@@ -1,0 +1,324 @@
+import React from 'react';
+import './Home.scss';
+
+// Importation des icônes
+import { FaShieldAlt, FaChartLine, FaCogs, FaHandshake, FaStoreAlt, FaSyncAlt, FaCog, FaLightbulb, FaUsers, FaWhatsapp, FaArrowRight, FaDesktop, FaBolt, FaStar } from 'react-icons/fa';
+
+const partners = [
+  { name: 'Partner 1', logo: 'https://placehold.co/150x60/f0f0f0/333?text=Partenaire+1' },
+  { name: 'Partner 2', logo: 'https://placehold.co/150x60/f0f0f0/333?text=Partenaire+2' },
+  { name: 'Partner 3', logo: 'https://placehold.co/150x60/f0f0f0/333?text=Partenaire+3' },
+  { name: 'Partner 4', logo: 'https://placehold.co/150x60/f0f0f0/333?text=Partenaire+4' },
+  { name: 'Partner 5', logo: 'https://placehold.co/150x60/f0f0f0/333?text=Partenaire+5' },
+  { name: 'Partner 6', logo: 'https://placehold.co/150x60/f0f0f0/333?text=Partenaire+6' },
+  { name: 'Partner 7', logo: 'https://placehold.co/150x60/f0f0f0/333?text=Partenaire+7' },
+];
+
+
+const Home = () => {
+  return (
+    <div className="home">
+      {/* Section Héro */}
+        <section className="hero">
+        <div className="hero-bg-overlay"></div>
+        <img src="/images/home.jpg" alt="Hero Transport" className="hero-bg-image" />
+        
+        <div className="hero-content">
+          <div className="hero-text">
+            <h1>THANK KOMPANY</h1>
+            <p>Réalisons intelligemment vos rêves !</p>
+            <button className="hero-cta-button">
+              <span>En savoir plus</span>
+              <FaArrowRight className="arrow-icon" />
+            </button>
+          </div>
+        </div>
+
+        <div className="qualities-bar">
+          <div className="quality-item">
+            <FaDesktop className="quality-icon" />
+            <span>Listening</span>
+          </div>
+          <div className="quality-item">
+            <FaBolt className="quality-icon" />
+            <span>Reactivity</span>
+          </div>
+          <div className="quality-item">
+            <FaStar className="quality-icon" />
+            <span>Customer Satisfaction</span>
+          </div>
+        </div>
+      </section>
+
+
+      {/* Section "Qui sommes-nous" */}
+      <section className="about" id="about">
+        <div className="about-text">
+          <h2>Qui sommes <span>nous</span></h2>
+          <p>
+            THANK KOMPANY est une entreprise internationale basée en Allemagne desservant des clients et partenaires en Afrique.
+            THANK KOMPANY propose un ensemble de services dans différents secteurs d’activités notamment : la logistique, le marketing & communication, les services informatiques et l’immobilier.
+          </p>
+          <p>
+            Pour desservir ses clients THANK KOMPANY s’appuie sur un solide réseau de partenaires en Amérique, en Europe et en Afrique.
+            Forte de plusieurs années d’expériences, l’ensemble des prestations de THANK KOMPANY visent à améliorer et à développer la performance des entreprises.
+          </p>
+        </div>
+        <div className="about-img">
+          <img src="/images/hp_qui_sommes_nous.png" alt="About illustration" />
+        </div>
+      </section>
+
+      {/* Section Offre */}
+      <section className="offer-section" id="offer">
+        <h3 className="section-title">
+          <span className="highlight">Notre offre:</span> Rendre votre travail sans effort
+        </h3>
+        <div className="service-cards-container">
+          <div className="service-card">
+            <div className="card-icon">
+              <img src="https://placehold.co/80x60/svg/0072bc/ffffff?text=Icon" alt="IT Services Icon" />
+            </div>
+            <h4>Services Informatique</h4>
+            <ul>
+              <li>Maintenance des systèmes informatiques</li>
+              <li>Gestion des données</li>
+              <li>Développement de logiciel</li>
+              <li>Développement Web</li>
+              <li>Conseils en SAP PM/CS</li>
+            </ul>
+          </div>
+          <div className="service-card">
+            <div className="card-icon">
+              <img src="https://placehold.co/80x60/svg/0072bc/ffffff?text=Icon" alt="Electronics Services Icon" />
+            </div>
+            <h4>Services électroniques</h4>
+            <ul>
+              <li>Conseil en matériaux de construction:</li>
+              <li className="sub-item">Gros Oeuvre</li>
+              <li className="sub-item">Second Oeuvre</li>
+              <li className="sub-item">Travaux de VRD</li>
+              <li>Vente des matériaux de construction</li>
+              <li>Bureau d’études</li>
+            </ul>
+          </div>
+          <div className="service-card">
+            <div className="card-icon">
+              <img src="https://placehold.co/80x60/svg/0072bc/ffffff?text=Icon" alt="Logistics Services Icon" />
+            </div>
+            <h4>Services de Logistique</h4>
+            <ul>
+              <li>Achat International</li>
+              <li>Transport et Gestion des colis</li>
+              <li>Recherche des fournisseurs</li>
+              <li>Paiement des factures</li>
+              <li>Location des voitures</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      {/* Section Mission & Vision */}
+    <section className="mission-vision-section">
+        {/* Mission: Image à gauche, Texte à droite */}
+        <div className="mission-vision-item">
+          <div className="mv-image-container">
+            <img src="https://placehold.co/500x350/cccccc/ffffff?text=Image+Mission" alt="Employé d'entrepôt" />
+          </div>
+          <div className="mv-text-container">
+            <h3>Notre Mission</h3>
+            <p>
+              Our mission is to empower businesses of all sizes to achieve seamless, agile, and cost-effective supply chain operations. We believe that a well-optimized supply chain is the backbone of successful businesses, enabling them to deliver exceptional products and services to customers around the world.
+            </p>
+          </div>
+        </div>
+        {/* Vision: Texte à gauche, Image à droite */}
+        <div className="mission-vision-item">
+          <div className="mv-text-container">
+            <h3>Notre Vision</h3>
+            <p>
+              We are committed to sustainable practices that contribute to a better future. By optimizing supply chains, reducing waste, and promoting eco-friendly initiatives, we play a role in building a more environmentally conscious world.
+            </p>
+          </div>
+          <div className="mv-image-container">
+            <img src="https://placehold.co/500x350/cccccc/ffffff?text=Image+Vision" alt="Manager dans un entrepôt" />
+          </div>
+        </div>
+      </section>
+
+      {/* Section Garantie */}
+      <section className="guarantee-section">
+        <div className="guarantee-overlay"></div>
+        <div className="guarantee-content">
+          <div className="guarantee-text">
+            <h3>Votre garantie</h3>
+            <p>
+              Comprendre les tendances globales de votre entreprise et de votre marché global vous permet d’économiser du temps, de l’argent et de l’énergie à long terme, et peut vous aider à dominer votre marché.
+            </p>
+            <button className="guarantee-cta-button">Demander un service</button>
+          </div>
+          <div className="guarantee-grid">
+            <div className="guarantee-item">
+              <div className="guarantee-icon-container"><FaUsers /></div>
+              <span>Informations clients</span>
+            </div>
+            <div className="guarantee-item">
+              <div className="guarantee-icon-container"><FaStoreAlt /></div>
+              <span>Efficacité accrue</span>
+            </div>
+            <div className="guarantee-item">
+              <div className="guarantee-icon-container"><FaSyncAlt /></div>
+              <span>Automatisation des processus</span>
+            </div>
+            <div className="guarantee-item">
+              <div className="guarantee-icon-container"><FaCog /></div>
+              <span>Coûts réduits</span>
+            </div>
+            <div className="guarantee-item">
+              <div className="guarantee-icon-container"><FaChartLine /></div>
+              <span>Aperçu du marché</span>
+            </div>
+            <div className="guarantee-item">
+              <div className="guarantee-icon-container"><FaLightbulb /></div>
+              <span>Innovation basée sur les données</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Section Meilleurs Produits */}
+      <section className="best-products-section">
+        <h3 className="section-title">
+          Nos meilleurs produits: <strong>Nous sommes votre meilleur partenaire</strong>
+        </h3>
+        <div className="products-container">
+          <div className="product-card">
+            <div className="product-image">
+              <img src="https://placehold.co/300x200/e0e0e0/ffffff?text=Produit" alt="Kenneth Simpson" />
+            </div>
+            <div className="product-info">
+              <h4>Kenneth Simpson</h4>
+              <p>Operations</p>
+            </div>
+          </div>
+          <div className="product-card">
+            <div className="product-image">
+              <img src="https://placehold.co/300x200/e0e0e0/ffffff?text=Produit" alt="Jonathan Gibson" />
+            </div>
+            <div className="product-info">
+              <h4>Jonathan Gibson</h4>
+              <p>Informatique</p>
+            </div>
+          </div>
+          <div className="product-card">
+            <div className="product-image">
+              <img src="https://placehold.co/300x200/e0e0e0/ffffff?text=Produit" alt="Dustin Lefkowitz" />
+            </div>
+            <div className="product-info">
+              <h4>Dustin Lefkowitz</h4>
+              <p>Logistique</p>
+            </div>
+          </div>
+          <div className="product-card">
+            <div className="product-image">
+              <img src="https://placehold.co/300x200/e0e0e0/ffffff?text=Produit" alt="Weston Trevino" />
+            </div>
+            <div className="product-info">
+              <h4>Weston Trevino</h4>
+              <p>Drivers</p>
+            </div>
+          </div>
+        </div>
+        <button className="products-nav-arrow">
+          <FaArrowRight />
+        </button>
+      </section>
+
+      {/* Section Résultats */}
+      <section className="results-section">
+        <div className="results-header">
+          <h3 className="section-title">
+            <span className="highlight">Nos resultats</span> en quelques chiffres
+          </h3>
+          <p className="section-subtitle">
+            Lorem morbi et amet suscipit. At sed proin quia risus urna a. Magna in odio in urna amet ultrices fermentum. Mauris in pretium eget donec erat ipsum a leo. Maecenas elementum consectetur ac blandit tortor.
+          </p>
+        </div>
+        <div className="results-cards-container">
+          <div className="result-card">
+            <span className="card-number">01</span>
+            <p className="card-title">Nombre Total projets</p>
+            <h4 className="card-stat">122 K</h4>
+            <p className="card-subtitle">Notre meilleurs performance</p>
+            <hr />
+          </div>
+          <div className="result-card">
+            <span className="card-number">02</span>
+            <p className="card-title">Nombre Produits Vendus</p>
+            <h4 className="card-stat">122 K</h4>
+            <p className="card-subtitle">Notre meilleurs performance</p>
+            <hr />
+          </div>
+          <div className="result-card">
+            <span className="card-number">03</span>
+            <p className="card-title">Nombre de Clients</p>
+            <h4 className="card-stat">122 K</h4>
+            <p className="card-subtitle">Notre meilleurs performance</p>
+            <hr />
+          </div>
+        </div>
+      </section>
+
+      {/* Section Contact */}
+     <section className="contact-section">
+        <div className="contact-bg-image"></div>
+        <div className="contact-content">
+          <div className="contact-left">
+            <div className="contact-card whatsapp-card">
+              <p>Ecrivez-nous</p>
+              <FaWhatsapp className="whatsapp-icon"/>
+              <span>Whatsapp</span>
+            </div>
+          </div>
+          <div className="contact-center">
+            <div className="contact-card meet-us-card">
+              <h4>Meet Us</h4>
+              <p>🇩🇪 Allemagne</p>
+              <p>🇨🇲 Cameroun</p>
+            </div>
+          </div>
+          <div className="contact-right">
+            <div className="contact-card form-card">
+              <h4>Contactez Nous</h4>
+              <p>Une question ? un message pour nous ?</p>
+              <form>
+                <input type="text" placeholder="Votre Nom" />
+                <input type="email" placeholder="Email Adresse" />
+                <input type="text" placeholder="Sujet" />
+                <textarea placeholder="Message"></textarea>
+                <button type="submit">Envoyer</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="partners-section">
+        <div className="partners-slider">
+          <div className="partners-slide-track">
+            {/* On duplique la liste des partenaires pour un effet de boucle infini */}
+            {[...partners, ...partners].map((partner, index) => (
+              <div className="partner-slide" key={index}>
+                <img src={partner.logo} alt={partner.name} />
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+
+    </div>
+  );
+};
+
+export default Home;

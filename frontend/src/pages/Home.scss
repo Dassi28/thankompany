@@ -1,0 +1,695 @@
+ @import '../styles/global.scss';
+ 
+
+  .home {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+  }
+  .highlight {
+  color: $primary-color;
+  }
+  // ... (autres styles de section)
+
+  // Section Hero
+  .hero {
+    position: relative;
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: white;
+    overflow: hidden;
+
+    // Lignes bleues en haut et en bas
+    &::before, &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      width: 100%;
+      height: 5px;
+      background-color: #0072bc;
+      z-index: 3;
+    }
+    &::before { top: 0; }
+    &::after { bottom: 0; }
+
+    .hero-bg-image {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -2;
+    }
+
+    .hero-bg-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(14, 32, 50, 0.7); // Superposition sombre
+      z-index: -1;
+    }
+
+    .hero-content {
+      padding-left: 80px;
+      z-index: 2;
+    }
+
+    .hero-text {
+      h1 {
+        font-family: 'Georgia', 'Times New Roman', serif;
+        font-size: 4rem;
+        font-weight: normal;
+        margin: 0;
+        letter-spacing: 1px;
+      }
+      p {
+        font-size: 1.2rem;
+        margin: 10px 0 30px;
+        font-style: italic;
+        opacity: 0.9;
+      }
+    }
+
+    .hero-cta-button {
+      background-color: #0072bc;
+      color: white;
+      border: none;
+      padding: 12px 25px;
+      font-size: 0.9rem;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background-color: #005fa3;
+      }
+
+      .arrow-icon {
+        transition: transform 0.3s ease;
+      }
+
+      &:hover .arrow-icon {
+        transform: translateX(5px);
+      }
+    }
+
+    .qualities-bar {
+      position: absolute;
+      bottom: 5px; // Positionné juste au-dessus de la bordure inférieure
+      left: 0;
+      width: 100%;
+      background-color: #0072bc;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 60px;
+      padding: 20px 0;
+      z-index: 2;
+    }
+
+    .quality-item {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 1rem;
+    }
+
+    .quality-icon {
+      font-size: 1.5rem;
+    }
+  }
+
+  // Section "Qui sommes-nous"
+  .about {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    padding: 80px;
+    background-color: #fff;
+    .about-text {
+      flex: 1.2;
+      h2 {
+        font-size: 2.2rem;
+        margin-bottom: 20px;
+        span { color: #0072bc; }
+      }
+      p { line-height: 1.7; }
+    }
+    .about-img {
+      flex: 1;
+      img { max-width: 100%; border-radius: 8px; }
+    }
+  }
+
+  .offer-section {
+    background-color: #f8f9fa;
+    padding: 80px;
+
+    .section-title {
+      font-size: 2rem;
+      font-weight: normal;
+      margin-bottom: 50px;
+      .highlight {
+        color: #0072bc;
+        display: block;
+        font-weight: bold;
+      }
+    }
+
+    .service-cards-container {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .service-card {
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.05);
+      width: 30%;
+      position: relative;
+
+      .card-icon {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        img {
+          height: 50px;
+          opacity: 0.8;
+        }
+      }
+
+      h4 {
+        font-size: 1.4rem;
+        margin-bottom: 20px;
+        font-weight: 600;
+      }
+
+      ul {
+        list-style: none;
+        padding: 0;
+        color: #555;
+        font-size: 0.95rem;
+
+        li {
+          margin-bottom: 10px;
+          padding-left: 20px;
+          position: relative;
+
+          &::before {
+            content: '•';
+            color: #0072bc;
+            font-size: 1.2rem;
+            position: absolute;
+            left: 0;
+            top: -2px;
+          }
+        }
+        
+        .sub-item {
+          padding-left: 35px;
+          &::before {
+            content: '-';
+            color: #888;
+            left: 15px;
+          }
+        }
+      }
+    }
+  }
+
+
+  .guarantee-section {
+    position: relative;
+    padding: 80px;
+    color: white;
+    background: url('https://placehold.co/1920x800/2c3e50/ffffff?text=Image+Port') no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed; // Effet parallaxe
+
+    .guarantee-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(14, 32, 50, 0.85);
+      z-index: 1;
+    }
+
+    .guarantee-content {
+      position: relative;
+      z-index: 2;
+      display: flex;
+      align-items: center;
+      gap: 60px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .guarantee-text {
+      flex: 1;
+      h3 {
+        font-size: 2.2rem;
+        font-weight: 600;
+        margin-bottom: 20px;
+      }
+      p {
+        font-size: 1rem;
+        line-height: 1.8;
+        margin-bottom: 30px;
+        opacity: 0.9;
+        max-width: 400px;
+      }
+    }
+
+    .guarantee-cta-button {
+      background-color: #0072bc;
+      color: white;
+      border: none;
+      padding: 12px 25px;
+      font-size: 0.9rem;
+      cursor: pointer;
+      transition: background-color 0.3s;
+
+      &:hover {
+        background-color: #005fa3;
+      }
+    }
+
+    .guarantee-grid {
+      flex: 1.2;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 40px;
+    }
+
+    .guarantee-item {
+      text-align: center;
+      
+      .guarantee-icon-container {
+        font-size: 2.5rem;
+        margin-bottom: 15px;
+        // Les icônes bicolores du design sont personnalisées.
+        // Pour les répliquer, il faudrait utiliser des images SVG.
+        // Ceci est une représentation fonctionnelle.
+        color: #0072bc;
+      }
+
+      span {
+        font-size: 1rem;
+        line-height: 1.4;
+      }
+    }
+  }
+
+
+  .mission-vision-section {
+    padding: 80px;
+    background-color: #fff;
+
+    .mission-vision-item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 60px;
+      margin-bottom: 80px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    .mv-image-container {
+      flex-basis: 45%;
+      img {
+        width: 100%;
+        border-radius: 12px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+      }
+    }
+
+    .mv-text-container {
+      flex-basis: 45%;
+      h3 {
+        font-size: 2.2rem;
+        font-weight: 600;
+        margin-bottom: 20px;
+      }
+      p {
+        font-size: 1rem;
+        line-height: 1.8;
+        color: #555;
+      }
+    }
+  }
+
+
+
+  .best-products-section {
+    padding: 80px;
+    background-color: #f8f9fa;
+    text-align: center;
+    position: relative;
+
+    .section-title {
+      font-size: 1.8rem;
+      font-weight: normal;
+      color: #888;
+      margin-bottom: 50px;
+      strong {
+        display: block;
+        color: #333;
+        font-weight: 600;
+      }
+    }
+
+    .products-container {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .product-card {
+      background: white;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+      width: 250px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+      &:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+      }
+
+      .product-image img {
+        width: 100%;
+        display: block;
+      }
+
+      .product-info {
+        background-color: #aeb5c4;
+        padding: 20px;
+        color: white;
+
+        h4 {
+          font-size: 1.1rem;
+          font-weight: 600;
+          margin: 0 0 5px;
+        }
+
+        p {
+          font-size: 0.9rem;
+          color: #0072bc;
+          margin: 0;
+          font-weight: bold;
+        }
+      }
+    }
+
+    .products-nav-arrow {
+      position: absolute;
+      top: 55%;
+      right: 50px;
+      transform: translateY(-50%);
+      background-color: #0072bc;
+      color: white;
+      border: none;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2rem;
+      cursor: pointer;
+      box-shadow: 0 4px 10px rgba(0, 114, 188, 0.3);
+    }
+  }
+
+
+  .results-section {
+    padding: 80px;
+    background-color: #fff;
+
+    .results-header {
+      max-width: 800px;
+      margin: 0 auto 50px auto;
+      text-align: center;
+    }
+
+    .section-title {
+      font-size: 2rem;
+      font-weight: 600;
+      margin-bottom: 20px;
+      .highlight {
+        color: #0072bc;
+      }
+    }
+
+    .section-subtitle {
+      font-size: 1rem;
+      line-height: 1.7;
+      color: #666;
+    }
+
+    .results-cards-container {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .result-card {
+      background-color: #0072bc;
+      color: white;
+      padding: 30px;
+      border-radius: 12px;
+      width: 300px;
+      position: relative;
+      
+      .card-number {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        font-size: 0.9rem;
+        font-weight: bold;
+        opacity: 0.7;
+      }
+
+      .card-title {
+        margin: 0;
+        font-size: 1rem;
+      }
+
+      .card-stat {
+        font-size: 4rem;
+        font-weight: bold;
+        margin: 10px 0;
+      }
+
+      .card-subtitle {
+        margin: 0 0 20px;
+        font-size: 0.9rem;
+        opacity: 0.9;
+      }
+
+      hr {
+        border: none;
+        height: 2px;
+        background-color: white;
+        opacity: 0.8;
+      }
+    }
+  }
+
+
+  .contact-section {
+    position: relative;
+    padding: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;
+    overflow: hidden;
+
+    .contact-bg-image {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url('https://placehold.co/1920x1080/cccccc/ffffff?text=Image+Contact') no-repeat center center;
+      background-size: cover;
+      filter: brightness(0.8);
+      z-index: -1;
+    }
+
+    .contact-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 30px;
+      width: 100%;
+      max-width: 1100px;
+    }
+
+    .contact-left, .contact-center, .contact-right {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .contact-left { align-self: flex-end; } // Aligne en bas
+    .contact-center { align-self: center; } // Aligne au centre
+    .contact-right { align-self: center; } // Aligne au centre
+
+    .contact-card {
+      border-radius: 12px;
+      padding: 25px;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.1);
+    }
+
+    .whatsapp-card {
+      background: $primary-color; // Fond bleu solide
+      color: white;
+      text-align: center;
+      width: 200px;
+      p { font-size: 1.1rem; margin: 0 0 10px; }
+      .whatsapp-icon { font-size: 4rem; margin-bottom: 5px; }
+      span { font-size: 1.2rem; font-weight: bold; }
+    }
+
+    .meet-us-card {
+      color: white;
+      text-align: center;
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      h4 { font-size: 1.2rem; margin: 0 0 15px; }
+      p { margin: 10px 0; font-size: 1rem; }
+    }
+
+    .form-card {
+      background: rgba(14, 32, 50, 0.8);
+      backdrop-filter: blur(10px);
+      color: white;
+      width: 100%;
+      max-width: 400px;
+      h4 { font-size: 1.2rem; margin: 0 0 5px; }
+      p { font-size: 0.9rem; opacity: 0.8; margin-bottom: 20px; }
+      
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      input, textarea {
+        background: #000; // Fond noir
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        border-radius: 8px;
+        padding: 12px;
+        color: white;
+        font-size: 0.9rem;
+        &::placeholder { color: rgba(255, 255, 255, 0.7); }
+      }
+      textarea { min-height: 80px; resize: vertical; }
+
+      button {
+        background: white; // Bouton blanc
+        color: #333;
+        border: none;
+        padding: 12px;
+        border-radius: 8px;
+        font-weight: bold;
+        cursor: pointer;
+      }
+    }
+
+  }
+
+
+  @keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+
+  .partners-section {
+      padding: 30px 0;
+      background-color: #e9ecef;
+      display: flex;
+      align-items: center;
+
+      .partners-nav-arrow {
+        background-color: $primary-color;
+        color: white;
+        border: none;
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.5rem;
+        cursor: pointer;
+        box-shadow: 0 4px 10px rgba(0, 114, 188, 0.3);
+        margin: 0 30px;
+      }
+
+      .partners-slider {
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+        -webkit-mask-image: linear-gradient(to right, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 5%, rgba(0,0,0,1) 95%, rgba(0,0,0,0) 100%);
+        mask-image: linear-gradient(to right, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 5%, rgba(0,0,0,1) 95%, rgba(0,0,0,0) 100%);
+
+        &:hover .partners-slide-track {
+          animation-play-state: paused;
+        }
+      }
+
+      .partners-slide-track {
+        display: flex;
+        width: calc(200px * 14);
+        animation: scroll 30s linear infinite;
+      }
+
+      .partner-slide {
+        width: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 25px;
+
+        img {
+          max-width: 150px;
+          filter: grayscale(100%);
+          opacity: 0.7;
+          transition: all 0.3s ease;
+
+          &:hover {
+            filter: grayscale(0%);
+            opacity: 1;
+          }
+        }
+      }
+  }
+  // ... (autres styles)
+
+  // Responsivité pour la section Meilleurs Produits
+  @media (max-width: 1200px) {
+    .best-products-section .products-container {
+      flex-wrap: wrap;
+    }
+    .best-products-section .products-nav-arrow {
+      display: none; // On cache la flèche sur les petits écrans
+    }
+  }
+

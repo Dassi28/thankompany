@@ -1,0 +1,134 @@
+ @import '../styles/global.scss';
+
+// --- STYLES GÉNÉRAUX ---
+.electronics-page {
+  .highlight {
+    color: $primary-color;
+  }
+  .e-section {
+    padding: 80px;
+  }
+  .e-content-container {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .e-text-content {
+    flex: 1;
+  }
+  .e-image-content {
+    flex: 1;
+    img {
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    }
+  }
+  h2 {
+    font-size: 2.2rem;
+    font-weight: 300;
+    line-height: 1.4;
+    margin-bottom: 20px;
+    span {
+      font-weight: 600;
+    }
+  }
+}
+
+// 01: Hero Section
+.electronics-hero {
+  position: relative;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  color: white;
+  background: url('https://placehold.co/1920x600/2c3e50/ffffff?text=Image+Hero') no-repeat center center;
+  background-size: cover;
+
+  .hero-overlay {
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+    background-color: rgba(14, 32, 50, 0.7);
+  }
+  .hero-content {
+    position: relative; z-index: 2; padding-left: 80px;
+  }
+  .breadcrumb { font-size: 0.9rem; margin-bottom: 10px; }
+  h1 { font-size: 3.5rem; font-weight: 300; margin: 0; span { font-weight: 600; } }
+  .hero-cta {
+    background-color: $primary-color; color: white; border: none;
+    padding: 15px 30px; font-size: 1rem; border-radius: 8px;
+    cursor: pointer; display: inline-flex; align-items: center;
+    gap: 10px; margin-top: 30px;
+  }
+}
+
+// 02: Partenaire fiable
+.reliable-partner {
+  p { line-height: 1.8; color: $light-text-color; }
+}
+
+// 03: Marché européen et africain
+.map-section {
+  background-color: $alt-bg-color;
+  h2 { color: white; }
+  .e-image-content img { box-shadow: none; }
+}
+
+// 04: Qualité et certification
+.quality-section {
+  p { line-height: 1.8; color: $light-text-color; }
+  h4 { font-size: 1.2rem; margin-top: 25px; margin-bottom: 10px; border-bottom: 1px solid #ddd; padding-bottom: 5px; }
+}
+
+// 05: Bannière avec icônes
+.icon-banner {
+  padding: 0;
+  height: 250px;
+  position: relative;
+  background: url('https://placehold.co/1920x250/333/ffffff?text=Image+Bannière') no-repeat center center;
+  background-size: cover;
+  .icon-overlay {
+    background-color: rgba(44, 62, 80, 0.7);
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+    display: flex; justify-content: space-around; align-items: center;
+    color: $primary-color; font-size: 4rem;
+  }
+}
+
+// 06: Nos produits & Partenaires
+.shop-section {
+  background-color: $alt-bg-color;
+  text-align: center;
+  h3 { font-size: 2rem; margin-bottom: 40px; }
+  .shop-products {
+    display: flex; justify-content: center; gap: 30px; margin-bottom: 40px;
+  }
+  .shop-card {
+    background: white; border-radius: 12px; overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05); width: 250px;
+    img { width: 100%; border-bottom: 1px solid #eee; }
+    h4, .rating { padding: 15px; }
+    h4 { font-size: 1.1rem; font-weight: 600; margin: 0; }
+    .rating {
+      display: flex; align-items: center; justify-content: center;
+      gap: 5px; color: #f0c419;
+      span { color: #888; font-size: 0.9rem; }
+    }
+  }
+  .shop-cta {
+    background-color: $primary-color; color: white; border: none;
+    padding: 15px 30px; font-size: 1rem; font-weight: bold;
+    border-radius: 8px; cursor: pointer; display: inline-flex;
+    align-items: center; gap: 10px; margin-bottom: 60px;
+  }
+  .partners-slider { /* ... styles du slider ... */ }
+}
+
+// Responsivité
+@media (max-width: 900px) {
+  .e-section { padding: 40px 20px; }
+  .e-content-container { flex-direction: column !important; }
+  .shop-section .shop-products { flex-wrap: wrap; }
+}

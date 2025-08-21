@@ -1,0 +1,160 @@
+// Variables pour un ajustement facile
+$footer-bg-color: #aeb5c4;
+$footer-right-text-color: white;
+$left-panel-width: 45%;
+$arrow-offset: 60px; // Profondeur de la pointe de la flèche
+
+.footer-v2 {
+  position: relative;
+  width: 100%;
+  background-color: $footer-bg-color;
+  font-family: 'Arial', sans-serif;
+
+  .footer-container {
+    display: flex;
+    position: relative;
+    width: 100%;
+  }
+
+  .footer-left-panel {
+    width: $left-panel-width;
+    background-color: white;
+    // clip-path pour créer la forme de flèche
+    clip-path: polygon(0 0, calc(100% - #{$arrow-offset}) 0, 100% 50%, calc(100% - #{$arrow-offset}) 100%, 0 100%);
+    z-index: 2;
+    padding: 40px 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .footer-logo {
+    height: 40px;
+    width: auto;
+    margin-bottom: 20px;
+  }
+
+  .footer-description {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 25px;
+    max-width: 380px;
+    color: #555;
+  }
+
+  .live-chat-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 25px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .copyright {
+    font-size: 0.9rem;
+    padding-top: 20px;
+    color: #555;
+  }
+  
+  .footer-right-panel {
+    flex: 1;
+    padding: 40px 60px;
+    padding-left: calc(#{$arrow-offset} + 20px); // Compense l'espace de la flèche
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: $footer-right-text-color;
+  }
+
+  .address-columns {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .address-col {
+    h4 {
+      font-size: 1.1rem;
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+    p {
+      margin: 0;
+      line-height: 1.7;
+      font-size: 0.95rem;
+    }
+  }
+
+  .legal-links {
+    padding-top: 20px;
+    text-align: right;
+    
+    a {
+      color: $footer-right-text-color;
+      text-decoration: none;
+      font-size: 0.9rem;
+      margin-left: 25px;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  
+  .footer-separator {
+    position: absolute;
+    bottom: 65px; // Ajustez cette valeur pour un positionnement parfait
+    left: 80px;
+    right: 60px;
+    border: none;
+    height: 1px;
+    background-color: #c8cdd7;
+    z-index: 3;
+  }
+
+  // --- RESPONSIVITÉ ---
+  @media (max-width: 1024px) {
+    .footer-container {
+      flex-direction: column;
+    }
+    .footer-left-panel, .footer-right-panel {
+      width: 100%;
+      clip-path: none;
+      padding: 40px;
+    }
+    .footer-right-panel {
+      padding-left: 40px;
+    }
+    .footer-separator {
+      position: static;
+      margin: 0 40px;
+      order: 1;
+    }
+    .footer-left-panel .left-panel-bottom, .footer-right-panel {
+      order: 2;
+    }
+    .address-columns {
+      margin-bottom: 30px;
+    }
+    .legal-links, .copyright {
+      text-align: center;
+      padding: 15px 0 0;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .address-columns {
+      flex-direction: column;
+      gap: 20px;
+      text-align: center;
+    }
+    .legal-links a {
+      margin: 0 10px;
+    }
+  }
+}
