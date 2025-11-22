@@ -2,7 +2,7 @@ import React from 'react';
 import './Home.scss';
 
 // Importation des icônes
-import { FaShieldAlt, FaChartLine, FaCogs, FaHandshake, FaStoreAlt, FaSyncAlt, FaCog, FaLightbulb, FaUsers, FaWhatsapp, FaArrowRight, FaDesktop, FaBolt, FaStar } from 'react-icons/fa';
+import { FaShieldAlt, FaChartLine, FaCogs, FaHandshake, FaStoreAlt, FaSyncAlt, FaCog, FaLightbulb, FaUsers, FaWhatsapp, FaArrowRight, FaDesktop, FaBolt, FaStar, FaAtlas, GiFaceToFace, SiAwsfargate, FaArrowTrendUp } from 'react-icons/fa';
 
 import PartnersLogo from '../components/PartnersLogo';
 
@@ -17,9 +17,12 @@ const Home = () => {
         <div className="hero-content">
           <div className="hero-text">
             <h1>THANK KOMPANY</h1>
-            <p>Réalisons intelligemment vos rêves !</p>
+                      {/*<h2>We help companies digitize, automate, and streamline their processes!</h2>*/}
+                      {/*<h3>We combining global expertise with local reliability </h3>*/}
+                      <h2>SAP EAM/PM Consulting: Delivering digital and smart maintenance solutions with SAP S/4HANA for peak performance</h2>
+                      <h2>Automation Engineering: Delivering expertise in PLC programming, control systems, and automation solutions.</h2>
             <button className="hero-cta-button">
-              <span>En savoir plus</span>
+             <span>Discover Our Solutions</span>
               <FaArrowRight className="arrow-icon" />
             </button>
           </div>
@@ -37,7 +40,23 @@ const Home = () => {
           <div className="quality-item">
             <FaStar className="quality-icon" />
             <span>Customer Satisfaction</span>
-          </div>
+                  </div>
+                  <div className="quality-item">
+                      <FaChartLine className="quality-icon" />
+                      <span>Quality & Precision</span>
+                  </div>
+                  <div className="quality-item">
+                      <FaLightbulb className="quality-icon" />
+                      <span>Innovation</span>
+                  </div>
+                  <div className="quality-item">
+                      <FaAtlas className="quality-icon" />
+                      <span>Internationality</span>
+                  </div>
+                  <div className="quality-item">
+                      <FaHandshake className="quality-icon" />
+                      <span>Partnership</span>
+                  </div>
         </div>
       </section>
 
