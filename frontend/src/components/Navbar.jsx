@@ -1,21 +1,24 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import './Navbar.scss';
 
-const Navbar = () => {
+const Navbar = ({ changeLanguage }) => {
+  const { t } = useTranslation();
+
   return (
     <>
       {/* TOP STRIP */}
       <div className="top-bar">
-        <span className="discount-msg">Get A Discount Of For Your First Orders This Month!</span>
+        <span className="discount-msg">{t('discount_msg')}</span>
         <div className="top-right">
           <div className="contact-block">
             <span className="icon">📞</span>
-            <span className="label">Call US</span>
+            <span className="label">{t('call_us')}</span>
             <span className="value">+62 864 6444 2222</span>
           </div>
           <div className="contact-block">
             <span className="icon">✉️</span>
-            <span className="label">Mail Us</span>
+            <span className="label">{t('mail_us')}</span>
             <span className="value">hi@logistic.com</span>
           </div>
           <div className="social-icons">
@@ -23,7 +26,17 @@ const Navbar = () => {
             <span>🔗</span>
             <span>📘</span>
           </div>
-          <div className="lang-select">EN ⌄</div>
+          <div className="lang-select">
+            <button onClick={() => changeLanguage('fr')} className="lang-button">
+              <img src="/images/flags/fr.jpg" alt="French" />
+            </button>
+            <button onClick={() => changeLanguage('en')} className="lang-button">
+              <img src="/images/flags/en.jpeg" alt="English" />
+            </button>
+            <button onClick={() => changeLanguage('de')} className="lang-button">
+              <img src="/images/flags/de.png" alt="German" />
+            </button>
+          </div>
         </div>
       </div>
 
@@ -34,16 +47,17 @@ const Navbar = () => {
         </div>
 
         <ul className="navbar-links">
-  <li><a href="/" className="active">HOME</a></li>
-  <li><a href="/it-service">IT–SERVICES</a></li>
-  <li><a href="/electronics">ELECTRONICS</a></li>
-  <li><a href="/logistics">LOGISTICS</a></li>
-  <li><a href="#shop">SHOP</a></li>
-</ul>
+          <li><a href="/" className="active">{t('home')}</a></li>
+          <li><a href="/it-service">{t('it_services')}</a></li>
+          <li><a href="/automation">{t('automation')}</a></li>
+          <li><a href="/electronics">{t('electronics')}</a></li>
+          <li><a href="/logistics">{t('logistics')}</a></li>
+          <li><a href="#shop">{t('shop')}</a></li>
+        </ul>
 
 
         <div className="navbar-actions">
-          <button className="quote-btn">Get a quote</button>
+          <button className="quote-btn">{t('get_a_quote')}</button>
         </div>
       </nav>
     </>

@@ -35,7 +35,28 @@
   .lang-select {
     border-left: 1px solid #ccc;
     padding-left: 10px;
-    cursor: pointer;
+    display: flex; // To arrange buttons horizontally
+    gap: 5px; // Space between buttons
+
+    .lang-button {
+      background: none;
+      border: none;
+      padding: 0;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+
+      img {
+        width: 24px; // Adjust size as needed
+        height: 16px; // Adjust size as needed
+        border: 1px solid #eee; // Optional: subtle border for flags
+        box-shadow: 0 0 2px rgba(0,0,0,0.2); // Optional: subtle shadow
+      }
+
+      &:hover img {
+        opacity: 0.8;
+      }
+    }
   }
 }
 

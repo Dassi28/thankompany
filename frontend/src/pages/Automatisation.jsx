@@ -3,7 +3,7 @@ import './ITService.scss';
 import { FaArrowRight, FaStar } from 'react-icons/fa';
 import PartnersLogo from '../components/PartnersLogo';
 
-const ITService = () => {
+const Automatisation = () => {
   return (
     <div className="it-service-page">
       {/* 01: Hero Section */}
@@ -130,4 +130,4 @@ const ITService = () => {
   );
 };
 
-export default ITService;
+export default Automatisation;
