@@ -77,7 +77,7 @@ const Home = () => {
         <div className="service-cards-container">
           <div className="service-card">
             <div className="card-icon">
-              <img src="https://placehold.co/80x60/svg/0072bc/ffffff?text=Icon" alt="IT Services Icon" />
+              <img src="/images/Home/hp_Service_informatique.png" alt="IT Services Icon" />
             </div>
             <h4>Services Informatique</h4>
             <ul>
@@ -90,7 +90,7 @@ const Home = () => {
           </div>
           <div className="service-card">
             <div className="card-icon">
-              <img src="https://placehold.co/80x60/svg/0072bc/ffffff?text=Icon" alt="Electronics Services Icon" />
+              <img src="/images/Home/HP_service-electro.png" alt="Electronics Services Icon" />
             </div>
             <h4>Services électroniques</h4>
             <ul>
@@ -104,7 +104,7 @@ const Home = () => {
           </div>
           <div className="service-card">
             <div className="card-icon">
-              <img src="https://placehold.co/80x60/svg/0072bc/ffffff?text=Icon" alt="Logistics Services Icon" />
+              <img src="/images/Home/HP_service-logist.png" alt="Logistics Services Icon" />
             </div>
             <h4>Services de Logistique</h4>
             <ul>
@@ -123,7 +123,7 @@ const Home = () => {
         {/* Mission: Image à gauche, Texte à droite */}
         <div className="mission-vision-item">
           <div className="mv-image-container">
-            <img src="https://placehold.co/500x350/cccccc/ffffff?text=Image+Mission" alt="Employé d'entrepôt" />
+            <img src="/images/Home/Notre_Mission.png" alt="Employé d'entrepôt" />
           </div>
           <div className="mv-text-container">
             <h3>Notre Mission</h3>
@@ -141,7 +141,7 @@ const Home = () => {
             </p>
           </div>
           <div className="mv-image-container">
-            <img src="https://placehold.co/500x350/cccccc/ffffff?text=Image+Vision" alt="Manager dans un entrepôt" />
+            <img src="/images/Home/HP_Vision.png" alt="Manager dans un entrepôt" />
           </div>
         </div>
       </section>
@@ -159,27 +159,27 @@ const Home = () => {
           </div>
           <div className="guarantee-grid">
             <div className="guarantee-item">
-              <div className="guarantee-icon-container"><FaUsers /></div>
+              <div className="guarantee-icon-container"><img src="/images/Home/garantie1.png" alt="garantie" /></div>
               <span>Informations clients</span>
             </div>
             <div className="guarantee-item">
-              <div className="guarantee-icon-container"><FaStoreAlt /></div>
+              <div className="guarantee-icon-container"><img src="/images/Home/garantie2.png" alt="garantie" /></div>
               <span>Efficacité accrue</span>
             </div>
             <div className="guarantee-item">
-              <div className="guarantee-icon-container"><FaSyncAlt /></div>
+              <div className="guarantee-icon-container"><img src="/images/Home/garantie3.png" alt="garantie" /></div>
               <span>Automatisation des processus</span>
             </div>
             <div className="guarantee-item">
-              <div className="guarantee-icon-container"><FaCog /></div>
+              <div className="guarantee-icon-container"><img src="/images/Home/garantie4.png" alt="garantie" /></div>
               <span>Coûts réduits</span>
             </div>
             <div className="guarantee-item">
-              <div className="guarantee-icon-container"><FaChartLine /></div>
+              <div className="guarantee-icon-container"><img src="/images/Home/garantie5.png" alt="garantie" /></div>
               <span>Aperçu du marché</span>
             </div>
             <div className="guarantee-item">
-              <div className="guarantee-icon-container"><FaLightbulb /></div>
+              <div className="guarantee-icon-container"><img src="/images/Home/garantie6.png" alt="garantie" /></div>
               <span>Innovation basée sur les données</span>
             </div>
           </div>
@@ -194,7 +194,7 @@ const Home = () => {
         <div className="products-container">
           <div className="product-card">
             <div className="product-image">
-              <img src="https://placehold.co/300x200/e0e0e0/ffffff?text=Produit" alt="Kenneth Simpson" />
+              <img src="/images/Home/Shop1.png" alt="Product 1"/>
             </div>
             <div className="product-info">
               <h4>Kenneth Simpson</h4>
@@ -203,7 +203,7 @@ const Home = () => {
           </div>
           <div className="product-card">
             <div className="product-image">
-              <img src="https://placehold.co/300x200/e0e0e0/ffffff?text=Produit" alt="Jonathan Gibson" />
+              <img src="/images/Home/Shop2.png" alt="Product 2" />
             </div>
             <div className="product-info">
               <h4>Jonathan Gibson</h4>
@@ -212,7 +212,7 @@ const Home = () => {
           </div>
           <div className="product-card">
             <div className="product-image">
-              <img src="https://placehold.co/300x200/e0e0e0/ffffff?text=Produit" alt="Dustin Lefkowitz" />
+              <img src="/images/Home/Shop3.png" alt="Product 3" />
             </div>
             <div className="product-info">
               <h4>Dustin Lefkowitz</h4>
@@ -221,7 +221,7 @@ const Home = () => {
           </div>
           <div className="product-card">
             <div className="product-image">
-              <img src="https://placehold.co/300x200/e0e0e0/ffffff?text=Produit" alt="Weston Trevino" />
+              <img src="/images/Home/Shop4.png" alt="Product 4" />
             </div>
             <div className="product-info">
               <h4>Weston Trevino</h4>
@@ -229,7 +229,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <button className="products-nav-arrow">
+        <button className="products-nav-arrow"> 
           <FaArrowRight />
         </button>
       </section>
@@ -314,7 +314,7 @@ const Home = () => {
             ))}
           </div>
         </div>
-      </section>
+      </section> 
 
 
     </div>

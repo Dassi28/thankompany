@@ -110,14 +110,21 @@ const Electronics = () => {
           <span>Consulter La Boutique</span>
           <FaArrowRight />
         </button>
+      </section>
+
+       <section className="partners-section">
         <div className="partners-slider">
           <div className="partners-slide-track">
+            {/* On duplique la liste des partenaires pour un effet de boucle infini */}
             {[...partners, ...partners].map((partner, index) => (
-              <div className="partner-slide" key={index}><img src={partner.logo} alt={partner.name} /></div>
+              <div className="partner-slide" key={index}>
+                <img src={partner.logo} alt={partner.name} />
+              </div>
             ))}
           </div>
         </div>
       </section>
+      
     </div>
   );
 };
