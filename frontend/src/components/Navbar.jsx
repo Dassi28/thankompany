@@ -1,9 +1,19 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
+import { FaBars, FaTimes } from 'react-icons/fa';
 import './Navbar.scss';
 
 const Navbar = ({ changeLanguage }) => {
   const { t } = useTranslation();
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
+  const closeMenu = () => {
+    setIsMenuOpen(false);
+  };
 
   return (
     <>
@@ -46,7 +56,7 @@ const Navbar = ({ changeLanguage }) => {
           <img src="/images/logo_thank_kompany_Final.png" alt="Thank Kompany Logo" />
         </div>
 
-        <ul className="navbar-links">
+        <ul className={isMenuOpen ? "navbar-links open" : "navbar-links"} onClick={closeMenu}>
           <li><a href="/" className="active">{t('home')}</a></li>
           <li><a href="/it-service">{t('it_services')}</a></li>
           <li><a href="/automation">{t('automation')}</a></li>
@@ -55,9 +65,11 @@ const Navbar = ({ changeLanguage }) => {
           <li><a href="#shop">{t('shop')}</a></li>
         </ul>
 
-
         <div className="navbar-actions">
           <button className="quote-btn">{t('get_a_quote')}</button>
+          <button className="mobile-menu-icon" onClick={toggleMenu}>
+            {isMenuOpen ? <FaTimes /> : <FaBars />}
+          </button>
         </div>
       </nav>
     </>

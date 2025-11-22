@@ -628,3 +628,67 @@
     }
   }
 
+/* Styles de Responsivité pour la page Home */
+@media (max-width: 992px) { // Tablettes
+  .hero .hero-text h1 {
+    font-size: 3rem;
+  }
+  .hero .qualities-bar {
+    gap: 20px;
+    padding: 15px 0;
+  }
+  .about, .guarantee-content, .mission-vision-item {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .mission-vision-item:nth-child(2) {
+    flex-direction: column-reverse;
+  }
+  .offer-section .service-cards-container,
+  .results-section .results-cards-container,
+  .best-products-section .products-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+  .offer-section .service-card,
+  .results-section .result-card,
+  .best-products-section .product-card {
+    width: 80%;
+  }
+  .guarantee-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .contact-content {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+
+@media (max-width: 768px) { // Mobiles larges
+  .hero {
+    height: 70vh;
+    .hero-content {
+      padding-left: 20px;
+      text-align: center;
+    }
+    .hero-text h1 {
+      font-size: 2.5rem;
+    }
+    .qualities-bar {
+      position: static;
+      flex-direction: column;
+      gap: 15px;
+      padding: 20px;
+    }
+  }
+  .guarantee-grid {
+    grid-template-columns: 1fr;
+  }
+  .offer-section .service-card,
+  .results-section .result-card,
+  .best-products-section .product-card {
+    width: 100%;
+  }
+}
+

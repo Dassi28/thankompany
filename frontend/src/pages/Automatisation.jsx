@@ -5,7 +5,7 @@ import PartnersLogo from '../components/PartnersLogo';
 
 const Automatisation = () => {
   return (
-    <div className="it-service-page">
+    <div className="it-service-page"> 
       {/* 01: Hero Section */}
       <section className="it-hero"> 
         <div className="it-hero-overlay"></div>
