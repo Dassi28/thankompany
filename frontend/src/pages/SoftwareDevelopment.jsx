@@ -1,5 +1,5 @@
 import React from 'react';
-import './ITService.scss';
+import './SoftwareDevelopment.scss';
 import { FaArrowRight, FaStar } from 'react-icons/fa';
 import PartnersLogo from '../components/PartnersLogo';
 
