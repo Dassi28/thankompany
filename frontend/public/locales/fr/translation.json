@@ -1,13 +1,14 @@
 {
-  "discount_msg": "Bénéficiez d'une réduction pour vos premières commandes ce mois-ci !",
-  "call_us": "Appelez-nous",
-  "mail_us": "Écrivez-nous",
+  "discount_msg": "Votre partenaire pour SAP EAM/PM, l’ingénierie de l’automatisation et des solutions logicielles innovantes!",
+  "call_us": "Parlez à un expert",
+  "mail_us": "Envoyez-nous un message",
   "home": "ACCUEIL",
-  "it_services": "SERVICES-IT",
-  "automation": "AUTOMATISATION",
+  "it_services": "CONSEIL SAP EAM/PM",
+  "automation": "INGÉNIERIE DE L’AUTOMATISATION",
   "electronics": "ÉLECTRONIQUE",
   "logistics": "LOGISTIQUE",
   "shop": "BOUTIQUE",
-  "get_a_quote": "Obtenir un devis",
-  "automation": "Automatisation"
+  "get_a_quote": "Discutons de vos besoins",
+  "software": "DÉVELOPPEMENT LOGICIEL"
+
 }

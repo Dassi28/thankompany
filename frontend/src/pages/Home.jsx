@@ -21,6 +21,7 @@ const Home = () => {
                       {/*<h3>We combining global expertise with local reliability </h3>*/}
                       <h2>SAP EAM/PM Consulting: Delivering digital and smart maintenance solutions with SAP S/4HANA for peak performance</h2>
                       <h2>Automation Engineering: Delivering expertise in PLC programming, control systems, and automation solutions.</h2>
+                      <h2>Software Development: Delivering modern, scalable, and secure software solutions for digital transformation.</h2>
             <button className="hero-cta-button">
              <span>Discover Our Solutions</span>
               <FaArrowRight className="arrow-icon" />
