@@ -7,7 +7,7 @@ const ITService = () => {
   return (
     <div className="it-service-page">
       {/* 01: Hero Section */}
-      <section className="it-hero"> 
+      <section className="it-hero" style={{backgroundImage: `url(/images/IT/0_Home_Screen.png)`}}> 
         <div className="it-hero-overlay"></div>
         <div className="it-hero-content">
           <p className="breadcrumb">HOME - IT Services</p>
@@ -23,7 +23,7 @@ const ITService = () => {
             <p>THANK KOMPANY vous permet de bénéficier d’une vaste expertise de conseils dans l’intégration des systèmes ERP SAP. Nos consultants se démarquent par leurs expériences développées sur plusieurs années, dans le conseil, la mise en oeuvre, l’implémentation et l’optimisation des processus de maintenance avec SAP PM (Plant Maintenance) ou SAP EAM (Enterprise Asset Management).</p>
           </div>
           <div className="service-image">
-            <img src="https://placehold.co/600x400/cccccc/ffffff?text=Image+SAP" alt="Conseils SAP" />
+            <img src="/images/IT/1_SAP_Conseils.png" alt="Conseils SAP" />
           </div>
         </div>
       </section>
@@ -42,7 +42,7 @@ const ITService = () => {
             </ul>
           </div>
           <div className="service-image">
-            <img src="https://placehold.co/600x400/cccccc/ffffff?text=Image+Données" alt="Gestion des Données" />
+            <img src="/images/IT/2_Gestion_Donnees.png" alt="Gestion des Données" />
           </div>
         </div>
       </section>
@@ -55,7 +55,7 @@ const ITService = () => {
             <p>Vous avez besoin d’une carte de visite électronique, d’une boutique en ligne ou d’un logiciel sur un cloud, quel que soit le domaine ou le secteur dans lequel vous souhaitez que votre site Web soit construit. Avec nos développeurs et concepteurs Web qualifiés chez THANK KOMPANY, vous trouverez des solutions Web qui dépassent vos attentes en termes de performance et de convivialité.</p>
           </div>
           <div className="service-image">
-            <img src="https://placehold.co/600x400/cccccc/ffffff?text=Image+Web" alt="Développement Web" />
+            <img src="/images/IT/3_Developement_Web.png" alt="Développement Web" />
           </div>
         </div>
       </section>
@@ -69,7 +69,7 @@ const ITService = () => {
             <p>Avec THANK KOMPANY vous avez également la possibilité d’évaluer votre logiciel régulièrement en fonction du besoin et des contraintes de votre Entreprise pour une satisfaction complète en fonctionnalité, ergonomie, performance.</p>
           </div>
           <div className="service-image">
-            <img src="https://placehold.co/600x400/cccccc/ffffff?text=Image+Logiciels" alt="Développement Logiciels" />
+            <img src="/images/IT/4_Development.png" alt="Développement Logiciels" />
           </div>
         </div>
       </section>
@@ -89,7 +89,7 @@ const ITService = () => {
             <p className="quote">“La maintenance est la clé pour un bon fonctionnement de votre entreprise”</p>
           </div>
           <div className="service-image">
-            <img src="https://placehold.co/600x400/cccccc/ffffff?text=Image+Maintenance" alt="Maintenance Informatiques" />
+            <img src="/images/IT/05_maintenance.png" alt="Maintenance Informatiques" />
           </div>
         </div>
       </section>
