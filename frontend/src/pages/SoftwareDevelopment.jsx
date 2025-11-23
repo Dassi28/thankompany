@@ -3,8 +3,8 @@ import './ITService.scss';
 import { FaArrowRight, FaStar } from 'react-icons/fa';
 import PartnersLogo from '../components/PartnersLogo';
 
-const ITService = () => {
-  return (
+const SoftwareDevelopment = () => {
+ return (
     <div className="it-service-page">
       {/* 01: Hero Section */}
       <section className="it-hero"> 
@@ -130,4 +130,4 @@ const ITService = () => {
   );
 };
 
-export default ITService;
+export default SoftwareDevelopment;

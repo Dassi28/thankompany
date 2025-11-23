@@ -6,6 +6,7 @@ import ITService from './pages/ITService';
 import Automatisation from './pages/Automatisation';
 import Electronics from './pages/Electronics';
 import Logistics from './pages/Logistics';
+import SoftwareDevelopment from './pages/SoftwareDevelopment';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import './styles/global.scss';
@@ -26,6 +27,7 @@ function App() {
         <Route path="/automatisation" element={<Automatisation />} />
         <Route path="/electronics" element={<Electronics />} />
         <Route path="/logistics" element={<Logistics />} />
+        <Route path="/software-development" element={<SoftwareDevelopment />} />
         {/* Add more routes as needed */}
       </Routes>
       <Footer />

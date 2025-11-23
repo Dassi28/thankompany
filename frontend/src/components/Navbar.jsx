@@ -59,10 +59,11 @@ const Navbar = ({ changeLanguage }) => {
         <ul className={isMenuOpen ? "navbar-links open" : "navbar-links"} onClick={closeMenu}>
           <li><a href="/" className="active">{t('home')}</a></li>
           <li><a href="/it-service">{t('it_services')}</a></li>
-          <li><a href="/automation">{t('automation')}</a></li>
-          <li><a href="/electronics">{t('electronics')}</a></li>
+          <li><a href="/automatisation">{t('automation')}</a></li>
+          <li><a href="/software-development">{t('software_development')}</a></li>
+         { /*<li><a href="/electronics">{t('electronics')}</a></li>
           <li><a href="/logistics">{t('logistics')}</a></li>
-          <li><a href="#shop">{t('shop')}</a></li>
+          <li><a href="#shop">{t('shop')}</a></li>*/}
         </ul>
 
         <div className="navbar-actions">
