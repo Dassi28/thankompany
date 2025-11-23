@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { FaBars, FaTimes } from 'react-icons/fa';
+import { useLocation } from 'react-router-dom';
 import './Navbar.scss';
 
 const Navbar = ({ changeLanguage }) => {
   const { t } = useTranslation();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const location = useLocation();
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -56,14 +58,12 @@ const Navbar = ({ changeLanguage }) => {
           <img src="/images/logo_thank_kompany_Final.png" alt="Thank Kompany Logo" />
         </div>
 
-        <ul className="navbar-links">
-  <li><a href="/" className="active">HOME</a></li>
-  <li><a href="/it-service">SAP EAM/PM CONSULTING</a></li>
-  <li><a href="/electronics">AUTOMATION ENGINEERING</a></li>
-  <li><a href="/logistics">SOFTWARE DEVELOPMENT</a></li>
-  {/*<li><a href="/logistics">LOGISTICS</a></li>*/}
- {/* <li><a href="#shop">SHOP</a></li>*/}
-</ul>
+        <ul className={`navbar-links ${isMenuOpen ? 'open' : ''}`}>
+          <li><a href="/" className={location.pathname === '/' ? 'active' : ''} onClick={closeMenu}>HOME</a></li>
+          <li><a href="/it-service" className={location.pathname === '/it-service' ? 'active' : ''} onClick={closeMenu}>SAP EAM/PM CONSULTING</a></li>
+          <li><a href="/electronics" className={location.pathname === '/electronics' ? 'active' : ''} onClick={closeMenu}>AUTOMATION ENGINEERING</a></li>
+          <li><a href="/software-development" className={location.pathname === '/software-development' ? 'active' : ''} onClick={closeMenu}>SOFTWARE DEVELOPMENT</a></li>
+        </ul>
 
         <div className="navbar-actions">
           <button className="quote-btn">{t('Let’s Discuss Your Needs')}</button>
