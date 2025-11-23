@@ -8,6 +8,7 @@ import Electronics from './pages/Electronics';
 import Logistics from './pages/Logistics';
 import SoftwareDevelopment from './pages/SoftwareDevelopment';
 import TermsAndPrivacy from './pages/TermsAndPrivacy';
+import DataPrivacy from './pages/DataPrivacy';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import './styles/global.scss';
@@ -30,6 +31,7 @@ function App() {
         <Route path="/logistics" element={<Logistics />} />
         <Route path="/software-development" element={<SoftwareDevelopment />} />
         <Route path="/terms-and-privacy" element={<TermsAndPrivacy />} />
+        <Route path="/data-privacy" element={<DataPrivacy />} />
         {/* Add more routes as needed */}
       </Routes>
       <Footer />

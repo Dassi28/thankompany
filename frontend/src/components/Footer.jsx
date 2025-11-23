@@ -44,7 +44,7 @@ const Footer = () => {
           <div className="right-panel-bottom">
             <div className="legal-links">
               <a href="/terms-and-privacy">Terms and Privacy</a>
-              <a href="#">Data Privacy</a>
+              <a href="/data-privacy">Data Privacy</a>
               <a href="#">Impresum</a>
             </div>
           </div>
