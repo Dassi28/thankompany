@@ -1,7 +1,20 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { useTranslation } from 'react-i18next';
+import { FaBars, FaTimes } from 'react-icons/fa';
 import './Navbar.scss';
 
-const Navbar = () => {
+const Navbar = ({ changeLanguage }) => {
+  const { t } = useTranslation();
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
+  const closeMenu = () => {
+    setIsMenuOpen(false);
+  };
+
   return (
     <>
       {/* TOP STRIP */}
@@ -23,7 +36,17 @@ const Navbar = () => {
             <span>🔗</span>
             <span>📘</span>
           </div>
-          <div className="lang-select">EN ⌄</div>
+          <div className="lang-select">
+            <button onClick={() => changeLanguage('fr')} className="lang-button">
+              <img src="/images/flags/fr.jpg" alt="French" />
+            </button>
+            <button onClick={() => changeLanguage('en')} className="lang-button">
+              <img src="/images/flags/en.jpeg" alt="English" />
+            </button>
+            <button onClick={() => changeLanguage('de')} className="lang-button">
+              <img src="/images/flags/de.png" alt="German" />
+            </button>
+          </div>
         </div>
       </div>
 
@@ -42,9 +65,11 @@ const Navbar = () => {
  {/* <li><a href="#shop">SHOP</a></li>*/}
 </ul>
 
-
         <div className="navbar-actions">
-                  <button className="quote-btn">Talk to an Expert</button>
+          <button className="quote-btn">{t('get_a_quote')}</button>
+          <button className="mobile-menu-icon" onClick={toggleMenu}>
+            {isMenuOpen ? <FaTimes /> : <FaBars />}
+          </button>
         </div>
       </nav>
     </>

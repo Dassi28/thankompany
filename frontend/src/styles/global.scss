@@ -13,3 +13,84 @@ a {
   text-decoration: none;
   color: inherit;
 }
+
+/* Responsive Breakpoints */
+$breakpoint-xl: 1200px;
+$breakpoint-lg: 992px;
+$breakpoint-md: 768px;
+$breakpoint-sm: 576px;
+
+/* General Responsive Rules */
+html {
+  font-size: 16px; // Base font size
+}
+
+@media (max-width: $breakpoint-lg) {
+  html {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: $breakpoint-md) {
+  html {
+    font-size: 14px;
+  }
+
+  /* Reduce padding on all sections for tablets and mobile */
+  section {
+    padding: 40px 20px !important;
+  }
+}
+
+@media (max-width: $breakpoint-sm) {
+  html {
+    font-size: 13px;
+  }
+
+  section {
+    padding: 30px 15px !important;
+  }
+}
+
+/* Helper class to stack flex containers on mobile */
+.flex-responsive-stack {
+  @media (max-width: $breakpoint-md) {
+    flex-direction: column;
+    gap: 30px !important;
+  }
+}
+
+/* Generic card container for stacking */
+.responsive-card-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+
+  > * { // Target direct children (the cards)
+    width: 30%; // Default for desktop
+    min-width: 280px; // Prevent cards from getting too small
+
+    @media (max-width: $breakpoint-lg) {
+      width: 45%;
+    }
+
+    @media (max-width: $breakpoint-md) {
+      width: 80%;
+    }
+
+    @media (max-width: $breakpoint-sm) {
+      width: 100%;
+    }
+  }
+}
+
+/* Generic grid container for stacking */
+.responsive-grid-container {
+  display: grid;
+  gap: 30px;
+
+  @media (max-width: $breakpoint-md) {
+    grid-template-columns: 1fr !important;
+  }
+}

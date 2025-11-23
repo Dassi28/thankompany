@@ -35,7 +35,28 @@
   .lang-select {
     border-left: 1px solid #ccc;
     padding-left: 10px;
-    cursor: pointer;
+    display: flex; // To arrange buttons horizontally
+    gap: 5px; // Space between buttons
+
+    .lang-button {
+      background: none;
+      border: none;
+      padding: 0;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+
+      img {
+        width: 24px; // Adjust size as needed
+        height: 16px; // Adjust size as needed
+        border: 1px solid #eee; // Optional: subtle border for flags
+        box-shadow: 0 0 2px rgba(0,0,0,0.2); // Optional: subtle shadow
+      }
+
+      &:hover img {
+        opacity: 0.8;
+      }
+    }
   }
 }
 
@@ -93,6 +114,7 @@
   justify-content: space-between;
   background: #0098db;
   padding: 0;
+  position: relative; // Ensure z-index context
 
   .logo-section {
     background: white;
@@ -140,27 +162,101 @@
 
 
   .navbar-actions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
     .quote-btn {
-  background-color: #aeb5c4;
-  color: white;
-  font-weight: bold;
-  padding: 8px 16px;
-  border-radius: 6px;
-  border: none;
-  cursor: pointer;
-  transition: all 0.3s ease;
+      background-color: #aeb5c4;
+      color: white;
+      font-weight: bold;
+      padding: 8px 16px;
+      border-radius: 6px;
+      border: none;
+      cursor: pointer;
+      transition: all 0.3s ease;
 
-  &:hover {
-    background-color: #8f98aa;
-    transform: translateY(-2px);
-    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
-  }
+      &:hover {
+        background-color: #8f98aa;
+        transform: translateY(-2px);
+        box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+      }
 
-  &:active {
-    transform: scale(0.96);
+      &:active {
+        transform: scale(0.96);
+      }
+    }
+
+    .mobile-menu-icon {
+      display: none; // Hidden by default
+      background: none;
+      border: none;
+      color: white;
+      font-size: 1.8rem;
+      cursor: pointer;
+    }
   }
 }
 
+/* Responsive styles for Navbar */
+@media (max-width: 992px) { // Tablet and mobile
+  .navbar {
+    .navbar-links {
+      display: none; // Hide links by default
+      &.open {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 70px; // Adjust based on navbar height
+        left: 0;
+        width: 100%;
+        background-color: #0072bc;
+        padding: 20px 0;
+        gap: 0;
+        z-index: 1000; // Make sure menu is on top
+
+        li {
+          width: 100%;
+          text-align: center;
+          padding: 10px 0;
+          
+          a {
+            padding: 10px 0;
+          }
+
+          &:hover {
+            background-color: #005fa3;
+          }
+        }
+      }
+    }
+
+    .navbar-actions {
+      .quote-btn {
+        display: none; // Hide quote button on smaller screens
+      }
+      .mobile-menu-icon {
+        display: block; // Show hamburger icon
+        margin-right: 20px;
+      }
+    }
+  }
+
+  .top-bar {
+    .discount-msg {
+      display: none; // Hide discount message on smaller screens
+    }
+    .contact-block .label {
+      display: none; // Hide labels like "Call US"
+    }
+  }
+}
+
+@media (max-width: 576px) { // Mobile specific
+  .top-bar {
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
   }
 }
 
