@@ -59,11 +59,11 @@ const Navbar = ({ changeLanguage }) => {
         </div>
 
         <ul className={`navbar-links ${isMenuOpen ? 'open' : ''}`}>
-  <li><a href="/" className={location.pathname === '/' ? 'active' : ''} onClick={closeMenu}>HOME</a></li>
-  <li><a href="/it-service" className={location.pathname === '/it-service' ? 'active' : ''} onClick={closeMenu}>SAP EAM/PM CONSULTING</a></li>
-  <li><a href="/electronics" className={location.pathname === '/electronics' ? 'active' : ''} onClick={closeMenu}>AUTOMATION ENGINEERING</a></li>
-   <li><a href="/software-development" className={location.pathname === '/software-development' ? 'active' : ''} onClick={closeMenu}>SOFTWARE DEVELOPMENT</a></li>
-</ul>
+          <li><a href="/" className={location.pathname === '/' ? 'active' : ''} onClick={closeMenu}>HOME</a></li>
+          <li><a href="/it-service" className={location.pathname === '/it-service' ? 'active' : ''} onClick={closeMenu}>SAP EAM/PM CONSULTING</a></li>
+          <li><a href="/electronics" className={location.pathname === '/electronics' ? 'active' : ''} onClick={closeMenu}>AUTOMATION ENGINEERING</a></li>
+          <li><a href="/software-development" className={location.pathname === '/software-development' ? 'active' : ''} onClick={closeMenu}>SOFTWARE DEVELOPMENT</a></li>
+        </ul>
 
         <div className="navbar-actions">
           <button className="quote-btn">{t('get_a_quote')}</button>
