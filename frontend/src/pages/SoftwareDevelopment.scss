@@ -1,17 +1,16 @@
-@import '../styles/global.scss';
-
 .software-development-page {
-  .hero {
+  .sd-hero {
     position: relative;
-    height: 50vh;
+    height: 60vh;
+    background-size: cover;
+    background-position: center;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white;
-    background-color: #2c3e50; // A different placeholder background
     text-align: center;
+    color: white;
 
-    .hero-overlay {
+    .sd-hero-overlay {
       position: absolute;
       top: 0;
       left: 0;
@@ -20,20 +19,245 @@
       background-color: rgba(0, 0, 0, 0.5);
     }
 
-    .hero-content {
+    .sd-hero-content {
       position: relative;
-      z-index: 2;
-      h1 {
-        font-size: 3rem;
+      z-index: 1;
+
+      .sd-hero-title {
+        font-size: 4rem;
+        font-weight: bold;
+        margin-bottom: 1rem;
       }
-      .highlight {
-        color: $primary-color;
+
+      .sd-hero-slogan {
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
+      }
+
+      .sd-hero-cta {
+        background-color: #0098db;
+        color: white;
+        border: none;
+        padding: 1rem 2rem;
+        font-size: 1.2rem;
+        font-weight: bold;
+        cursor: pointer;
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+          background-color: #0072bc;
+        }
       }
     }
   }
 
-  .content-section {
-    padding: 50px 20px;
+  .sd-intro-section {
+    padding: 4rem 2rem;
+    background-color: #f8f9fa;
+
+    .sd-intro-content {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+
+      .sd-intro-text {
+        flex: 1;
+
+        h2 {
+          font-size: 2.5rem;
+          font-weight: bold;
+          margin-bottom: 1.5rem;
+          color: #333;
+        }
+
+        p {
+          font-size: 1.1rem;
+          line-height: 1.6;
+          margin-bottom: 1rem;
+        }
+      }
+
+      .sd-intro-image {
+        flex: 1;
+
+        img {
+          width: 100%;
+          height: auto;
+          border-radius: 8px;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+      }
+    }
+  }
+
+  .sd-technologies-section {
+    padding: 4rem 2rem;
+
+    .section-title {
+      text-align: center;
+      font-size: 2.5rem;
+      font-weight: bold;
+      margin-bottom: 3rem;
+      color: #333;
+    }
+
+    .tabs {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 2rem;
+
+      .tab-button {
+        background-color: transparent;
+        border: none;
+        padding: 1rem 2rem;
+        font-size: 1.2rem;
+        font-weight: bold;
+        cursor: pointer;
+        position: relative;
+        color: #555;
+        transition: color 0.3s ease;
+
+        &::after {
+          content: '';
+          position: absolute;
+          bottom: 0;
+          left: 50%;
+          transform: translateX(-50%);
+          width: 0;
+          height: 3px;
+          background-color: #0098db;
+          transition: width 0.3s ease;
+        }
+
+        &.active {
+          color: #0098db;
+
+          &::after {
+            width: 100%;
+          }
+        }
+      }
+    }
+    .tab-content {
+      .technologies-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 2rem;
+        max-width: 1200px;
+        margin: 0 auto;
+
+        .tech-item {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 1rem;
+
+          img {
+            height: 80px;
+            width: auto;
+          }
+
+          span {
+            font-size: 1.1rem;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+
+  .sd-api-section,
+  .sd-data-section {
+    padding: 4rem 2rem;
+
+    .sd-api-content,
+    .sd-data-content {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+
+      .sd-api-text,
+      .sd-data-text {
+        flex: 1;
+
+        h2 {
+          font-size: 2.5rem;
+          font-weight: bold;
+          margin-bottom: 1.5rem;
+          color: #333;
+        }
+
+        p {
+          font-size: 1.1rem;
+          line-height: 1.6;
+          margin-bottom: 1rem;
+        }
+      }
+
+      .sd-api-image,
+      .sd-data-image {
+        flex: 1;
+
+        img {
+          width: 100%;
+          height: auto;
+          border-radius: 8px;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+      }
+    }
+  }
+
+  .sd-data-section {
+    background-color: #f8f9fa;
+  }
+
+  .sd-cta-section {
+    padding: 4rem 2rem;
+    background-color: #0098db;
+    color: white;
     text-align: center;
+
+    .sd-cta-content {
+      max-width: 800px;
+      margin: 0 auto;
+
+      h2 {
+        font-size: 2.5rem;
+        font-weight: bold;
+        margin-bottom: 1.5rem;
+      }
+
+      p {
+        font-size: 1.2rem;
+        margin-bottom: 2rem;
+      }
+
+      .sd-cta-button {
+        background-color: white;
+        color: #0098db;
+        border: none;
+        padding: 1rem 2rem;
+        font-size: 1.2rem;
+        font-weight: bold;
+        cursor: pointer;
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        transition: background-color 0.3s ease, color 0.3s ease;
+
+        &:hover {
+          background-color: #f8f9fa;
+          color: #0072bc;
+        }
+      }
+    }
   }
 }

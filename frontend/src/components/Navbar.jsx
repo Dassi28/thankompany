@@ -61,7 +61,7 @@ const Navbar = ({ changeLanguage }) => {
         <ul className={`navbar-links ${isMenuOpen ? 'open' : ''}`}>
           <li><a href="/" className={location.pathname === '/' ? 'active' : ''} onClick={closeMenu}>HOME</a></li>
           <li><a href="/it-service" className={location.pathname === '/it-service' ? 'active' : ''} onClick={closeMenu}>SAP EAM/PM CONSULTING</a></li>
-          <li><a href="/electronics" className={location.pathname === '/electronics' ? 'active' : ''} onClick={closeMenu}>AUTOMATION ENGINEERING</a></li>
+          <li><a href="/automatisation" className={location.pathname === '/automatisation' ? 'active' : ''} onClick={closeMenu}>AUTOMATION ENGINEERING</a></li>
           <li><a href="/software-development" className={location.pathname === '/software-development' ? 'active' : ''} onClick={closeMenu}>SOFTWARE DEVELOPMENT</a></li>
         </ul>
 
