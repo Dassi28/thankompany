@@ -45,7 +45,7 @@ const Footer = () => {
             <div className="legal-links">
               <a href="/terms-and-privacy">Terms and Privacy</a>
               <a href="/data-privacy">Data Privacy</a>
-              <a href="#">Impresum</a>
+              <a href="/impresum">Impresum</a>
             </div>
           </div>
         </div>
