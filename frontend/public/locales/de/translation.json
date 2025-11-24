@@ -137,5 +137,22 @@
   "it_service_maintenance_service_2": "Diagnose und Fehlererkennung",
   "it_service_maintenance_service_3": "Mehr vorbeugende als korrektive Wartung (vorbeugen statt heilen)",
   "it_service_maintenance_service_4": "Installation und Konfiguration neuer Geräte (Computer, Drucker, Scanner...)",
-  "it_service_maintenance_quote": "„Wartung ist der Schlüssel zum reibungslosen Funktionieren Ihres Unternehmens“"
+  "it_service_maintenance_quote": "„Wartung ist der Schlüssel zum reibungslosen Funktionieren Ihres Unternehmens“",
+  "navbar": {
+    "contact": "Kontakt"
+  },
+  "contact": {
+    "title": "Kontakt aufnehmen",
+    "description": "Haben Sie eine Frage oder ein Projekt im Sinn? Wir würden uns freuen, von Ihnen zu hören. Füllen Sie das untenstehende Formular aus oder nutzen Sie unsere Kontaktdaten, um uns zu erreichen.",
+    "email": "E-Mail",
+    "phone": "Telefon",
+    "address": "Adresse",
+    "form": {
+      "name": "Ihr Name",
+      "email": "Ihre E-Mail",
+      "subject": "Betreff",
+      "message": "Ihre Nachricht",
+      "submit": "Nachricht senden"
+    }
+  }
 }

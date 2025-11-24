@@ -137,5 +137,22 @@
   "it_service_maintenance_service_2": "Diagnostic et détection des pannes",
   "it_service_maintenance_service_3": "Maintenance plus préventive que corrective (prévenir plutôt que guérir)",
   "it_service_maintenance_service_4": "Installation et configuration des nouveaux matériels (ordinateurs, imprimantes, scanners...)",
-  "it_service_maintenance_quote": "“La maintenance est la clé pour un bon fonctionnement de votre entreprise”"
+  "it_service_maintenance_quote": "“La maintenance est la clé pour un bon fonctionnement de votre entreprise”",
+  "navbar": {
+    "contact": "Contact"
+  },
+  "contact": {
+    "title": "Contactez-nous",
+    "description": "Vous avez une question ou un projet en tête ? Nous serions ravis de vous entendre. Remplissez le formulaire ci-dessous ou utilisez nos coordonnées pour nous joindre.",
+    "email": "E-mail",
+    "phone": "Téléphone",
+    "address": "Adresse",
+    "form": {
+      "name": "Votre Nom",
+      "email": "Votre E-mail",
+      "subject": "Sujet",
+      "message": "Votre Message",
+      "submit": "Envoyer le message"
+    }
+  }
 }

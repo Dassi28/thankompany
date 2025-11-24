@@ -146,5 +146,22 @@
   "it_service_maintenance_service_2": "Diagnosis and fault detection",
   "it_service_maintenance_service_3": "More preventive than corrective maintenance (prevent rather than cure)",
   "it_service_maintenance_service_4": "Installation and configuration of new equipment (computers, printers, scanners...)",
-  "it_service_maintenance_quote": "“Maintenance is the key to the proper functioning of your business”"
+  "it_service_maintenance_quote": "“Maintenance is the key to the proper functioning of your business”",
+  "navbar": {
+    "contact": "Contact"
+  },
+  "contact": {
+    "title": "Get in Touch",
+    "description": "Have a question or a project in mind? We'd love to hear from you. Fill out the form below or use our contact details to reach us.",
+    "email": "Email",
+    "phone": "Phone",
+    "address": "Address",
+    "form": {
+      "name": "Your Name",
+      "email": "Your Email",
+      "subject": "Subject",
+      "message": "Your Message",
+      "submit": "Send Message"
+    }
+  }
 }

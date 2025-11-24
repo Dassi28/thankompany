@@ -9,7 +9,10 @@ const Footer = () => {
         {/* Panneau de gauche (blanc) */}
         <div className="footer-left-panel">
           <div className="left-panel-top">
-            <img src="/images/logo_thank_kompany_Final.png" alt="FNK Logo" className="footer-logo" />
+            <a href="/">
+              <img src="/images/logo_thank_kompany_Final.png" alt="FNK Logo" className="footer-logo" />
+            </a>
+            
             <p className="footer-description">
                           {/*<h4>Engineering Smart Futures</h4> <br />Delivering intelligent solutions that elevate business excellence.*/}
                           <h3 className="section-title">

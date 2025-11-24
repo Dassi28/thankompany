@@ -55,7 +55,9 @@ const Navbar = ({ changeLanguage }) => {
       {/* NAVBAR */}
       <nav className="navbar">
         <div className="logo-section">
-          <img src="/images/logo_thank_kompany_Final.png" alt="Thank Kompany Logo" />
+          <a href="/">
+            <img src="/images/logo_thank_kompany_Final.png" alt="Thank Kompany Logo" />
+          </a>
         </div>
 
         <ul className={`navbar-links ${isMenuOpen ? 'open' : ''}`}>
@@ -63,6 +65,7 @@ const Navbar = ({ changeLanguage }) => {
           <li><a href="/it-service" className={location.pathname === '/it-service' ? 'active' : ''} onClick={closeMenu}>SAP EAM/PM CONSULTING</a></li>
           <li><a href="/automatisation" className={location.pathname === '/automatisation' ? 'active' : ''} onClick={closeMenu}>AUTOMATION ENGINEERING</a></li>
           <li><a href="/software-development" className={location.pathname === '/software-development' ? 'active' : ''} onClick={closeMenu}>SOFTWARE DEVELOPMENT</a></li>
+          <li><a href="/contact" className={location.pathname === '/contact' ? 'active' : ''} onClick={closeMenu}>{t('navbar.contact')}</a></li>
         </ul>
 
         <div className="navbar-actions">
