@@ -10,6 +10,7 @@ import SoftwareDevelopment from './pages/SoftwareDevelopment';
 import TermsAndPrivacy from './pages/TermsAndPrivacy';
 import DataPrivacy from './pages/DataPrivacy';
 import Impresum from './pages/Impresum';
+import Contact from './pages/Contact';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import './styles/global.scss';
@@ -34,6 +35,7 @@ function App() {
         <Route path="/terms-and-privacy" element={<TermsAndPrivacy />} />
         <Route path="/data-privacy" element={<DataPrivacy />} />
         <Route path="/impresum" element={<Impresum />} />
+        <Route path="/contact" element={<Contact />} />
         {/* Add more routes as needed */}
       </Routes>
       <Footer />
