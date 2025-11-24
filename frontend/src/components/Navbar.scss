@@ -1,3 +1,12 @@
+.header-fixed-wrapper {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000; /* A high z-index to ensure it stays on top */
+  background-color: white; /* Or the background color of your top-bar */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Optional: add a subtle shadow */
+}
+
 .top-bar {
   background-color: #aeb5c4;
   color: white;
@@ -114,7 +123,11 @@
   justify-content: space-between;
   background: #0098db;
   padding: 0;
-  position: relative; // Ensure z-index context
+  position: relative; // Reverted to relative
+  // top: 0; // Removed
+  // width: 100%; // Removed
+  // z-index: 100; // Removed
+
 
   .logo-section {
     background: white;

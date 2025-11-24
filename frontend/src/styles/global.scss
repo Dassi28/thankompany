@@ -94,3 +94,7 @@ html {
     grid-template-columns: 1fr !important;
   }
 }
+
+.main-content-wrapper {
+  padding-top: 110px; // Adjusted for combined height of top-bar and navbar
+}

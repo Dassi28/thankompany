@@ -18,7 +18,7 @@ const Navbar = ({ changeLanguage }) => {
   };
 
   return (
-    <>
+    <div className="header-fixed-wrapper">
       {/* TOP STRIP */}
       <div className="top-bar">
               <span className="discount-msg">Your Partner for SAP EAM/PM, Automation, and Software Solutions!</span>
@@ -75,7 +75,7 @@ const Navbar = ({ changeLanguage }) => {
           </button>
         </div>
       </nav>
-    </>
+    </div>
   );
 };
 

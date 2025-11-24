@@ -25,19 +25,21 @@ function App() {
   return (
     <Router>
       <Navbar changeLanguage={changeLanguage} />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/it-service" element={<ITService />} />
-        <Route path="/automatisation" element={<Automatisation />} />
-        <Route path="/electronics" element={<Electronics />} />
-        <Route path="/logistics" element={<Logistics />} />
-        <Route path="/software-development" element={<SoftwareDevelopment />} />
-        <Route path="/terms-and-privacy" element={<TermsAndPrivacy />} />
-        <Route path="/data-privacy" element={<DataPrivacy />} />
-        <Route path="/impresum" element={<Impresum />} />
-        <Route path="/contact" element={<Contact />} />
-        {/* Add more routes as needed */}
-      </Routes>
+      <div className="main-content-wrapper">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/it-service" element={<ITService />} />
+          <Route path="/automatisation" element={<Automatisation />} />
+          <Route path="/electronics" element={<Electronics />} />
+          <Route path="/logistics" element={<Logistics />} />
+          <Route path="/software-development" element={<SoftwareDevelopment />} />
+          <Route path="/terms-and-privacy" element={<TermsAndPrivacy />} />
+          <Route path="/data-privacy" element={<DataPrivacy />} />
+          <Route path="/impresum" element={<Impresum />} />
+          <Route path="/contact" element={<Contact />} />
+          {/* Add more routes as needed */}
+        </Routes>
+      </div>
       <Footer />
     </Router>
   );

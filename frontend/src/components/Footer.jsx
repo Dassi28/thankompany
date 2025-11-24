@@ -1,8 +1,32 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './Footer.scss';
-import { FaCommentDots } from 'react-icons/fa';
+import { FaCommentDots, FaArrowUp } from 'react-icons/fa';
 
 const Footer = () => {
+  const [showButton, setShowButton] = useState(false);
+
+  const handleScroll = () => {
+    if (window.scrollY > 300) { // Show button after scrolling 300px down
+      setShowButton(true);
+    } else {
+      setShowButton(false);
+    }
+  };
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
     <footer className="footer-v2">
       <div className="footer-container">
@@ -60,6 +84,11 @@ const Footer = () => {
       </div>
       {/* La ligne de séparation est maintenant un élément distinct pour un alignement parfait */}
       <hr className="footer-separator" />
+      {showButton && (
+        <button onClick={scrollToTop} className="back-to-top-btn">
+          <FaArrowUp />
+        </button>
+      )}
     </footer>
   );
 };

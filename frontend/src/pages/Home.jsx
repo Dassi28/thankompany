@@ -24,10 +24,10 @@ const Home = () => {
                         <h3>{t('home_sap_eam_title')}</h3>
                         <h3>{t('home_automation_title')}</h3>
                         <h3>{t('home_software_dev_title')}</h3>
-                        <button className="hero-cta-button">
+                        <a href="#contact" className="hero-cta-button">
                             <span>Discover Our Solutions</span>
                             <FaArrowRight className="arrow-icon" />
-                        </button>
+                        </a>
                     </div>
                 </div>
 
@@ -317,7 +317,7 @@ const Home = () => {
             </section>
 
             {/* Section Contact */}
-            <section className="contact-section">
+            <section className="contact-section" id='contact'>
                 <div className="contact-bg-image"></div>
                 <div className="contact-content">
                     <div className="contact-left">
