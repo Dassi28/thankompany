@@ -198,52 +198,52 @@ const Home = () => {
       </section>
 
       {/* Section Meilleurs Produits */}
-      <section className="best-products-section">
-        <h3 className="section-title">
-          Nos meilleurs produits: <strong>Nous sommes votre meilleur partenaire</strong>
-        </h3>
-        <div className="products-container">
-          <div className="product-card">
-            <div className="product-image">
-              <img src="/images/Home/Shop1.png" alt="Product 1"/>
-            </div>
-            <div className="product-info">
-              <h4>Kenneth Simpson</h4>
-              <p>Operations</p>
-            </div>
-          </div>
-          <div className="product-card">
-            <div className="product-image">
-              <img src="/images/Home/Shop2.png" alt="Product 2" />
-            </div>
-            <div className="product-info">
-              <h4>Jonathan Gibson</h4>
-              <p>Informatique</p>
-            </div>
-          </div>
-          <div className="product-card">
-            <div className="product-image">
-              <img src="/images/Home/Shop3.png" alt="Product 3" />
-            </div>
-            <div className="product-info">
-              <h4>Dustin Lefkowitz</h4>
-              <p>Logistique</p>
-            </div>
-          </div>
-          <div className="product-card">
-            <div className="product-image">
-              <img src="/images/Home/Shop4.png" alt="Product 4" />
-            </div>
-            <div className="product-info">
-              <h4>Weston Trevino</h4>
-              <p>Drivers</p>
-            </div>
-          </div>
-        </div>
-        <button className="products-nav-arrow"> 
-          <FaArrowRight />
-        </button>
-      </section>
+      {/*<section className="best-products-section">*/}
+      {/*  <h3 className="section-title">*/}
+      {/*    Nos meilleurs produits: <strong>Nous sommes votre meilleur partenaire</strong>*/}
+      {/*  </h3>*/}
+      {/*  <div className="products-container">*/}
+      {/*    <div className="product-card">*/}
+      {/*      <div className="product-image">*/}
+      {/*        <img src="/images/Home/Shop1.png" alt="Product 1"/>*/}
+      {/*      </div>*/}
+      {/*      <div className="product-info">*/}
+      {/*        <h4>Kenneth Simpson</h4>*/}
+      {/*        <p>Operations</p>*/}
+      {/*      </div>*/}
+      {/*    </div>*/}
+      {/*    <div className="product-card">*/}
+      {/*      <div className="product-image">*/}
+      {/*        <img src="/images/Home/Shop2.png" alt="Product 2" />*/}
+      {/*      </div>*/}
+      {/*      <div className="product-info">*/}
+      {/*        <h4>Jonathan Gibson</h4>*/}
+      {/*        <p>Informatique</p>*/}
+      {/*      </div>*/}
+      {/*    </div>*/}
+      {/*    <div className="product-card">*/}
+      {/*      <div className="product-image">*/}
+      {/*        <img src="/images/Home/Shop3.png" alt="Product 3" />*/}
+      {/*      </div>*/}
+      {/*      <div className="product-info">*/}
+      {/*        <h4>Dustin Lefkowitz</h4>*/}
+      {/*        <p>Logistique</p>*/}
+      {/*      </div>*/}
+      {/*    </div>*/}
+      {/*    <div className="product-card">*/}
+      {/*      <div className="product-image">*/}
+      {/*        <img src="/images/Home/Shop4.png" alt="Product 4" />*/}
+      {/*      </div>*/}
+      {/*      <div className="product-info">*/}
+      {/*        <h4>Weston Trevino</h4>*/}
+      {/*        <p>Drivers</p>*/}
+      {/*      </div>*/}
+      {/*    </div>*/}
+      {/*  </div>*/}
+      {/*  <button className="products-nav-arrow"> */}
+      {/*    <FaArrowRight />*/}
+      {/*  </button>*/}
+      {/*</section>*/}
 
       {/* Section Résultats */}
       <section className="results-section">

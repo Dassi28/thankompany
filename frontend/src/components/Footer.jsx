@@ -11,15 +11,20 @@ const Footer = () => {
           <div className="left-panel-top">
             <img src="/images/logo_thank_kompany_Final.png" alt="FNK Logo" className="footer-logo" />
             <p className="footer-description">
-              Faucibus quis fringilla scelerisque dui. Amet parturient dui venenatis amet sagittis viverra vel tincidunt. Orci tincidunt.
+                          {/*<h4>Engineering Smart Futures</h4> <br />Delivering intelligent solutions that elevate business excellence.*/}
+                          <h3 className="section-title">
+                              <span className="highlight">Engineering Smart Futures</span> 
+                          </h3>
+                          <h4>Delivering smart maintenance, advanced automation, and intelligent software solutions that elevate businesses and drive measurable growth.</h4>
+
             </p>
-            <button className="live-chat-btn">
-              <FaCommentDots />
-              <span>Start Live Chat</span>
-            </button>
+            {/*<button className="live-chat-btn">*/}
+            {/*  <FaCommentDots />*/}
+            {/*  <span>Start Live Chat</span>*/}
+            {/*</button>*/}
           </div>
           <div className="left-panel-bottom">
-            <p className="copyright">Copyright © 2023 Thank Kompany. All Right Reserved</p>
+            <p className="copyright">Copyright © 2025 THANK KOMPANY GmbH. All Right Reserved</p>
           </div>
         </div>
 

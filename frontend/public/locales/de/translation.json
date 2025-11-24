@@ -1,5 +1,5 @@
 {
-   "discount_msg": "Ihr Partner für SAP EAM/PM, Automatisierung und Softwarelösungen!",
+  "discount_msg": "Ihr Partner für SAP EAM/PM, Automatisierung und Softwarelösungen!",
   "call_us": "Sprechen Sie mit einem Experten",
   "mail_us": "Senden Sie uns eine Nachricht",
   "home": "STARTSEITE",
@@ -9,6 +9,6 @@
   "logistics": "LOGISTIK",
   "shop": "SHOP",
   "get_a_quote": "Lassen Sie uns über Ihre Anforderungen sprechen",
-  "software": "SOFTWAREENTWICKLUNG"
+  "software-development": "SOFTWAREENTWICKLUNG"
 
 }
