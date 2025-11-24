@@ -20,7 +20,7 @@
 .contact-info {
     flex: 1;
     padding: 40px;
-    background-color: #004494; // Using a blue from the logo
+    background-color: #0072bc; // Using a blue from the logo
     color: #fff;
 
     h2 {
@@ -72,7 +72,7 @@
 
             &:focus {
                 outline: none;
-                border-color: #004494;
+                border-color: #0072bc;
             }
         }
 
@@ -84,7 +84,7 @@
     .submit-btn {
         width: 100%;
         padding: 15px;
-        background-color: #004494;
+        background-color: #0072bc;
         color: #fff;
         border: none;
         border-radius: 5px;
@@ -94,7 +94,7 @@
         transition: background-color 0.3s;
 
         &:hover {
-            background-color: #003366;
+            background-color: #005fa3;
         }
     }
 }
