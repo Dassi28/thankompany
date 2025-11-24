@@ -1,5 +1,7 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
+import Odometer from 'react-odometerjs';
+import 'odometer/themes/odometer-theme-default.css';
 import './Home.scss';
 // Importation des icônes
 import { FaShieldAlt, FaChartLine, FaCogs, FaHandshake, FaStoreAlt, FaSyncAlt, FaCog, FaLightbulb, FaUsers, FaWhatsapp, FaArrowRight, FaDesktop, FaBolt, FaStar, FaAtlas, GiFaceToFace, SiAwsfargate, FaArrowTrendUp } from 'react-icons/fa';
@@ -269,35 +271,45 @@ const Home = () => {
                     <div className="result-card">
                         <span className="card-number">01</span>
                         <p className="card-title">{t('home_results_item_1_title')}</p>
-                        <h4 className="card-stat">{t('home_results_item_1_stat')}</h4>
+                        <h4 className="card-stat">
+                            <Odometer format="d" duration={3000} value={parseInt(t('home_results_item_1_stat'))} />
+                        </h4>
                         <p className="card-subtitle">{t('home_results_item_1_subtitle')}</p>
                         <hr />
                     </div>
                     <div className="result-card">
                         <span className="card-number">02</span>
                         <p className="card-title">{t('home_results_item_2_title')}</p>
-                        <h4 className="card-stat">{t('home_results_item_2_stat')}</h4>
+                        <h4 className="card-stat">
+                            <Odometer format="d" duration={3000} value={parseInt(t('home_results_item_2_stat'))} />
+                        </h4>
                         <p className="card-subtitle">{t('home_results_item_2_subtitle')}</p>
                         <hr />
                     </div>
                     <div className="result-card">
                         <span className="card-number">03</span>
                         <p className="card-title">{t('home_results_item_3_title')}</p>
-                        <h4 className="card-stat">{t('home_results_item_3_stat')}</h4>
+                        <h4 className="card-stat">
+                            <Odometer format="d" duration={3000} value={parseInt(t('home_results_item_3_stat'))} />
+                        </h4>
                         <p className="card-subtitle">{t('home_results_item_3_subtitle')}</p>
                         <hr />
                     </div>
                     <div className="result-card">
                         <span className="card-number">04</span>
                         <p className="card-title">{t('home_results_item_4_title')}</p>
-                        <h4 className="card-stat">{t('home_results_item_4_stat')}</h4>
+                        <h4 className="card-stat">
+                            <Odometer format="d" duration={3000} value={parseInt(t('home_results_item_4_stat'))} />
+                        </h4>
                         <p className="card-subtitle">{t('home_results_item_4_subtitle')}</p>
                         <hr />
                     </div>
                     <div className="result-card">
                         <span className="card-number">05</span>
                         <p className="card-title">{t('home_results_item_5_title')}</p>
-                        <h4 className="card-stat">{t('home_results_item_5_stat')}</h4>
+                        <h4 className="card-stat">
+                            <Odometer format="d" duration={3000} value={parseInt(t('home_results_item_5_stat'))} /> %
+                        </h4>
                         <p className="card-subtitle">{t('home_results_item_5_subtitle')}</p>
                         <hr />
                     </div>
