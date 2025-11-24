@@ -7,6 +7,9 @@ import Automatisation from './pages/Automatisation';
 import Electronics from './pages/Electronics';
 import Logistics from './pages/Logistics';
 import SoftwareDevelopment from './pages/SoftwareDevelopment';
+import TermsAndPrivacy from './pages/TermsAndPrivacy';
+import DataPrivacy from './pages/DataPrivacy';
+import Impresum from './pages/Impresum';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import './styles/global.scss';
@@ -28,6 +31,9 @@ function App() {
         <Route path="/electronics" element={<Electronics />} />
         <Route path="/logistics" element={<Logistics />} />
         <Route path="/software-development" element={<SoftwareDevelopment />} />
+        <Route path="/terms-and-privacy" element={<TermsAndPrivacy />} />
+        <Route path="/data-privacy" element={<DataPrivacy />} />
+        <Route path="/impresum" element={<Impresum />} />
         {/* Add more routes as needed */}
       </Routes>
       <Footer />

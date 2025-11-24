@@ -1,4 +1,5 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import './Home.scss';
 
 // Importation des icônes
@@ -7,6 +8,7 @@ import { FaShieldAlt, FaChartLine, FaCogs, FaHandshake, FaStoreAlt, FaSyncAlt, F
 import PartnersLogo from '../components/PartnersLogo';
 
 const Home = () => {
+  const { t } = useTranslation();
   return (
     <div className="home">
       {/* Section Héro */}
@@ -16,12 +18,9 @@ const Home = () => {
         
         <div className="hero-content">
           <div className="hero-text">
-            <h1>THANK KOMPANY</h1>
-                      {/*<h2>We help companies digitize, automate, and streamline their processes!</h2>*/}
-                      {/*<h3>We combining global expertise with local reliability </h3>*/}
-                      <h2>SAP EAM/PM Consulting: Delivering digital and smart maintenance solutions with SAP S/4HANA for peak performance</h2>
-                      <h2>Automation Engineering: Delivering expertise in PLC programming, control systems, and automation solutions.</h2>
-                      <h2>Software Development: Delivering modern, scalable, and secure software solutions for digital transformation.</h2>
+            <h1>{t('home_intro_title')}</h1>
+                      <h2>{t('home_sap_eam_title')}</h2>
+                      <h2>{t('home_automation_title')}</h2>
             <button className="hero-cta-button">
              <span>Discover Our Solutions</span>
               <FaArrowRight className="arrow-icon" />
@@ -32,31 +31,31 @@ const Home = () => {
         <div className="qualities-bar">
           <div className="quality-item">
             <FaDesktop className="quality-icon" />
-            <span>Listening</span>
+            <span>{t('home_values_description_listening')}</span>
           </div>
           <div className="quality-item">
             <FaBolt className="quality-icon" />
-            <span>Reactivity</span>
+            <span>{t('home_values_description_reactivity')}</span>
           </div>
           <div className="quality-item">
             <FaStar className="quality-icon" />
-            <span>Customer Satisfaction</span>
+            <span>{t('home_values_description_customer_satisfaction')}</span>
                   </div>
                   <div className="quality-item">
                       <FaChartLine className="quality-icon" />
-                      <span>Quality & Precision</span>
+                      <span>{t('home_values_description_quality_precision')}</span>
                   </div>
                   <div className="quality-item">
                       <FaLightbulb className="quality-icon" />
-                      <span>Innovation</span>
+                      <span>{t('home_values_description_innovation')}</span>
                   </div>
                   <div className="quality-item">
                       <FaAtlas className="quality-icon" />
-                      <span>Internationality</span>
+                      <span>{t('home_values_description_internationality')}</span>
                   </div>
                   <div className="quality-item">
                       <FaHandshake className="quality-icon" />
-                      <span>Partnership</span>
+                      <span>{t('home_values_description_partnership')}</span>
                   </div>
         </div>
       </section>
@@ -65,14 +64,12 @@ const Home = () => {
       {/* Section "Qui sommes-nous" */}
       <section className="about" id="about">
         <div className="about-text">
-          <h2>Qui sommes <span>nous</span></h2>
+          <h2>{t('home_intro_title')}</h2>
           <p>
-            THANK KOMPANY est une entreprise internationale basée en Allemagne desservant des clients et partenaires en Afrique.
-            THANK KOMPANY propose un ensemble de services dans différents secteurs d’activités notamment : la logistique, le marketing & communication, les services informatiques et l’immobilier.
+            {t('home_intro_description')}
           </p>
           <p>
-            Pour desservir ses clients THANK KOMPANY s’appuie sur un solide réseau de partenaires en Amérique, en Europe et en Afrique.
-            Forte de plusieurs années d’expériences, l’ensemble des prestations de THANK KOMPANY visent à améliorer et à développer la performance des entreprises.
+            {t('home_focus_area')}
           </p>
         </div>
         <div className="about-img">
@@ -83,47 +80,47 @@ const Home = () => {
       {/* Section Offre */}
       <section className="offer-section" id="offer">
         <h3 className="section-title">
-          <span className="highlight">Notre offre:</span> Rendre votre travail sans effort
+          <span className="highlight">{t('home_business_areas_title')}:</span> {t('home_offer_slogan')}
         </h3>
         <div className="service-cards-container">
           <div className="service-card">
             <div className="card-icon">
               <img src="/images/Home/hp_Service_informatique.png" alt="IT Services Icon" />
             </div>
-            <h4>Services Informatique</h4>
+            <h4>{t('home_it_services_title')}</h4>
             <ul>
-              <li>Maintenance des systèmes informatiques</li>
-              <li>Gestion des données</li>
-              <li>Développement de logiciel</li>
-              <li>Développement Web</li>
-              <li>Conseils en SAP PM/CS</li>
+              <li>{t('home_it_services_1')}</li>
+              <li>{t('home_it_services_2')}</li>
+              <li>{t('home_it_services_3')}</li>
+              <li>{t('home_it_services_4')}</li>
+              <li>{t('home_it_services_5')}</li>
             </ul>
           </div>
           <div className="service-card">
             <div className="card-icon">
               <img src="/images/Home/HP_service-electro.png" alt="Electronics Services Icon" />
             </div>
-            <h4>Services électroniques</h4>
+            <h4>{t('home_electronic_services_title')}</h4>
             <ul>
-              <li>Conseil en matériaux de construction:</li>
-              <li className="sub-item">Gros Oeuvre</li>
-              <li className="sub-item">Second Oeuvre</li>
-              <li className="sub-item">Travaux de VRD</li>
-              <li>Vente des matériaux de construction</li>
-              <li>Bureau d’études</li>
+              <li>{t('home_electronic_services_1')}</li>
+              <li className="sub-item">{t('home_electronic_services_1_sub_1')}</li>
+              <li className="sub-item">{t('home_electronic_services_1_sub_2')}</li>
+              <li className="sub-item">{t('home_electronic_services_1_sub_3')}</li>
+              <li>{t('home_electronic_services_2')}</li>
+              <li>{t('home_electronic_services_3')}</li>
             </ul>
           </div>
           <div className="service-card">
             <div className="card-icon">
               <img src="/images/Home/HP_service-logist.png" alt="Logistics Services Icon" />
             </div>
-            <h4>Services de Logistique</h4>
+            <h4>{t('home_logistics_services_title')}</h4>
             <ul>
-              <li>Achat International</li>
-              <li>Transport et Gestion des colis</li>
-              <li>Recherche des fournisseurs</li>
-              <li>Paiement des factures</li>
-              <li>Location des voitures</li>
+              <li>{t('home_logistics_services_1')}</li>
+              <li>{t('home_logistics_services_2')}</li>
+              <li>{t('home_logistics_services_3')}</li>
+              <li>{t('home_logistics_services_4')}</li>
+              <li>{t('home_logistics_services_5')}</li>
             </ul>
           </div>
         </div>
@@ -137,18 +134,18 @@ const Home = () => {
             <img src="/images/Home/Notre_Mission.png" alt="Employé d'entrepôt" />
           </div>
           <div className="mv-text-container">
-            <h3>Notre Mission</h3>
+            <h3>{t('home_mission_title')}</h3>
             <p>
-              Our mission is to empower businesses of all sizes to achieve seamless, agile, and cost-effective supply chain operations. We believe that a well-optimized supply chain is the backbone of successful businesses, enabling them to deliver exceptional products and services to customers around the world.
+              {t('home_mission_description')}
             </p>
           </div>
         </div>
         {/* Vision: Texte à gauche, Image à droite */}
         <div className="mission-vision-item">
           <div className="mv-text-container">
-            <h3>Notre Vision</h3>
+            <h3>{t('home_vision_title')}</h3>
             <p>
-              We are committed to sustainable practices that contribute to a better future. By optimizing supply chains, reducing waste, and promoting eco-friendly initiatives, we play a role in building a more environmentally conscious world.
+              {t('home_vision_description')}
             </p>
           </div>
           <div className="mv-image-container">
@@ -162,36 +159,36 @@ const Home = () => {
         <div className="guarantee-overlay"></div>
         <div className="guarantee-content">
           <div className="guarantee-text">
-            <h3>Votre garantie</h3>
+            <h3>{t('home_guarantee_title')}</h3>
             <p>
-              Comprendre les tendances globales de votre entreprise et de votre marché global vous permet d’économiser du temps, de l’argent et de l’énergie à long terme, et peut vous aider à dominer votre marché.
+              {t('home_guarantee_description')}
             </p>
-            <button className="guarantee-cta-button">Demander un service</button>
+            <button className="guarantee-cta-button">{t('home_guarantee_cta')}</button>
           </div>
           <div className="guarantee-grid">
             <div className="guarantee-item">
               <div className="guarantee-icon-container"><img src="/images/Home/garantie1.png" alt="garantie" /></div>
-              <span>Informations clients</span>
+              <span>{t('home_guarantee_item_1')}</span>
             </div>
             <div className="guarantee-item">
               <div className="guarantee-icon-container"><img src="/images/Home/garantie2.png" alt="garantie" /></div>
-              <span>Efficacité accrue</span>
+              <span>{t('home_guarantee_item_2')}</span>
             </div>
             <div className="guarantee-item">
               <div className="guarantee-icon-container"><img src="/images/Home/garantie3.png" alt="garantie" /></div>
-              <span>Automatisation des processus</span>
+              <span>{t('home_guarantee_item_3')}</span>
             </div>
             <div className="guarantee-item">
               <div className="guarantee-icon-container"><img src="/images/Home/garantie4.png" alt="garantie" /></div>
-              <span>Coûts réduits</span>
+              <span>{t('home_guarantee_item_4')}</span>
             </div>
             <div className="guarantee-item">
               <div className="guarantee-icon-container"><img src="/images/Home/garantie5.png" alt="garantie" /></div>
-              <span>Aperçu du marché</span>
+              <span>{t('home_guarantee_item_5')}</span>
             </div>
             <div className="guarantee-item">
               <div className="guarantee-icon-container"><img src="/images/Home/garantie6.png" alt="garantie" /></div>
-              <span>Innovation basée sur les données</span>
+              <span>{t('home_guarantee_item_6')}</span>
             </div>
           </div>
         </div>
@@ -249,32 +246,32 @@ const Home = () => {
       <section className="results-section">
         <div className="results-header">
           <h3 className="section-title">
-            <span className="highlight">Nos resultats</span> en quelques chiffres
+            <span className="highlight">{t('home_results_title')}</span> {t('home_results_subtitle')}
           </h3>
           <p className="section-subtitle">
-            Lorem morbi et amet suscipit. At sed proin quia risus urna a. Magna in odio in urna amet ultrices fermentum. Mauris in pretium eget donec erat ipsum a leo. Maecenas elementum consectetur ac blandit tortor.
+            {t('home_results_description')}
           </p>
         </div>
         <div className="results-cards-container">
           <div className="result-card">
             <span className="card-number">01</span>
-            <p className="card-title">Nombre Total projets</p>
-            <h4 className="card-stat">122 K</h4>
-            <p className="card-subtitle">Notre meilleurs performance</p>
+            <p className="card-title">{t('home_results_item_1_title')}</p>
+            <h4 className="card-stat">{t('home_results_item_1_stat')}</h4>
+            <p className="card-subtitle">{t('home_results_item_1_subtitle')}</p>
             <hr />
           </div>
           <div className="result-card">
             <span className="card-number">02</span>
-            <p className="card-title">Nombre Produits Vendus</p>
-            <h4 className="card-stat">122 K</h4>
-            <p className="card-subtitle">Notre meilleurs performance</p>
+            <p className="card-title">{t('home_results_item_2_title')}</p>
+            <h4 className="card-stat">{t('home_results_item_2_stat')}</h4>
+            <p className="card-subtitle">{t('home_results_item_2_subtitle')}</p>
             <hr />
           </div>
           <div className="result-card">
             <span className="card-number">03</span>
-            <p className="card-title">Nombre de Clients</p>
-            <h4 className="card-stat">122 K</h4>
-            <p className="card-subtitle">Notre meilleurs performance</p>
+            <p className="card-title">{t('home_results_item_3_title')}</p>
+            <h4 className="card-stat">{t('home_results_item_3_stat')}</h4>
+            <p className="card-subtitle">{t('home_results_item_3_subtitle')}</p>
             <hr />
           </div>
         </div>
@@ -286,28 +283,28 @@ const Home = () => {
         <div className="contact-content">
           <div className="contact-left">
             <div className="contact-card whatsapp-card">
-              <p>Ecrivez-nous</p>
+              <p>{t('home_contact_whatsapp_text')}</p>
               <FaWhatsapp className="whatsapp-icon"/>
-              <span>Whatsapp</span>
+              <span>{t('home_contact_whatsapp_label')}</span>
             </div>
           </div>
           <div className="contact-center">
             <div className="contact-card meet-us-card">
-              <h4>Meet Us</h4>
-              <p>🇩🇪 Allemagne</p>
-              <p>🇨🇲 Cameroun</p>
+              <h4>{t('home_contact_meet_us_title')}</h4>
+              <p>{t('home_contact_meet_us_location_1')}</p>
+              <p>{t('home_contact_meet_us_location_2')}</p>
             </div>
           </div>
           <div className="contact-right">
             <div className="contact-card form-card">
-              <h4>Contactez Nous</h4>
-              <p>Une question ? un message pour nous ?</p>
+              <h4>{t('home_contact_form_title')}</h4>
+              <p>{t('home_contact_form_subtitle')}</p>
               <form>
-                <input type="text" placeholder="Votre Nom" />
-                <input type="email" placeholder="Email Adresse" />
-                <input type="text" placeholder="Sujet" />
-                <textarea placeholder="Message"></textarea>
-                <button type="submit">Envoyer</button>
+                <input type="text" placeholder={t('home_contact_form_name_placeholder')} />
+                <input type="email" placeholder={t('home_contact_form_email_placeholder')} />
+                <input type="text" placeholder={t('home_contact_form_subject_placeholder')} />
+                <textarea placeholder={t('home_contact_form_message_placeholder')}></textarea>
+                <button type="submit">{t('home_contact_form_submit_button')}</button>
               </form>
             </div>
           </div>
