@@ -1,5 +1,6 @@
 import React from 'react';
 import './Electronics.scss';
+import { useTranslation } from 'react-i18next';
 import { FaArrowRight, FaStar, FaLightbulb, FaSun, FaTools, FaPlug } from 'react-icons/fa';
 import PartnersLogo from '../components/PartnersLogo';
 

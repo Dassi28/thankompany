@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import './SoftwareDevelopment.scss';
 import { FaArrowRight } from 'react-icons/fa';
 import PartnersLogo from '../components/PartnersLogo';

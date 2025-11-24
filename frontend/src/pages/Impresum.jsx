@@ -1,5 +1,6 @@
 import React from 'react';
 import './Impresum.scss';
+import { useTranslation } from 'react-i18next';
 
 const Impresum = () => {
   return (

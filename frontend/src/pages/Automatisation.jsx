@@ -1,5 +1,6 @@
 import React from 'react';
 import './Automatisation.scss';
+import { useTranslation } from 'react-i18next';
 import { FaArrowRight, FaCogs, FaIndustry, FaNetworkWired, FaUsers } from 'react-icons/fa';
 import PartnersLogo from '../components/PartnersLogo';
 

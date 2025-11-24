@@ -1,5 +1,6 @@
 import React from 'react';
 import './DataPrivacy.scss';
+import { useTranslation } from 'react-i18next';
 
 const DataPrivacy = () => {
   return (

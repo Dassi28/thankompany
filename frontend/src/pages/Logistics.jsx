@@ -1,5 +1,6 @@
 import React from 'react';
 import './Logistics.scss';
+import { useTranslation } from 'react-i18next';
 import { FaArrowRight, FaStar } from 'react-icons/fa';
 import PartnersLogo from '../components/PartnersLogo';
 

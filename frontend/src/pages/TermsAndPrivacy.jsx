@@ -1,5 +1,6 @@
 import React from 'react';
 import './TermsAndPrivacy.scss';
+import { useTranslation } from 'react-i18next';
 
 const TermsAndPrivacy = () => {
   return (
