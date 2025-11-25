@@ -230,7 +230,7 @@
     position: relative;
     padding: 80px;
     color: white;
-    background-image: url('/assets/images/Home/HP_Arriereplan_Garantie.png');
+    background-image: url('/assets/images/img-8.jpg');
     background-size: cover;
     background-attachment: fixed; // Effet parallaxe
 
@@ -464,7 +464,7 @@
 
     .results-cards-container {
         display: flex;
-        justify-content: center;
+        //justify-content: center;
         gap: 30px;
     }
 
@@ -475,7 +475,6 @@
                 border-radius: 12px;
                 width: 300px;
                 position: relative;
-                text-align: center;
         .card-number {
             position: absolute;
             top: 20px;
@@ -494,13 +493,16 @@
             font-size: 4rem;
             font-weight: bold;
             margin: 1px 0;
+            text-align: center;
          
         }
 
         .card-subtitle {
             margin: 0 0 20px;
-            font-size:1,2rem;
+            font-size:0.9rem;
             opacity: 0.9;
+            text-align: start;
+            justify-content: start;
         }
 
         hr {

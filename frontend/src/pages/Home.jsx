@@ -15,7 +15,7 @@ const Home = () => {
             {/* Section Héro */}
             <section className="hero">
                 <div className="hero-bg-overlay"></div>
-                <img src="/images/home.jpg" alt="Hero Transport" className="hero-bg-image" />
+                <img src="/images/img-10.jpg" alt="Hero Transport" className="hero-bg-image" />
 
                 <div className="hero-content">
                     <div className="hero-text">
@@ -79,7 +79,7 @@ const Home = () => {
                     </p>
                 </div>
                 <div className="about-img">
-                    <img src="/images/hp_qui_sommes_nous.png" alt="About illustration" />
+                    <img src="/images/img-11.jpg" alt="About illustration" />
                 </div>
             </section>
 
@@ -146,7 +146,7 @@ const Home = () => {
                 {/* Mission: Image à gauche, Texte à droite */}
                 <div className="mission-vision-item">
                     <div className="mv-image-container">
-                        <img src="/images/Home/Notre_Mission.png" alt="Employé d'entrepôt" />
+                        <img src="/images/img-19.jpg" alt="Employé d'entrepôt" />
                     </div>
                     <div className="mv-text-container">
                         <h3>{t('home_mission_title')}</h3>
@@ -164,7 +164,7 @@ const Home = () => {
                         </p>
                     </div>
                     <div className="mv-image-container">
-                        <img src="/images/Home/HP_Vision.png" alt="Manager dans un entrepôt" />
+                        <img src="/images/img-22.jpg" alt="Manager dans un entrepôt" />
                     </div>
                 </div>
             </section>
@@ -272,7 +272,7 @@ const Home = () => {
                         <span className="card-number">01</span>
                         <p className="card-title">{t('home_results_item_1_title')}</p>
                         <h4 className="card-stat">
-                            <Odometer format="d" duration={3000} value={parseInt(t('home_results_item_1_stat'))} />
+                            <Odometer format="d" duration={3000} value={parseInt(t('home_results_item_1_stat'))} />+
                         </h4>
                         <p className="card-subtitle">{t('home_results_item_1_subtitle')}</p>
                         <hr />
@@ -281,7 +281,7 @@ const Home = () => {
                         <span className="card-number">02</span>
                         <p className="card-title">{t('home_results_item_2_title')}</p>
                         <h4 className="card-stat">
-                            <Odometer format="d" duration={3000} value={parseInt(t('home_results_item_2_stat'))} />
+                            <Odometer format="d" duration={3000} value={parseInt(t('home_results_item_2_stat'))} />%
                         </h4>
                         <p className="card-subtitle">{t('home_results_item_2_subtitle')}</p>
                         <hr />
@@ -290,7 +290,7 @@ const Home = () => {
                         <span className="card-number">03</span>
                         <p className="card-title">{t('home_results_item_3_title')}</p>
                         <h4 className="card-stat">
-                            <Odometer format="d" duration={3000} value={parseInt(t('home_results_item_3_stat'))} />
+                            <Odometer format="d" duration={3000} value={parseInt(t('home_results_item_3_stat'))} />+
                         </h4>
                         <p className="card-subtitle">{t('home_results_item_3_subtitle')}</p>
                         <hr />
@@ -299,7 +299,7 @@ const Home = () => {
                         <span className="card-number">04</span>
                         <p className="card-title">{t('home_results_item_4_title')}</p>
                         <h4 className="card-stat">
-                            <Odometer format="d" duration={3000} value={parseInt(t('home_results_item_4_stat'))} />
+                            <Odometer format="d" duration={3000} value={parseInt(t('home_results_item_4_stat'))} />+
                         </h4>
                         <p className="card-subtitle">{t('home_results_item_4_subtitle')}</p>
                         <hr />
