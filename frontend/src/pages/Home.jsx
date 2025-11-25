@@ -318,35 +318,70 @@ const Home = () => {
 
             {/* Section Contact */}
             <section className="contact-section" id='contact'>
-                <div className="contact-bg-image"></div>
-                <div className="contact-content">
-                    <div className="contact-left">
-                        <div className="contact-card whatsapp-card">
-                            <p>{t('home_contact_whatsapp_text')}</p>
-                            <FaWhatsapp className="whatsapp-icon" />
-                            <span>{t('home_contact_whatsapp_label')}</span>
+                <div className="contact-bg-overlay"></div>
+                
+                <div className="contact-content-wrapper">
+                    
+                    {/* 1. Carte WhatsApp (Gauche) */}
+                    <div className="contact-box whatsapp-box">
+                        <p className="wa-top-text">Ecrivez-nous</p>
+                        <div className="wa-icon-wrapper">
+                            <FaWhatsapp />
+                        </div>
+                        <p className="wa-bottom-text">Whatsapp</p>
+                    </div>
+
+                    {/* 2. Infos "Meet Us" (Centre) */}
+                    <div className="contact-box info-box">
+                        <h4 className="info-title">Meet Us</h4>
+                        
+                        {/* Bloc Allemagne */}
+                        <div className="country-block">
+                            <div className="country-header">
+                                <img src="images/flags/all.png" alt="DEU" className="country-flag" />
+                                <span className="country-name">Allemagne</span>
+                            </div>
+                            <div className="address-lines">
+                                <p>Mundenheimer Str. 177</p>
+                                <p>67061 Ludwigshafen</p>
+                                <p className="phone-number">+49 176 684 054 56</p>
+                            </div>
+                        </div>
+
+                        {/* Bloc Cameroun */}
+                        <div className="country-block">
+                            <div className="country-header">
+                                <img src="images/flags/cmr.png" alt="CMR" className="country-flag" />
+                                <span className="country-name">Cameroun</span>
+                            </div>
+                            <div className="address-lines">
+                                <p>BP 7509</p>
+                                <p>Douala, Cameroun</p>
+                                <p className="phone-number">+237 680 875 787</p>
+                            </div>
                         </div>
                     </div>
-                    <div className="contact-center">
-                        <div className="contact-card meet-us-card">
-                            <h4>{t('home_contact_meet_us_title')}</h4>
-                            <p>{t('home_contact_meet_us_location_1')}</p>
-                            <p>{t('home_contact_meet_us_location_2')}</p>
-                        </div>
+
+                    {/* 3. Formulaire (Droite) */}
+                    <div className="contact-box form-box">
+                        <h4 className="form-title">Contactez-nous</h4>
+                        <form>
+                            <div className="input-group">
+                                <input type="text" placeholder="Your Name" />
+                            </div>
+                            <div className="input-group">
+                                <input type="email" placeholder="Email" />
+                            </div>
+                            <div className="input-group">
+                                <input type="text" placeholder="Sujet" />
+                            </div>
+                            <div className="input-group">
+                                <textarea placeholder="Message"></textarea>
+                            </div>
+                            <button type="submit" className="submit-btn">ENVOYER</button>
+                        </form>
                     </div>
-                    <div className="contact-right">
-                        <div className="contact-card form-card">
-                            <h4>{t('home_contact_form_title')}</h4>
-                            <p>{t('home_contact_form_subtitle')}</p>
-                            <form>
-                                <input type="text" placeholder={t('home_contact_form_name_placeholder')} />
-                                <input type="email" placeholder={t('home_contact_form_email_placeholder')} />
-                                <input type="text" placeholder={t('home_contact_form_subject_placeholder')} />
-                                <textarea placeholder={t('home_contact_form_message_placeholder')}></textarea>
-                                <button type="submit">{t('home_contact_form_submit_button')}</button>
-                            </form>
-                        </div>
-                    </div>
+
                 </div>
             </section>
 

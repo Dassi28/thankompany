@@ -8,6 +8,13 @@
   .highlight {
   color: $primary-color;
   }
+.country-flag {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: transparent;
+    object-fit: cover;
+  }
   // ... (autres styles de section)
 
   // Section Hero
@@ -515,112 +522,238 @@
 }
 
 
-  .contact-section {
+ .contact-section {
     position: relative;
-    padding: 80px;
+    padding: 80px 0;
+    min-height: 90vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 80vh;
-    overflow: hidden;
+    // Image de fond
+    background-image: url('/assets/images/Home/Caller_Home_Page.png'); 
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
 
-    .contact-bg-image {
+    // Overlay sombre général sur l'image de fond
+    .contact-bg-overlay {
       position: absolute;
       top: 0;
       left: 0;
       width: 100%;
       height: 100%;
-      background-image: url('/assets/images/Home/Caller_Home_Page.png') ;
-      background-size: cover;
-       background-attachment: fixed; 
-      filter: brightness(0.8);
-      z-index: -1;
+      background-color: rgba(10, 25, 40, 0.3);
+      z-index: 1;
     }
 
-    .contact-content {
+    .contact-content-wrapper {
+      position: relative;
+      z-index: 2;
+      width: 100%;
+      max-width: 1200px;
+      padding: 0 20px;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      gap: 30px;
-      width: 100%;
-      max-width: 1100px;
+      gap: 40px;
     }
 
-    .contact-left, .contact-center, .contact-right {
+    // --- 1. Carte WhatsApp (Gauche) ---
+    .whatsapp-box {
+      background-color: #2CA5DF; // Bleu solide
+      width: 250px;
+      height: 200px;
+      border-radius: 12px;
       display: flex;
       flex-direction: column;
-    }
-  
-    .contact-left { align-self: flex-end; } // Aligne en bas
-    .contact-center { align-self: center; } // Aligne au centre
-    .contact-right { align-self: center; } // Aligne au centre
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+      flex-shrink: 0;
 
-    .contact-card {
-      border-radius: 12px;
-      padding: 25px;
-      border: 1px solid rgba(255, 255, 255, 0.2);
-      box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.1);
-    }
+      .wa-top-text {
+        font-size: 1.2rem;
+        font-weight: 600;
+        margin: 0 0 15px 0;
+      }
 
-    .whatsapp-card {
-      background: $primary-color; // Fond bleu solide
-      color: white;
-      text-align: center;
-      width: 200px;
-      p { font-size: 1.1rem; margin: 0 0 10px; }
-      .whatsapp-icon { font-size: 4rem; margin-bottom: 5px; }
-      span { font-size: 1.2rem; font-weight: bold; }
-    }
+      .wa-icon-wrapper {
+        font-size: 5rem;
+        margin-bottom: 5px;
+        line-height: 1;
+      }
 
-    .meet-us-card {
-      color: white;
-      text-align: center;
-      background: rgba(255, 255, 255, 0.1);
-      backdrop-filter: blur(10px);
-      h4 { font-size: 1.2rem; margin: 0 0 15px; }
-      p { margin: 10px 0; font-size: 1rem; }
+      .wa-bottom-text {
+        font-size: 1.6rem;
+        font-weight: 400;
+        margin: 0;
+      }
     }
 
-    .form-card {
-      background: rgba(14, 32, 50, 0.8);
-      backdrop-filter: blur(10px);
-      color: white;
-      width: 100%;
-      max-width: 400px;
-      h4 { font-size: 1.2rem; margin: 0 0 5px; }
-      p { font-size: 0.9rem; opacity: 0.8; margin-bottom: 20px; }
+    // --- 2. Infos Centrales (Meet Us) - MODIFIÉ ---
+    .info-box {
+      flex: 1;
+      padding: 30px;
+      text-align: left;
+      width: 150px;
+      height: 350px;
       
+      // VOS MODIFICATIONS ICI :
+      background-color: rgba(128, 128, 128, 0.3); // Fond gris transparent (opacité 0.3)
+      backdrop-filter: blur(4px); // Flou léger
+      
+      border-radius: 12px;
+      // Bordure subtile pour délimiter le gris transparent
+      border: 1px solid rgba(255, 255, 255, 0.1); 
+
+      .info-title {
+        font-size: 2rem;
+        font-weight: 600;
+        margin-bottom: 30px;
+        margin-top: 10px;
+        color: #fff;
+      }
+
+      .country-block {
+        margin-bottom: 25px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+                  .country-header {
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    margin-bottom: 8px;
+                    
+                    img {
+                      width: 50px;
+                      height: 50px;
+                      border-radius: 10px;
+                      background-color: transparent;
+                      object-fit: cover;
+                    }
+        
+                    .flag {
+                      font-size: 1.5rem;
+                    }
+                    .country-name {
+                      font-size: 1.2rem;
+                      font-weight: 600;
+                    }
+                  }
+        .address-lines {
+          padding-left: 38px;
+          
+          p {
+            margin: 2px 0;
+            font-size: 0.95rem;
+            color: rgba(255, 255, 255, 0.9);
+            font-weight: 300;
+          }
+
+          .phone-number {
+            margin-top: 5px;
+            font-weight: 500;
+            color: #fff;
+          }
+        }
+      }
+    }
+
+    // --- 3. Formulaire (Droite) ---
+    .form-box {
+      flex: 1;
+      width: 400px;
+      background: rgba(121, 149, 172, 0.25);
+      backdrop-filter: blur(15px);
+      border-radius: 12px;
+      padding: 30px;
+      box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      flex-shrink: 0;
+
       form {
         display: flex;
         flex-direction: column;
         gap: 15px;
       }
 
+      .input-group {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+      }
+
       input, textarea {
-        background: #000; // Fond noir
-        border: 1px solid rgba(255, 255, 255, 0.3);
-        border-radius: 8px;
-        padding: 12px;
+        width: 95%;
+        background-color: #000000; // Fond noir
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        border-radius: 6px;
+        padding: 12px 15px;
         color: white;
         font-size: 0.9rem;
-        &::placeholder { color: rgba(255, 255, 255, 0.7); }
-      }
-      textarea { min-height: 80px; resize: vertical; }
+        font-family: inherit;
 
-      button {
-        background: white; // Bouton blanc
+        &::placeholder {
+          color: rgba(255, 255, 255, 0.6);
+        }
+
+        &:focus {
+          outline: none;
+          border-color: #2CA5DF;
+        }
+      }
+
+      textarea {
+        min-height: 100px;
+        resize: vertical;
+      }
+
+      .submit-btn {
+        background-color: white;
         color: #333;
-        border: none;
-        padding: 12px;
-        border-radius: 8px;
         font-weight: bold;
+        border: none;
+        border-radius: 6px;
+        padding: 12px;
         cursor: pointer;
+        transition: background 0.3s;
+        margin-top: 10px;
+        width: 90%;
+
+        &:hover {
+          background-color: #f0f0f0;
+        }
       }
     }
 
+    // --- Responsivité ---
+    @media (max-width: 992px) {
+      .contact-content-wrapper {
+        flex-direction: column;
+        gap: 60px;
+        padding: 40px 20px;
+      }
+
+      .whatsapp-box, .info-box, .form-box {
+        width: 100%;
+        max-width: 450px;
+      }
+      
+      .info-box {
+        text-align: center;
+        .country-header {
+            justify-content: center;
+        }
+        .address-lines {
+            padding-left: 0;
+        }
+      }
+    }
   }
-
-
   // ... (autres styles)
 
   // Responsivité pour la section Meilleurs Produits
