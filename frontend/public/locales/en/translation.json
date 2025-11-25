@@ -9,7 +9,8 @@
   "logistics": "LOGISTICS",
   "shop": "SHOP",
   "get_a_quote": "Get a quote",
-  "home_intro_title": "Who We Are",
+  "home_intro_title": "THANK KOMPANY",
+  "home_intro_title_1": "Who Are We",
   "home_intro_subtitle": "Your Partner for Digital Transformation, Automation & Sustainable Business Development",
   "home_intro_description": "THANK KOMPANY GmbH is a Germany-based company dedicated to empowering European businesses through SAP Enterprise Asset Management, automation engineering, software development, and digital transformation.",
   "home_focus_area": "We primarily serve clients across Germany and the D-A-CH region, while also taking on international projects worldwide. With a strong network spanning Africa, Europe, and the Americas, we bring global experience and local expertise to every project we undertake.",
@@ -36,7 +37,6 @@
   "home_software_dev_title": "Software Development: Delivering modern, scalable, and secure software solutions for digital transformation.",
   "home_software_dev_expertise_title": "Software Development",
   "home_software_dev_expertise_description": "As an experienced software development partner, we help companies build, integrate, and optimize modern digital solutions.",
-
   "home_software_dev_expertise_1": "Backend development: Java, Spring Boot, .NET Core, Node.js, Python, Go",
   "home_software_dev_expertise_2": "Frontend: React, Angular, Vue.js, TypeScript",
   "home_software_dev_expertise_3": "Mobile: Flutter, React Native, Kotlin, Swift",
