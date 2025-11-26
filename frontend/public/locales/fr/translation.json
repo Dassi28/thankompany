@@ -138,6 +138,10 @@
   "it_service_maintenance_service_3": "Maintenance plus préventive que corrective (prévenir plutôt que guérir)",
   "it_service_maintenance_service_4": "Installation et configuration des nouveaux matériels (ordinateurs, imprimantes, scanners...)",
   "it_service_maintenance_quote": "“La maintenance est la clé pour un bon fonctionnement de votre entreprise”",
+  "discover_our_solutions": "Découvrez nos solutions",
+  "it_service_cta_title": "Prêt à optimiser vos services informatiques ?",
+  "it_service_cta_description": "Contactez-nous dès aujourd'hui pour discuter de vos besoins et découvrir comment nous pouvons vous aider à atteindre vos objectifs.",
+  "contact_us": "Contactez-nous",
   "navbar": {
     "contact": "Contact"
   },

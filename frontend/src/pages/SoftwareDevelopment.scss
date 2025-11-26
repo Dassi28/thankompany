@@ -1,3 +1,11 @@
+@import '../styles/global.scss';
+
+// --- STYLES GÉNÉRAUX ---
+
+.highlight {
+  color: $primary-color;
+}
+
 .software-development-page {
   .sd-hero {
     position: relative;

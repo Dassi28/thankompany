@@ -1,3 +1,9 @@
+@import '../styles/global.scss';
+
+.highlight {
+  color: $primary-color;
+}
+
 .data-privacy-page {
   padding: 4rem 2rem;
   background-color: #f8f9fa;

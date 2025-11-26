@@ -26,7 +26,7 @@ const SoftwareDevelopment = () => {
       <section className="sd-intro-section">
         <div className="sd-intro-content">
           <div className="sd-intro-text">
-            <h2>Des solutions logicielles innovantes pour votre entreprise</h2>
+            <h2 className='highlight'>Des solutions logicielles innovantes pour votre entreprise</h2>
             <p>
               Chez THANK KOMPANY, nous concevons et développons des solutions logicielles sur mesure qui répondent précisément aux besoins de votre entreprise. Notre équipe d'experts vous accompagne de la conception à la mise en production, en passant par le développement et les tests.
             </p>
@@ -42,7 +42,7 @@ const SoftwareDevelopment = () => {
 
       {/* 03: Technologies Section */}
       <section className="sd-technologies-section">
-        <h2 className="section-title">Nos Technologies</h2>
+        <h2 className="section-title highlight">Nos Technologies</h2>
         <div className="tabs">
           <button className={`tab-button ${activeTab === 'backend' ? 'active' : ''}`} onClick={() => setActiveTab('backend')}>
             Backend
@@ -160,7 +160,7 @@ const SoftwareDevelopment = () => {
       <section className="sd-api-section">
         <div className="sd-api-content">
           <div className="sd-api-text">
-            <h2>Solutions d'intégration & API</h2>
+            <h2 className='highlight'>Solutions d'intégration & API</h2>
             <p>
               Nous concevons et développons des API robustes et sécurisées pour connecter vos applications et services. Nous vous aidons à mettre en place des solutions d'intégration pour automatiser vos flux de travail et améliorer votre efficacité.
             </p>
@@ -178,7 +178,7 @@ const SoftwareDevelopment = () => {
             <img src="/images/IT/Produit_PC2.png" alt="Data Engineering" />
           </div>
           <div className="sd-data-text">
-            <h2>Ingénierie des données</h2>
+            <h2 className='highlight'>Ingénierie des données</h2>
             <p>
               Nous vous aidons à collecter, stocker, traiter et analyser vos données pour en extraire de la valeur. Nous mettons en place des pipelines de données robustes et évolutifs pour alimenter vos applications et vos modèles d'apprentissage automatique.
             </p>
@@ -191,10 +191,10 @@ const SoftwareDevelopment = () => {
         <div className="sd-cta-content">
           <h2>Prêt à transformer votre entreprise avec des solutions logicielles innovantes ?</h2>
           <p>Contactez-nous dès aujourd'hui pour discuter de votre projet et découvrir comment nous pouvons vous aider à atteindre vos objectifs.</p>
-          <button className="sd-cta-button">
+          <a href="/contact" className="sd-cta-button">
             <span>Contactez-nous</span>
             <FaArrowRight />
-          </button>
+          </a>
         </div>
       </section>
 

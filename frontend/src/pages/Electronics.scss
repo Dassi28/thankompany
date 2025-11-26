@@ -1,6 +1,11 @@
  @import '../styles/global.scss';
 
 // --- STYLES GÉNÉRAUX ---
+
+.highlight {
+  color: $primary-color;
+}
+
 .electronics-page {
   .highlight {
     color: $primary-color;

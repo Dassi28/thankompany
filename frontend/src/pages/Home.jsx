@@ -19,7 +19,7 @@ const Home = () => {
 
                 <div className="hero-content">
                     <div className="hero-text">
-                        <h1>{t('home_intro_title')}</h1>
+                        <h1 className='highlight'>{t('home_intro_title')}</h1>
                         <h2>{t('home_intro_subtitle')}</h2>
                         <h3>{t('home_sap_eam_title')}</h3>
                         <h3>{t('home_automation_title')}</h3>
@@ -67,7 +67,7 @@ const Home = () => {
             {/* Section "Qui sommes-nous" */}
             <section className="about" id="about">
                 <div className="about-text">
-                    <h2>{t('home_intro_title_1')}</h2>
+                    <h2 className='highlight'>{t('home_intro_title_1')}</h2>
                     <p>
                         {t('home_intro_description')}
                     </p>
@@ -94,7 +94,7 @@ const Home = () => {
                             <img src="/images/Home/hp_Service_informatique.png" alt="SAP EAM/PM Conculting Icon" />
                         
                         </div>
-                        <h4>{t('home_sap_eam_expertise_title')}</h4>
+                        <h4 className='highlight'>{t('home_sap_eam_expertise_title')}</h4>
                         <h5>{t('home_sap_eam_expertise_description')}</h5>
                         <ul>
                             <li>{t('home_sap_eam_expertise_1')}</li>
@@ -110,7 +110,7 @@ const Home = () => {
                         <div className="card-icon">
                             <img src="/images/Home/HP_service-electro.png" alt="Electronics Services Icon" />
                       </div>
-                        <h4>{t('home_automation_expertise_title')}</h4>
+                        <h4 className='highlight'>{t('home_automation_expertise_title')}</h4>
                         <h5>{t('home_automation_expertise_description')}</h5>
                         <ul>
                             <li>{t('home_automation_expertise_1')}</li>
@@ -127,7 +127,7 @@ const Home = () => {
                         <div className="card-icon">
                             <img src="/images/Home/HP_service-logist.png" alt="Logistics Services Icon" />
                         </div>
-                        <h4>{t('home_software_dev_expertise_title')}</h4>
+                        <h4 className='highlight'>{t('home_software_dev_expertise_title')}</h4>
                         <h5>{t('home_software_dev_expertise_description')}</h5>
                         <ul>
                             <li>{t('home_software_dev_expertise_1')}</li>
@@ -149,7 +149,7 @@ const Home = () => {
                         <img src="/images/Home/Notre_Mission.png" alt="Employé d'entrepôt" />
                     </div>
                     <div className="mv-text-container">
-                        <h3>{t('home_mission_title')}</h3>
+                        <h3 className='highlight'>{t('home_mission_title')}</h3>
                         <p>
                             {t('home_mission_description')}
                         </p>
@@ -158,7 +158,7 @@ const Home = () => {
                 {/* Vision: Texte à gauche, Image à droite */}
                 <div className="mission-vision-item">
                     <div className="mv-text-container">
-                        <h3>{t('home_vision_title')}</h3>
+                        <h3 className='highlight'>{t('home_vision_title')}</h3>
                         <p>
                             {t('home_vision_description')}
                         </p>
@@ -174,7 +174,7 @@ const Home = () => {
                 <div className="guarantee-overlay"></div>
                 <div className="guarantee-content">
                     <div className="guarantee-text">
-                        <h3>{t('home_guarantee_title')}</h3>
+                        <h3 className='highlight'>{t('home_guarantee_title')}</h3>
                         <p>
                             {t('home_guarantee_description')}
                         </p>
@@ -272,7 +272,7 @@ const Home = () => {
                         <span className="card-number">01</span>
                         <p className="card-title">{t('home_results_item_1_title')}</p>
                         <h4 className="card-stat">
-                            <Odometer format="d" duration={3000} value={parseInt(t('home_results_item_1_stat'))} />
+                            <Odometer format="d" duration={3000} value={parseInt(t('home_results_item_1_stat'))} />+
                         </h4>
                         <p className="card-subtitle">{t('home_results_item_1_subtitle')}</p>
                         <hr />
@@ -281,7 +281,7 @@ const Home = () => {
                         <span className="card-number">02</span>
                         <p className="card-title">{t('home_results_item_2_title')}</p>
                         <h4 className="card-stat">
-                            <Odometer format="d" duration={3000} value={parseInt(t('home_results_item_2_stat'))} />
+                            <Odometer format="d" duration={3000} value={parseInt(t('home_results_item_2_stat'))} />%
                         </h4>
                         <p className="card-subtitle">{t('home_results_item_2_subtitle')}</p>
                         <hr />
@@ -290,7 +290,7 @@ const Home = () => {
                         <span className="card-number">03</span>
                         <p className="card-title">{t('home_results_item_3_title')}</p>
                         <h4 className="card-stat">
-                            <Odometer format="d" duration={3000} value={parseInt(t('home_results_item_3_stat'))} />
+                            <Odometer format="d" duration={3000} value={parseInt(t('home_results_item_3_stat'))} />+
                         </h4>
                         <p className="card-subtitle">{t('home_results_item_3_subtitle')}</p>
                         <hr />
@@ -299,7 +299,7 @@ const Home = () => {
                         <span className="card-number">04</span>
                         <p className="card-title">{t('home_results_item_4_title')}</p>
                         <h4 className="card-stat">
-                            <Odometer format="d" duration={3000} value={parseInt(t('home_results_item_4_stat'))} />
+                            <Odometer format="d" duration={3000} value={parseInt(t('home_results_item_4_stat'))} />+
                         </h4>
                         <p className="card-subtitle">{t('home_results_item_4_subtitle')}</p>
                         <hr />
@@ -318,35 +318,70 @@ const Home = () => {
 
             {/* Section Contact */}
             <section className="contact-section" id='contact'>
-                <div className="contact-bg-image"></div>
-                <div className="contact-content">
-                    <div className="contact-left">
-                        <div className="contact-card whatsapp-card">
-                            <p>{t('home_contact_whatsapp_text')}</p>
-                            <FaWhatsapp className="whatsapp-icon" />
-                            <span>{t('home_contact_whatsapp_label')}</span>
+                <div className="contact-bg-overlay"></div>
+                
+                <div className="contact-content-wrapper">
+                    
+                    {/* 1. Carte WhatsApp (Gauche) */}
+                    <div className="contact-box whatsapp-box">
+                        <p className="wa-top-text">Ecrivez-nous</p>
+                        <div className="wa-icon-wrapper">
+                            <FaWhatsapp />
+                        </div>
+                        <p className="wa-bottom-text">Whatsapp</p>
+                    </div>
+
+                    {/* 2. Infos "Meet Us" (Centre) */}
+                    <div className="contact-box info-box">
+                        <h4 className="info-title">Meet Us</h4>
+                        
+                        {/* Bloc Allemagne */}
+                        <div className="country-block">
+                            <div className="country-header">
+                                <img src="images/flags/all.png" alt="DEU" className="country-flag" />
+                                <span className="country-name">Allemagne</span>
+                            </div>
+                            <div className="address-lines">
+                                <p>Mundenheimer Str. 177</p>
+                                <p>67061 Ludwigshafen</p>
+                                <p className="phone-number">+49 176 684 054 56</p>
+                            </div>
+                        </div>
+
+                        {/* Bloc Cameroun */}
+                        <div className="country-block">
+                            <div className="country-header">
+                                <img src="images/flags/cmr.png" alt="CMR" className="country-flag" />
+                                <span className="country-name">Cameroun</span>
+                            </div>
+                            <div className="address-lines">
+                                <p>BP 7509</p>
+                                <p>Douala, Cameroun</p>
+                                <p className="phone-number">+237 680 875 787</p>
+                            </div>
                         </div>
                     </div>
-                    <div className="contact-center">
-                        <div className="contact-card meet-us-card">
-                            <h4>{t('home_contact_meet_us_title')}</h4>
-                            <p>{t('home_contact_meet_us_location_1')}</p>
-                            <p>{t('home_contact_meet_us_location_2')}</p>
-                        </div>
+
+                    {/* 3. Formulaire (Droite) */}
+                    <div className="contact-box form-box">
+                        <h4 className="form-title">Contactez-nous</h4>
+                        <form>
+                            <div className="input-group">
+                                <input type="text" placeholder="Your Name" />
+                            </div>
+                            <div className="input-group">
+                                <input type="email" placeholder="Email" />
+                            </div>
+                            <div className="input-group">
+                                <input type="text" placeholder="Sujet" />
+                            </div>
+                            <div className="input-group">
+                                <textarea placeholder="Message"></textarea>
+                            </div>
+                            <button type="submit" className="submit-btn">ENVOYER</button>
+                        </form>
                     </div>
-                    <div className="contact-right">
-                        <div className="contact-card form-card">
-                            <h4>{t('home_contact_form_title')}</h4>
-                            <p>{t('home_contact_form_subtitle')}</p>
-                            <form>
-                                <input type="text" placeholder={t('home_contact_form_name_placeholder')} />
-                                <input type="email" placeholder={t('home_contact_form_email_placeholder')} />
-                                <input type="text" placeholder={t('home_contact_form_subject_placeholder')} />
-                                <textarea placeholder={t('home_contact_form_message_placeholder')}></textarea>
-                                <button type="submit">{t('home_contact_form_submit_button')}</button>
-                            </form>
-                        </div>
-                    </div>
+
                 </div>
             </section>
 

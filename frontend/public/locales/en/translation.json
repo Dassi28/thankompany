@@ -136,6 +136,10 @@
   "it_service_maintenance_service_3": "More preventive than corrective maintenance (prevent rather than cure)",
   "it_service_maintenance_service_4": "Installation and configuration of new equipment (computers, printers, scanners...)",
   "it_service_maintenance_quote": "“Maintenance is the key to the proper functioning of your business”",
+  "discover_our_solutions": "Discover our solutions",
+  "it_service_cta_title": "Ready to optimize your IT services?",
+  "it_service_cta_description": "Contact us today to discuss your needs and find out how we can help you achieve your goals.",
+  "contact_us": "Contact us",
   "navbar": {
     "contact": "Contact"
   },

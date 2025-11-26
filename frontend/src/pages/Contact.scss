@@ -1,3 +1,10 @@
+
+@import '../styles/global.scss';
+
+.highlight {
+  color: $primary-color;
+}
+
 .contact-page {
     display: flex;
     justify-content: center;

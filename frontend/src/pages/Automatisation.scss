@@ -1,3 +1,9 @@
+@import '../styles/global.scss';
+
+.highlight {
+  color: $primary-color;
+}
+
 .automatisation-page {
   .auto-hero {
     position: relative;

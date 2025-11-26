@@ -121,10 +121,10 @@ const Automatisation = () => {
         <div className="auto-cta-content">
           <h2>Prêt à automatiser votre succès ?</h2>
           <p>Contactez-nous dès aujourd'hui pour discuter de votre projet et découvrir comment nous pouvons vous aider à atteindre vos objectifs.</p>
-          <button className="auto-cta-button">
+          <a href="/contact" className="auto-cta-button">
             <span>Contactez-nous</span>
             <FaArrowRight />
-          </button>
+          </a>
         </div>
       </section>
 
