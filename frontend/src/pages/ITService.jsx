@@ -99,6 +99,17 @@ const ITService = () => {
             <img src="/images/IT/05_maintenance.png" alt="Maintenance Informatiques" />
           </div>
         </div>
+
+        <div className="is-maintenance-section">
+          <div className="is-maintenance-content">
+            <div className="is-maintenance-text">
+              <h2 className='highlight'>Elevate Your Maintenance Operations</h2>
+              <p>Looking to modernize your SAP EAM landscape, prepare for S/4HANA, or unlock the next level of Smart Maintenance? <br />
+                <span className='highlight'>Let's talk about your roadmap.</span> We support you from strategy to execution.
+              </p>
+            </div>
+          </div>
+        </div>
       </section>
 
       {/* 07: CTA Section */}
