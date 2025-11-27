@@ -1,11 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Automatisation.scss';
 import { useTranslation } from 'react-i18next';
 import { FaArrowRight, FaCogs, FaIndustry, FaNetworkWired, FaUsers } from 'react-icons/fa';
 import PartnersLogo from '../components/PartnersLogo';
 
 const Automatisation = () => {
-  const { t } = useTranslation();
+    const { t } = useTranslation();
+    const [activeTab, setActiveTab] = useState('backend');
 
   return (
     <div className="automatisation-page">
@@ -15,40 +16,11 @@ const Automatisation = () => {
         <div className="auto-hero-content">
           <h1 className="auto-hero-title">{t('automation_title')}</h1>
           <p className="auto-hero-slogan">{t('automation_slogan')}</p>
-          <button className="auto-hero-cta">
-            <span>{t('discover_our_solutions')}</span>
-            <FaArrowRight />
-          </button>
-        </div>
-      </section>
-
-      {/* 04: Expertise & Interfaces Section */}
-      <section className="auto-expertise-section">
-        <div className="auto-expertise-content">
-          <div className="expertise-column">
-            <h2 className="section-title highlight">{t('automation_technologies_title')}</h2>
-            <div className="logos-grid">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/5/5f/Siemens-logo.svg" alt="Siemens Logo" />
-              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/ABB_logo.svg/1200px-ABB_logo.svg.png" alt="ABB Logo" />
-              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/SEW-EURODRIVE_logo.svg/1200px-SEW-EURODRIVE_logo.svg.png" alt="SEW Eurodrive Logo" />
-              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Sigmatek_logo.svg/1200px-Sigmatek_logo.svg.png" alt="Sigmatek Logo" />
-            </div>
-          </div>
-          <div className="interfaces-column">
-            <h2 className="section-title highlight">{t('automation_technologies_networks')}</h2>
-            <ul className="interfaces-list">
-              <li>MQTT</li>
-              <li>OPC-UA</li>
-              <li>Modbus</li>
-              <li>Profinet</li>
-              <li>Profibus</li>
-            </ul>
-          </div>
         </div>
       </section>
 
 
-          {/* SAP EAM/PM Consulting */}
+          {/* Smart Automation for Buildings & Industry */}
           <section className="service-section">
               <div className="service-content">
                   <div className="service-text">
@@ -61,7 +33,7 @@ const Automatisation = () => {
               </div>
           </section>
 
-          {/* Our SAP EAM/PM Expertise */}
+          {/* Our  Expertise */}
           <section className="service-section alt-bg">
               <div className="service-content reverse">
                   <div className="service-text">
@@ -84,7 +56,7 @@ const Automatisation = () => {
               </div>
           </section>
 
-          {/* Why SAP S/4HANA Matters*/}
+          {/* Why Modern AutomationMatters*/}
           <section className="service-section">
               <div className="service-content">
                   <div className="service-text">
@@ -106,7 +78,107 @@ const Automatisation = () => {
               </div>
           </section>
 
-          {/* Your Path to S/4HANA EAM  */}
+         
+          {/* 03: Technologies Section */}
+          <section className="auto-technologies-section">
+              <h2 className="section-title highlight">{t('software_dev_technologies_title')}</h2>
+              <div className="tabs">
+                  <button className={`tab-button ${activeTab === 'backend' ? 'active' : ''}`} onClick={() => setActiveTab('backend')}>
+                      Innovation
+                  </button>
+                  <button className={`tab-button ${activeTab === 'frontend' ? 'active' : ''}`} onClick={() => setActiveTab('frontend')}>
+                      Industrial Communication
+                  </button>
+                  <button className={`tab-button ${activeTab === 'mobile' ? 'active' : ''}`} onClick={() => setActiveTab('mobile')}>
+                      Control Technologies
+                  </button>
+                 </div>
+              <div className="tab-content">
+              {/*Innovation*/}
+                  {activeTab === 'backend' && (
+                      <div className="technologies-grid">
+                          <div className="tech-item">
+                              <img src="https://upload.wikimedia.org/wikipedia/en/thumb/3/30/Java_programming_language_logo.svg/1200px-Java_programming_language_logo.svg.png" alt="Java" />
+                              <span>IoT</span>
+                          </div>
+                          <div className="tech-item">
+                              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Spring_Framework_Logo_2018.svg/1200px-Spring_Framework_Logo_2018.svg.png" alt="Spring Boot" />
+                              <span>Cloud</span>
+                          </div>
+                          <div className="tech-item">
+                              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/.NET_Core_Logo.svg/1200px-.NET_Core_Logo.svg.png" alt=".NET Core" />
+                              <span>AI</span>
+                          </div>
+                          <div className="tech-item">
+                              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/1200px-Node.js_logo.svg.png" alt="Node.js" />
+                              <span>Automation</span>
+                          </div>
+                         
+                      </div>
+                  )}
+                  {/*Industrial Communication*/}
+                  {activeTab === 'frontend' && (
+                      <div className="technologies-grid">
+                          <div className="tech-item">
+                              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png" alt="React" />
+                              <span>MQTT</span>
+                          </div>
+                          <div className="tech-item">
+                              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/1200px-Angular_full_color_logo.svg.png" alt="Angular" />
+                              <span>OPC-UA</span>
+                          </div>
+                          <div className="tech-item">
+                              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Vue.js_Logo_2.svg/1200px-Vue.js_Logo_2.svg.png" alt="Vue.js" />
+                              <span>KNX</span>
+                          </div>
+                          <div className="tech-item">
+                              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/1200px-Typescript_logo_2020.svg.png" alt="TypeScript" />
+                              <span>BACnet</span>
+                          </div>
+                          <div className="tech-item">
+                              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/1200px-Typescript_logo_2020.svg.png" alt="TypeScript" />
+                              <span>Modbus </span>
+                          </div>
+                          <div className="tech-item">
+                              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/1200px-Typescript_logo_2020.svg.png" alt="TypeScript" />
+                              <span>Profinet</span>
+                          </div>
+                          <div className="tech-item">
+                              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/1200px-Typescript_logo_2020.svg.png" alt="TypeScript" />
+                              <span>Profibus</span>
+                          </div>
+                          <div className="tech-item">
+                              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/1200px-Typescript_logo_2020.svg.png" alt="TypeScript" />
+                              <span>CAN</span>
+                          </div>
+                      </div>
+                  )}
+                  {/*Control Technologies*/}
+                  {activeTab === 'mobile' && (
+                      <div className="technologies-grid">
+                          <div className="tech-item">
+                              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Google-flutter-logo.png/1200px-Google-flutter-logo.png" alt="Flutter" />
+                              <span>PLC </span>
+                          </div>
+                          <div className="tech-item">
+                              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png" alt="React Native" />
+                              <span>KNX Control</span>
+                          </div>
+                          <div className="tech-item">
+                              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Kotlin_Icon.png/1200px-Kotlin_Icon.png" alt="Kotlin" />
+                              <span>Functional Logic</span>
+                          </div>
+                          <div className="tech-item">
+                              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Swift_logo.svg/1200px-Swift_logo.svg.png" alt="Swift" />
+                              <span>Safety Systems</span>
+                          </div>
+                      </div>
+                  )}
+               </div>
+          </section>
+
+
+          {/* Challenges We Solve  */}
           <section className="service-section alt-bg">
               <div className="service-content reverse">
                   <div className="service-text">
@@ -128,7 +200,7 @@ const Automatisation = () => {
               </div>
           </section>
 
-          {/* Our Guarantee */}
+          {/* Our Commitment to Excellence */}
           <section className="service-section">
               <div className="service-content">
                   <div className="service-text">
@@ -143,116 +215,17 @@ const Automatisation = () => {
                           <li>{t('automation_guarantee_service_5')}</li>
                       </ul>
                       <p className="quote">{t('automation_maintenance_quote')}</p>
+                      {/*Create a section with text and icon*/}
+                      <button className="auto-hero-cta">
+                          <span>{t('discover_our_solutions')}</span>
+                          <FaArrowRight />
+                      </button>
                   </div>
                   <div className="service-image">
                       <img src="/images/IT/05_maintenance.png" alt="Maintenance Informatiques" />
                   </div>
               </div>
           </section>
-
-
-
-      {/* 02: Introduction Section */}
-      {/*<section className="auto-intro-section">*/}
-      {/*  <div className="auto-intro-content">*/}
-      {/*    <div className="auto-intro-text">*/}
-      {/*      <h2 className='highlight'>{t('automation_intro_title')}</h2>*/}
-      {/*      <p>*/}
-      {/*        {t('automation_intro_description')}*/}
-      {/*      </p>*/}
-      {/*    </div>*/}
-      {/*    <div className="auto-intro-image">*/}
-      {/*      <img src="/images/Electronic/1_About_us.png" alt="Introduction to automation" />*/}
-      {/*    </div>*/}
-      {/*  </div>*/}
-      {/*</section>*/}
-
-      {/* 03: Services Section */}
-      {/*<section className="auto-services-section">*/}
-      {/*  <h2 className="section-title highlight">{t('automation_expertise_service_title')}</h2>*/}
-      {/*  <div className="auto-services-grid">*/}
-      {/*    <div className="service-card">*/}
-      {/*      <div className="service-icon">*/}
-      {/*        <FaCogs />*/}
-      {/*      </div>*/}
-      {/*      <h3 className="highlight">{t('automation_expertise_service_1')}</h3>*/}
-      {/*      <p>{t('home_automation_expertise_1')}</p>*/}
-      {/*    </div>*/}
-      {/*    <div className="service-card">*/}
-      {/*      <div className="service-icon">*/}
-      {/*        <FaIndustry />*/}
-      {/*      </div>*/}
-      {/*      <h3 className="highlight">{t('automation_expertise_service_2')}</h3>*/}
-      {/*      <p>{t('home_automation_expertise_2')}</p>*/}
-      {/*    </div>*/}
-      {/*    <div className="service-card">*/}
-      {/*      <div className="service-icon">*/}
-      {/*        <FaNetworkWired />*/}
-      {/*      </div>*/}
-      {/*      <h3 className="highlight">{t('automation_expertise_service_6')}</h3>*/}
-      {/*      <p>{t('home_automation_expertise_4')}</p>*/}
-      {/*    </div>*/}
-      {/*    <div className="service-card">*/}
-      {/*      <div className="service-icon">*/}
-      {/*        <FaUsers />*/}
-      {/*      </div>*/}
-      {/*      <h3 className="highlight">{t('home_automation_expertise_6')}</h3>*/}
-      {/*      <p>{t('automation_expertise_service_8')}</p>*/}
-      {/*    </div>*/}
-      {/*  </div>*/}
-      {/*</section>*/}
-
-      {/* 04: Expertise & Interfaces Section */}
-      {/*<section className="auto-expertise-section">*/}
-      {/*  <div className="auto-expertise-content">*/}
-      {/*    <div className="expertise-column">*/}
-      {/*      <h2 className="section-title highlight">{t('automation_technologies_title')}</h2>*/}
-      {/*      <div className="logos-grid">*/}
-      {/*        <img src="https://upload.wikimedia.org/wikipedia/commons/5/5f/Siemens-logo.svg" alt="Siemens Logo" />*/}
-      {/*        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/ABB_logo.svg/1200px-ABB_logo.svg.png" alt="ABB Logo" />*/}
-      {/*        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/SEW-EURODRIVE_logo.svg/1200px-SEW-EURODRIVE_logo.svg.png" alt="SEW Eurodrive Logo" />*/}
-      {/*        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Sigmatek_logo.svg/1200px-Sigmatek_logo.svg.png" alt="Sigmatek Logo" />*/}
-      {/*      </div>*/}
-      {/*    </div>*/}
-      {/*    <div className="interfaces-column">*/}
-      {/*      <h2 className="section-title highlight">{t('automation_technologies_networks')}</h2>*/}
-      {/*      <ul className="interfaces-list">*/}
-      {/*        <li>MQTT</li>*/}
-      {/*        <li>OPC-UA</li>*/}
-      {/*        <li>Modbus</li>*/}
-      {/*        <li>Profinet</li>*/}
-      {/*        <li>Profibus</li>*/}
-      {/*      </ul>*/}
-      {/*    </div>*/}
-      {/*  </div>*/}
-      {/*</section>*/}
-
-      {/* 05: Technical Leadership & Team Coordination Section */}
-      {/*<section className="auto-leadership-section">*/}
-      {/*  <div className="auto-leadership-content">*/}
-      {/*    <div className="auto-leadership-text">*/}
-      {/*      <h2 className='highlight'>{t('home_automation_expertise_6')}</h2>*/}
-      {/*      <p>*/}
-      {/*        {t('automation_guarantee_description')}*/}
-      {/*      </p>*/}
-      {/*    </div>*/}
-      {/*    <div className="auto-leadership-image">*/}
-      {/*      <img src="/images/Electronic/4_Technicien_Batiment.png" alt="Technical Leadership" />*/}
-      {/*    </div>*/}
-      {/*  </div>*/}
-      {/*</section>*/}
-
-      {/* 06: CTA Section */}
-      {/*<section className="auto-cta-section">*/}
-      {/*  <div className="auto-cta-content">*/}
-      {/*    <h2>{t('it_service_cta_title')}</h2>*/}
-      {/*    <p>{t('it_service_cta_description')}</p>*/}
-      {/*    <a href="/contact" className="auto-cta-button">*/}
-      {/*      <span>{t('contact_us')}</span>*/}
-      {/*      <FaArrowRight />*/}
-      {/*    </a>*/}
-      {/*  </div>*/}
-      {/*</section>*/}
 
       <PartnersLogo />
     </div>
