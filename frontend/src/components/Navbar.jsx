@@ -21,16 +21,16 @@ const Navbar = ({ changeLanguage }) => {
     <div className="header-fixed-wrapper">
       {/* TOP STRIP */}
       <div className="top-bar">
-              <span className="discount-msg">Your Partner for SAP EAM/PM, Automation, and Software Solutions!</span>
+              <span className="discount-msg">{t('discount_msg')}</span>
         <div className="top-right">
           <div className="contact-block">
             <span className="icon">📞</span>
-            <span className="label">Talk to an Expert</span>
+            <span className="label">{t('call_us')}</span>
             <span className="value">+49 176 267 792 75</span>
           </div>
           <div className="contact-block">
             <span className="icon">✉️</span>
-            <span className="label">Send Us a Message</span>
+            <span className="label">{t('mail_us')}</span>
             <span className="value">info@thankompany.com</span>
           </div>
           {/*<div className="social-icons">*/}
@@ -61,15 +61,15 @@ const Navbar = ({ changeLanguage }) => {
         </div>
 
         <ul className={`navbar-links ${isMenuOpen ? 'open' : ''}`}>
-          <li><a href="/" className={location.pathname === '/' ? 'active' : ''} onClick={closeMenu}>HOME</a></li>
-          <li><a href="/it-service" className={location.pathname === '/it-service' ? 'active' : ''} onClick={closeMenu}>SAP EAM/PM CONSULTING</a></li>
-          <li><a href="/automatisation" className={location.pathname === '/automatisation' ? 'active' : ''} onClick={closeMenu}>AUTOMATION ENGINEERING</a></li>
-          <li><a href="/software-development" className={location.pathname === '/software-development' ? 'active' : ''} onClick={closeMenu}>SOFTWARE DEVELOPMENT</a></li>
+          <li><a href="/" className={location.pathname === '/' ? 'active' : ''} onClick={closeMenu}>{t('home')}</a></li>
+          <li><a href="/it-service" className={location.pathname === '/it-service' ? 'active' : ''} onClick={closeMenu}>{t('sap_eam')}</a></li>
+          <li><a href="/automatisation" className={location.pathname === '/automatisation' ? 'active' : ''} onClick={closeMenu}>{t('automation')}</a></li>
+          <li><a href="/software-development" className={location.pathname === '/software-development' ? 'active' : ''} onClick={closeMenu}>{t('navbar_software_development')}</a></li>
           <li><a href="/contact" className={location.pathname === '/contact' ? 'active' : ''} onClick={closeMenu}>{t('navbar.contact')}</a></li>
         </ul>
 
         <div className="navbar-actions">
-          <button className="quote-btn">{t('Let’s Discuss Your Needs')}</button>
+          <button className="quote-btn">{t('navbar_discuss_needs_btn')}</button>
           <button className="mobile-menu-icon" onClick={toggleMenu}>
             {isMenuOpen ? <FaTimes /> : <FaBars />}
           </button>

@@ -22,6 +22,32 @@ const Automatisation = () => {
         </div>
       </section>
 
+      {/* 04: Expertise & Interfaces Section */}
+      <section className="auto-expertise-section">
+        <div className="auto-expertise-content">
+          <div className="expertise-column">
+            <h2 className="section-title highlight">{t('automation_technologies_title')}</h2>
+            <div className="logos-grid">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/5/5f/Siemens-logo.svg" alt="Siemens Logo" />
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/ABB_logo.svg/1200px-ABB_logo.svg.png" alt="ABB Logo" />
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/SEW-EURODRIVE_logo.svg/1200px-SEW-EURODRIVE_logo.svg.png" alt="SEW Eurodrive Logo" />
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Sigmatek_logo.svg/1200px-Sigmatek_logo.svg.png" alt="Sigmatek Logo" />
+            </div>
+          </div>
+          <div className="interfaces-column">
+            <h2 className="section-title highlight">{t('automation_technologies_networks')}</h2>
+            <ul className="interfaces-list">
+              <li>MQTT</li>
+              <li>OPC-UA</li>
+              <li>Modbus</li>
+              <li>Profinet</li>
+              <li>Profibus</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+
           {/* SAP EAM/PM Consulting */}
           <section className="service-section">
               <div className="service-content">
@@ -53,7 +79,7 @@ const Automatisation = () => {
                       <p>{t('automation_expertise_service_conclusion')}</p>
                   </div>
                   <div className="service-image">
-                      <img src="/images/IT/2_Gestion_Donnees.png" alt="Gestion des Données" />
+                      <img src="/images/IT/2_Gestion_Donnees.png" alt="Gestion des Donnï¿½es" />
                   </div>
               </div>
           </section>
@@ -75,7 +101,7 @@ const Automatisation = () => {
                       <p>{t('automation_why_conclusion')}</p>
                   </div>
                   <div className="service-image">
-                      <img src="/images/IT/3_Developement_Web.png" alt="Développement Web" />
+                      <img src="/images/IT/3_Developement_Web.png" alt="Dï¿½veloppement Web" />
                   </div>
               </div>
           </section>
@@ -97,7 +123,7 @@ const Automatisation = () => {
                       <p>{t('automation_why_conclusion')}</p>
                   </div>
                   <div className="service-image">
-                      <img src="/images/IT/4_Development.png" alt="Développement Logiciels" />
+                      <img src="/images/IT/4_Development.png" alt="Dï¿½veloppement Logiciels" />
                   </div>
               </div>
           </section>

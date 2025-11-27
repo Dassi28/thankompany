@@ -25,7 +25,7 @@ const Home = () => {
                         <h3>{t('home_automation_title')}</h3>
                         <h3>{t('home_software_dev_title')}</h3>
                         <a href="#contact" className="hero-cta-button">
-                            <span>Discover Our Solutions</span>
+                            <span>{t('discover_solutions_cta')}</span>
                             <FaArrowRight className="arrow-icon" />
                         </a>
                     </div>
@@ -324,27 +324,27 @@ const Home = () => {
                                 
                                 {/* 1. Carte WhatsApp (Gauche) */}
                                 <div className="contact-box whatsapp-box">
-                                    <p className="wa-top-text">Ecrivez-nous</p>
+                                    <p className="wa-top-text">{t('whatsapp_write_to_us_home')}</p>
                                     <div className="wa-icon-wrapper">
                                         <FaWhatsapp />
                                     </div>
-                                    <p className="wa-bottom-text">Whatsapp</p>
+                                    <p className="wa-bottom-text">{t('whatsapp_label_home')}</p>
                                 </div>
             
                                 {/* 2. Infos "Meet Us" (Centre) */}
                                 <div className="contact-box info-box">
-                                    <h4 className="info-title">Meet Us</h4>
+                                    <h4 className="info-title">{t('contact_meet_us_title_home')}</h4>
                                     
                                     {/* Bloc Allemagne */}
                                     <div className="country-block">
                                         <div className="country-header">
                                             <img src="images/flags/all.png" alt="DEU" className="country-flag" />
-                                            <span className="country-name">Allemagne</span>
+                                            <span className="country-name">{t('country_germany')}</span>
                                         </div>
                                         <div className="address-lines">
                                             <p>Mundenheimer Str. 177</p>
                                             <p>67061 Ludwigshafen</p>
-                                            <p className="phone-number">+49 176 684 054 56</p>
+                                            <p className="phone-number">{t('home_contact_phone_germany')}</p>
                                         </div>
                                     </div>
             
@@ -352,33 +352,33 @@ const Home = () => {
                                     <div className="country-block">
                                         <div className="country-header">
                                             <img src="images/flags/cmr.png" alt="CMR" className="country-flag" />
-                                            <span className="country-name">Cameroun</span>
+                                            <span className="country-name">{t('country_cameroon')}</span>
                                         </div>
                                         <div className="address-lines">
                                             <p>BP 7509</p>
-                                            <p>Douala, Cameroun</p>
-                                            <p className="phone-number">+237 680 875 787</p>
+                                            <p>Douala, {t('country_cameroon')}</p>
+                                            <p className="phone-number">{t('home_contact_phone_cameroon')}</p>
                                         </div>
                                     </div>
                                 </div>
             
                                 {/* 3. Formulaire (Droite) */}
                                 <div className="contact-box form-box">
-                                    <h4 className="form-title">Contactez-nous</h4>
+                                    <h4 className="form-title">{t('contact_form_title')}</h4>
                                     <form>
                                         <div className="input-group">
-                                            <input type="text" placeholder="Your Name" />
+                                            <input type="text" placeholder={t('contact_form_name_placeholder')} />
                                         </div>
                                         <div className="input-group">
-                                            <input type="email" placeholder="Email" />
+                                            <input type="email" placeholder={t('contact_form_email_placeholder')} />
                                         </div>
                                         <div className="input-group">
-                                            <input type="text" placeholder="Sujet" />
+                                            <input type="text" placeholder={t('contact_form_subject_placeholder')} />
                                         </div>
                                         <div className="input-group">
-                                            <textarea placeholder="Message"></textarea>
+                                            <textarea placeholder={t('contact_form_message_placeholder')}></textarea>
                                         </div>
-                                        <button type="submit" className="submit-btn">ENVOYER</button>
+                                        <button type="submit" className="submit-btn">{t('contact_form_submit_button')}</button>
                                     </form>
                                 </div>
             

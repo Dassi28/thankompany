@@ -205,9 +205,12 @@
   "automation_guarantee_service_4": "Reliable performance and long-term maintainability",
   "automation_guarantee_service_5": "Smooth handover with complete documentation",
   "automation_maintenance_quote": "“Our commitment: automation systems that are stable, scalable, and built with engineering excellence.”",
+  "automation_technologies_networks": "Industrial Networks: Profinet, Profibus, EtherCAT, Modbus, OPC UA, MQTT",
+  "automation_technologies_title": "Our Core Automation Technologies",
 
 
   "software_dev_breadcrumb": "HOME - SAP EAM/PM Consulting",
+  "software_dev_technologies_title": "Our Core Technologies",
   "software_dev_title": "SAP EAM/PM Consulting",
   "software_dev_slogan": "Optimizing Maintenance. Enabling Reliability. Powering Digital Operations.",
   "software_dev_sd_title": "Empower Your Maintenance with SAP Excellence",
@@ -271,5 +274,23 @@
       "message": "Your Message",
       "submit": "Send Message"
     }
-  }
+  },
+  "our_technologies": "Our Technologies",
+  "footer_slogan_title": "Engineering Smart Futures",
+  "footer_slogan_description": "Delivering smart maintenance, advanced automation, and intelligent software solutions that elevate businesses and drive measurable growth.",
+  "footer_copyright": "Copyright © 2025 THANK KOMPANY GmbH. All Right Reserved",
+  "country_germany": "Germany",
+  "country_france": "France",
+  "country_cameroon": "Cameroon",
+  "footer_terms_privacy": "Terms and Privacy",
+  "footer_data_privacy": "Data Privacy",
+  "footer_impresum": "Impresum",
+  "discover_solutions_cta": "Discover Our Solutions",
+  "whatsapp_write_to_us_home": "Write to us",
+  "whatsapp_label_home": "Whatsapp",
+  "contact_meet_us_title_home": "Meet Us",
+  "home_contact_phone_germany": "+49 176 684 054 56",
+  "home_contact_phone_cameroon": "+237 680 875 787",
+  "navbar_software_development": "SOFTWARE DEVELOPMENT",
+  "navbar_discuss_needs_btn": "Let’s Discuss Your Needs"
 }

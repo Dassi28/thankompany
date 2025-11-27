@@ -209,7 +209,7 @@
   "automation_expertise_service_6": "System Integration & Commissioning",
   "automation_expertise_service_7": "Maintenance & Support for Automation Systems",
   "automation_expertise_service_8": "Consulting & Feasibility Studies",
-  "automation_technologies_title": "Our Core Automation Technologies",
+  "automation_technologies_title": "Our Core Automation Technologies", 
   "automation_technologies_description": "We work with leading automation platforms and technologies to build robust and reliable systems for your operations.",
   "automation_technologies_plc_platforms": "PLC Platforms: Siemens (TIA Portal, STEP 7), Rockwell Automation (Studio 5000), Schneider Electric, ABB, Mitsubishi, Beckhoff",
   "automation_technologies_hmi_scada": "HMI/SCADA: WinCC, Ignition, Aveva System Platform, Wonderware, FactoryTalk View",

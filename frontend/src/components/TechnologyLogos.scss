@@ -1,0 +1,50 @@
+@import '../styles/global.scss';
+
+.technologies-section {
+  padding: 50px 20px;
+  text-align: center;
+  background-color: #f8f9fa;
+
+  .section-title {
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+    color: $primary-color;
+  }
+
+  .technologies-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .tech-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  .tech-icon {
+    font-size: 4rem;
+    margin-bottom: 15px;
+    color: $secondary-color;
+  }
+
+  .tech-name {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #333;
+  }
+}
