@@ -5,6 +5,7 @@
     font-family: 'Arial', sans-serif;
     color: #333;
   }
+  
   .highlight {
   color: $primary-color;
   }
@@ -230,7 +231,7 @@
     position: relative;
     padding: 80px;
     color: white;
-    background-image: url('/assets/images/img-8.jpg');
+    background-image: url('/assets/images/Home/HP_Arriereplan_Garantie.png');
     background-size: cover;
     background-attachment: fixed; // Effet parallaxe
 
@@ -741,7 +742,9 @@
   }
 
 
-  // ... (autres styles) 
+
+
+  // ... (autres styles)
 
   // Responsivité pour la section Meilleurs Produits
   @media (max-width: 1200px) {

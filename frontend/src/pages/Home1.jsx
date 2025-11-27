@@ -15,11 +15,11 @@ const Home = () => {
             {/* Section Héro */}
             <section className="hero">
                 <div className="hero-bg-overlay"></div>
-                <img src="/images/img-15.jpg" alt="Hero Transport" className="hero-bg-image" />
+                <img src="/images/home.jpg" alt="Hero Transport" className="hero-bg-image" />
 
                 <div className="hero-content">
                     <div className="hero-text">
-                        <h1>{t('home_intro_title')}</h1>
+                        <h1 className='highlight'>{t('home_intro_title')}</h1>
                         <h2>{t('home_intro_subtitle')}</h2>
                         <h3>{t('home_sap_eam_title')}</h3>
                         <h3>{t('home_automation_title')}</h3>
@@ -79,7 +79,7 @@ const Home = () => {
                     </p>
                 </div>
                 <div className="about-img">
-                    <img src="/images/img-4.jpg" alt="About illustration" />
+                    <img src="/images/hp_qui_sommes_nous.png" alt="About illustration" />
                 </div>
             </section>
 
@@ -146,7 +146,7 @@ const Home = () => {
                 {/* Mission: Image à gauche, Texte à droite */}
                 <div className="mission-vision-item">
                     <div className="mv-image-container">
-                        <img src="/images/img-22.jpg" alt="Employé d'entrepôt" />
+                        <img src="/images/Home/Notre_Mission.png" alt="Employé d'entrepôt" />
                     </div>
                     <div className="mv-text-container">
                         <h3 className='highlight'>{t('home_mission_title')}</h3>
@@ -164,7 +164,7 @@ const Home = () => {
                         </p>
                     </div>
                     <div className="mv-image-container">
-                        <img src="/images/img-19.jpg" alt="Manager dans un entrepôt" />
+                        <img src="/images/Home/HP_Vision.png" alt="Manager dans un entrepôt" />
                     </div>
                 </div>
             </section>
@@ -174,7 +174,7 @@ const Home = () => {
                 <div className="guarantee-overlay"></div>
                 <div className="guarantee-content">
                     <div className="guarantee-text">
-                        <h3>{t('home_guarantee_title')}</h3>
+                        <h3 className='highlight'>{t('home_guarantee_title')}</h3>
                         <p>
                             {t('home_guarantee_description')}
                         </p>
@@ -316,74 +316,74 @@ const Home = () => {
                 </div>
             </section>
 
-             {/* Section Contact */}
-                        <section className="contact-section" id='contact'>
-                            <div className="contact-bg-overlay"></div>
-                            
-                            <div className="contact-content-wrapper">
-                                
-                                {/* 1. Carte WhatsApp (Gauche) */}
-                                <div className="contact-box whatsapp-box">
-                                    <p className="wa-top-text">Ecrivez-nous</p>
-                                    <div className="wa-icon-wrapper">
-                                        <FaWhatsapp />
-                                    </div>
-                                    <p className="wa-bottom-text">Whatsapp</p>
-                                </div>
-            
-                                {/* 2. Infos "Meet Us" (Centre) */}
-                                <div className="contact-box info-box">
-                                    <h4 className="info-title">Meet Us</h4>
-                                    
-                                    {/* Bloc Allemagne */}
-                                    <div className="country-block">
-                                        <div className="country-header">
-                                            <img src="images/flags/all.png" alt="DEU" className="country-flag" />
-                                            <span className="country-name">Allemagne</span>
-                                        </div>
-                                        <div className="address-lines">
-                                            <p>Mundenheimer Str. 177</p>
-                                            <p>67061 Ludwigshafen</p>
-                                            <p className="phone-number">+49 176 684 054 56</p>
-                                        </div>
-                                    </div>
-            
-                                    {/* Bloc Cameroun */}
-                                    <div className="country-block">
-                                        <div className="country-header">
-                                            <img src="images/flags/cmr.png" alt="CMR" className="country-flag" />
-                                            <span className="country-name">Cameroun</span>
-                                        </div>
-                                        <div className="address-lines">
-                                            <p>BP 7509</p>
-                                            <p>Douala, Cameroun</p>
-                                            <p className="phone-number">+237 680 875 787</p>
-                                        </div>
-                                    </div>
-                                </div>
-            
-                                {/* 3. Formulaire (Droite) */}
-                                <div className="contact-box form-box">
-                                    <h4 className="form-title">Contactez-nous</h4>
-                                    <form>
-                                        <div className="input-group">
-                                            <input type="text" placeholder="Your Name" />
-                                        </div>
-                                        <div className="input-group">
-                                            <input type="email" placeholder="Email" />
-                                        </div>
-                                        <div className="input-group">
-                                            <input type="text" placeholder="Sujet" />
-                                        </div>
-                                        <div className="input-group">
-                                            <textarea placeholder="Message"></textarea>
-                                        </div>
-                                        <button type="submit" className="submit-btn">ENVOYER</button>
-                                    </form>
-                                </div>
-            
+            {/* Section Contact */}
+            <section className="contact-section" id='contact'>
+                <div className="contact-bg-overlay"></div>
+                
+                <div className="contact-content-wrapper">
+                    
+                    {/* 1. Carte WhatsApp (Gauche) */}
+                    <div className="contact-box whatsapp-box">
+                        <p className="wa-top-text">Ecrivez-nous</p>
+                        <div className="wa-icon-wrapper">
+                            <FaWhatsapp />
+                        </div>
+                        <p className="wa-bottom-text">Whatsapp</p>
+                    </div>
+
+                    {/* 2. Infos "Meet Us" (Centre) */}
+                    <div className="contact-box info-box">
+                        <h4 className="info-title">Meet Us</h4>
+                        
+                        {/* Bloc Allemagne */}
+                        <div className="country-block">
+                            <div className="country-header">
+                                <img src="images/flags/all.png" alt="DEU" className="country-flag" />
+                                <span className="country-name">Allemagne</span>
                             </div>
-                        </section>
+                            <div className="address-lines">
+                                <p>Mundenheimer Str. 177</p>
+                                <p>67061 Ludwigshafen</p>
+                                <p className="phone-number">+49 176 684 054 56</p>
+                            </div>
+                        </div>
+
+                        {/* Bloc Cameroun */}
+                        <div className="country-block">
+                            <div className="country-header">
+                                <img src="images/flags/cmr.png" alt="CMR" className="country-flag" />
+                                <span className="country-name">Cameroun</span>
+                            </div>
+                            <div className="address-lines">
+                                <p>BP 7509</p>
+                                <p>Douala, Cameroun</p>
+                                <p className="phone-number">+237 680 875 787</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* 3. Formulaire (Droite) */}
+                    <div className="contact-box form-box">
+                        <h4 className="form-title">Contactez-nous</h4>
+                        <form>
+                            <div className="input-group">
+                                <input type="text" placeholder="Your Name" />
+                            </div>
+                            <div className="input-group">
+                                <input type="email" placeholder="Email" />
+                            </div>
+                            <div className="input-group">
+                                <input type="text" placeholder="Sujet" />
+                            </div>
+                            <div className="input-group">
+                                <textarea placeholder="Message"></textarea>
+                            </div>
+                            <button type="submit" className="submit-btn">ENVOYER</button>
+                        </form>
+                    </div>
+
+                </div>
+            </section>
 
             <PartnersLogo />
 
