@@ -15,10 +15,6 @@ const Automatisation = () => {
         <div className="auto-hero-content">
           <h1 className="auto-hero-title">{t('automation_title')}</h1>
           <p className="auto-hero-slogan">{t('automation_slogan')}</p>
-          <button className="auto-hero-cta">
-            <span>{t('discover_our_solutions')}</span>
-            <FaArrowRight />
-          </button>
         </div>
       </section>
 
@@ -143,6 +139,11 @@ const Automatisation = () => {
                           <li>{t('automation_guarantee_service_5')}</li>
                       </ul>
                       <p className="quote">{t('automation_maintenance_quote')}</p>
+                      {/*Create a section with text and icon*/}
+                      <button className="auto-hero-cta">
+                          <span>{t('discover_our_solutions')}</span>
+                          <FaArrowRight />
+                      </button>
                   </div>
                   <div className="service-image">
                       <img src="/images/IT/05_maintenance.png" alt="Maintenance Informatiques" />
