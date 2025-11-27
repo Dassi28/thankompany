@@ -16,9 +16,9 @@ const ITService = () => {
                   <h1>{t('sap_eam_title')}</h1>
                   <p>{t('sap_eam_slogan')}</p>
                  </div>
-      </section>
+          </section>
 
-      {/* SAP EAM/PM Consulting */}
+       {/* SAP EAM/PM Consulting */}
       <section className="service-section">
         <div className="service-content">
           <div className="service-text">
