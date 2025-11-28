@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next';
 import './SoftwareDevelopment.scss';
 import { FaArrowRight } from 'react-icons/fa';
 import PartnersLogo from '../components/PartnersLogo';
+import ContactPrompt from '../components/ContactPrompt';
 
 const SoftwareDevelopment = () => {
     const { t } = useTranslation();
@@ -245,6 +246,7 @@ const SoftwareDevelopment = () => {
 
 
 
+            <ContactPrompt />
             <PartnersLogo />
         </div>
   );

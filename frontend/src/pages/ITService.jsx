@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next';
 import './ITService.scss';
 import { FaArrowRight, FaStar } from 'react-icons/fa';
 import PartnersLogo from '../components/PartnersLogo';
+import ContactPrompt from '../components/ContactPrompt';
 
 const ITService = () => {
     const { t } = useTranslation();
@@ -124,6 +125,7 @@ const ITService = () => {
                 </div>
             </section>
 
+            <ContactPrompt />
             <PartnersLogo />
         </div>
     );
