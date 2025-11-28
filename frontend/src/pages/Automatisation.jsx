@@ -39,7 +39,7 @@ const Automatisation = () => {
                   <div className="service-text">
                       <h2 className='highlight'>{t('automation_expertise_title')}</h2>
                       <p>{t('automation_expertise_description')}</p>
-                      <h4>{t('automation_expertise_service_title')}</h4>
+                      <h4 className='highlight'>{t('automation_expertise_service_title')}</h4>
                       <ul>
                           <li>{t('automation_expertise_service_1')}</li>
                           <li>{t('automation_expertise_service_2')}</li>
@@ -62,7 +62,7 @@ const Automatisation = () => {
                   <div className="service-text">
                       <h2 className='highlight'>{t('automation_why_title')}</h2>
                       <p>{t('automation_why_description')}</p>
-                      <h4>{t('automation_why_service_title')}</h4>
+                      <h4 className='highlight'>{t('automation_why_service_title')}</h4>
                       <ul>
                           <li>{t('automation_why_service_1')}</li>
                           <li>{t('automation_why_service_2')}</li>
@@ -184,7 +184,7 @@ const Automatisation = () => {
                   <div className="service-text">
                       <h2 className='highlight'>{t('automation_solution_title')}</h2>
                       <p>{t('automation_solution_description')}</p>
-                      <h4>{t('automation_solution_service_title')}</h4>
+                      <h4 className='highlight'>{t('automation_solution_service_title')}</h4>
                       <ul>
                           <li>{t('automation_solution_service_1')}</li>
                           <li>{t('automation_solution_service_2')}</li>
@@ -206,7 +206,7 @@ const Automatisation = () => {
                   <div className="service-text">
                       <h2 className='highlight'>{t('automation_guarantee_title')}</h2>
                       <p>{t('automation_guarantee_description')}</p>
-                      <h4>{t('automation_guarantee_service_title')}</h4>
+                      <h4 className='highlight'>{t('automation_guarantee_service_title')}</h4>
                       <ul>
                           <li>{t('automation_guarantee_service_1')}</li>
                           <li>{t('automation_guarantee_service_2')}</li>

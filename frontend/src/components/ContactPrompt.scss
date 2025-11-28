@@ -1,0 +1,47 @@
+@import '../styles/global.scss';
+
+.contact-prompt-section {
+  padding: 80px;
+  background-color: $alt-bg-color;
+  text-align: center;
+
+  .contact-prompt-content {
+    max-width: 800px;
+    margin: 0 auto;
+
+    h2 {
+      font-size: 2.2rem;
+      font-weight: 300;
+      margin-bottom: 20px;
+    }
+
+    p {
+      line-height: 1.8;
+      color: #555;
+      margin-bottom: 30px;
+    }
+
+    .contact-prompt-cta {
+      background-color: $primary-color;
+      color: white;
+      border: none;
+      padding: 15px 30px;
+      font-size: 1rem;
+      font-weight: bold;
+      border-radius: 8px;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background-color: darken($primary-color, 10%);
+      }
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .contact-prompt-section {
+    padding: 40px 20px;
+  }
+}

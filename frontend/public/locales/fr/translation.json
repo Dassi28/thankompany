@@ -284,5 +284,11 @@
   "home_contact_phone_germany": "+49 176 684 054 56",
   "home_contact_phone_cameroon": "+237 680 875 787",
   "navbar_software_development": "DÉVELOPPEMENT LOGICIEL",
-  "navbar_discuss_needs_btn": "Discutons de vos besoins"
+  "navbar_discuss_needs_btn": "Discutons de vos besoins",
+"contact_form_title": "Contactez-nous",
+"contact_form_name_placeholder": "Votre nom",
+"contact_form_email_placeholder": "Adresse e-mail",
+"contact_form_subject_placeholder": "Sujet",
+"contact_form_message_placeholder": "Message",
+"contact_form_submit_button": "Envoyer"
 }

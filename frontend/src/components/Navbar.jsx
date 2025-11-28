@@ -65,11 +65,11 @@ const Navbar = ({ changeLanguage }) => {
           <li><a href="/it-service" className={location.pathname === '/it-service' ? 'active' : ''} onClick={closeMenu}>{t('sap_eam')}</a></li>
           <li><a href="/automatisation" className={location.pathname === '/automatisation' ? 'active' : ''} onClick={closeMenu}>{t('automation')}</a></li>
           <li><a href="/software-development" className={location.pathname === '/software-development' ? 'active' : ''} onClick={closeMenu}>{t('navbar_software_development')}</a></li>
-          <li><a href="/contact" className={location.pathname === '/contact' ? 'active' : ''} onClick={closeMenu}>{t('navbar.contact')}</a></li>
+          {/*<li><a href="/contact" className={location.pathname === '/contact' ? 'active' : ''} onClick={closeMenu}>{t('navbar.contact')}</a></li>*/}
         </ul>
 
         <div className="navbar-actions">
-          <button className="quote-btn">{t('navbar_discuss_needs_btn')}</button>
+          <a href="/contact" className="quote-btn">{t('navbar_discuss_needs_btn')}</a>
           <button className="mobile-menu-icon" onClick={toggleMenu}>
             {isMenuOpen ? <FaTimes /> : <FaBars />}
           </button>

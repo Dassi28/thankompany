@@ -79,7 +79,7 @@ const Home = () => {
                     </p>
                 </div>
                 <div className="about-img">
-                    <img src="/images/img-4.jpg" alt="About illustration" />
+                    <img src="/images/img-25.jpg" alt="About illustration" />
                 </div>
             </section>
 
@@ -178,7 +178,7 @@ const Home = () => {
                         <p>
                             {t('home_guarantee_description')}
                         </p>
-                        <button className="guarantee-cta-button">{t('home_guarantee_cta')}</button>
+                        <a href="#contact" className="guarantee-cta-button">{t('home_guarantee_cta')}</a>
                     </div>
                     <div className="guarantee-grid">
                         <div className="guarantee-item">

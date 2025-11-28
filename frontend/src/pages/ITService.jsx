@@ -11,7 +11,7 @@ const ITService = () => {
             {/* 01: Hero Section */}
 
             {/* 01: Hero Section */}
-            <section className="it-hero" style={{ backgroundImage: `url(/images/IT/3_Developement_Web.png)` }}>
+            <section className="it-hero" style={{ backgroundImage: `url(/images/img-24.jpg)` }}>
                 <div className="it-hero-overlay"></div>
                 <div className="it-hero-content">
                     <h1 className="it-hero-title">{t('sap_eam_title')}</h1>
@@ -38,7 +38,7 @@ const ITService = () => {
                     <div className="service-text">
                         <h2 className='highlight'>{t('sap_eam_expertise_title')}</h2>
                         <p>{t('sap_eam_expertise_description')}</p>
-                        <h4>{t('sap_eam_expertise_service_title')}</h4>
+                        <h4 className='highlight'>{t('sap_eam_expertise_service_title')}</h4>
                         <ul>
                             <li>{t('sap_eam_expertise_service_1')}</li>
                             <li>{t('sap_eam_expertise_service_2')}</li>
@@ -64,7 +64,7 @@ const ITService = () => {
                     <div className="service-text">
                         <h2 className='highlight'>{t('sap_eam_why_title')}</h2>
                         <p>{t('sap_eam_why_description')}</p>
-                        <h4>{t('sap_eam_why_service_title')}</h4>
+                        <h4 className='highlight'>{t('sap_eam_why_service_title')}</h4>
                         <ul>
                             <li>{t('sap_eam_why_service_1')}</li>
                             <li>{t('sap_eam_why_service_2')}</li>
@@ -86,7 +86,7 @@ const ITService = () => {
                     <div className="service-text">
                         <h2 className='highlight'>{t('sap_eam_solution_title')}</h2>
                         <p>{t('sap_eam_solution_description')}</p>
-                        <h4>{t('sap_eam_solution_service_title')}</h4>
+                        <h4 className='highlight'>{t('sap_eam_solution_service_title')}</h4>
                         <ul>
                             <li>{t('sap_eam_solution_service_1')}</li>
                             <li>{t('sap_eam_solution_service_2')}</li>
@@ -108,7 +108,7 @@ const ITService = () => {
                     <div className="service-text">
                         <h2 className='highlight'>{t('sap_eam_guarantee_title')}</h2>
                         <p>{t('sap_eam_guarantee_description')}</p>
-                        <h4>{t('sap_eam_guarantee_service_title')}</h4>
+                        <h4 className='highlight'>{t('sap_eam_guarantee_service_title')}</h4>
                         <ul>
                             <li>{t('sap_eam_guarantee_service_1')}</li>
                             <li>{t('sap_eam_guarantee_service_2')}</li>
