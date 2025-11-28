@@ -123,9 +123,12 @@ const ITService = () => {
                         <img src="/images/IT/05_maintenance.png" alt="Maintenance Informatiques" />
                     </div>
                 </div>
+
+                <div className="service-content">
+                    <ContactPrompt />
+                </div>
             </section>
 
-            <ContactPrompt />
             <PartnersLogo />
         </div>
     );

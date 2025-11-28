@@ -1,9 +1,11 @@
 @import '../styles/global.scss';
 
 .contact-prompt-section {
-  padding: 80px;
-  background-color: $alt-bg-color;
-  text-align: center;
+  padding: 10px;
+  text-align: start;
+  display: grid;
+  align-items: start;
+  justify-content: space-between;
 
   .contact-prompt-content {
     max-width: 800px;

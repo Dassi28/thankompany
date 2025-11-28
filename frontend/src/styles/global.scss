@@ -18,6 +18,14 @@ a {
   color: inherit;
 }
 
+.delete-background-image {
+  background: transparent !important;
+  img {
+    background: transparent !important;
+    display: block;
+  }
+}
+
 /* Responsive Breakpoints */
 $breakpoint-xl: 1200px;
 $breakpoint-lg: 992px;

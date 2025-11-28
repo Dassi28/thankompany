@@ -217,19 +217,23 @@ const Automatisation = () => {
                       </ul>
                       <p className="quote">{t('automation_maintenance_quote')}</p>
                       {/*Create a section with text and icon*/}
-                      <button className="auto-hero-cta">
+                      {/*<button className="auto-hero-cta">
                           <span>{t('discover_our_solutions')}</span>
                           <FaArrowRight />
-                      </button>
+                      </button>*/}
                   </div>
                   <div className="service-image">
                       <img src="/images/IT/05_maintenance.png" alt="Maintenance Informatiques" />
                   </div>
               </div>
+
+                <div className="service-content">
+                    <ContactPrompt />
+                </div>
           </section>
 
-                  <ContactPrompt />
-                  <PartnersLogo />    </div>
+                  <PartnersLogo />    
+    </div>
   );
 };
 

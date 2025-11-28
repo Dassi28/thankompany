@@ -184,11 +184,11 @@ const SoftwareDevelopment = () => {
                                 <img src="/images/logo/docker.png" alt="Docker" />
                                 <span>Docker</span>
                             </div>
-                            <div className="tech-item">
+                            <div className="tech-item delete-background-image ">
                                 <img src="/images/logo/kubernetes.png" alt="Kubernetes" />
                                 <span>Kubernetes</span>
                             </div>
-                            <div className="tech-item">
+                            <div className="tech-item delete-background-image ">
                                 <img src="/images/logo/ci-cd.png" alt="CI/CD" />
                                 <span>CI/CD</span>
                             </div>
@@ -234,20 +234,24 @@ const SoftwareDevelopment = () => {
                         </ul>
                         <p className="quote">{t('software_dev_maintenance_quote')}</p>
                         {/*Create a section with text and icon*/}
-                        <button className="auto-hero-cta">
+                        {/*<button className="auto-hero-cta">
                             <span>{t('discover_our_solutions')}</span>
                             <FaArrowRight />
-                        </button>
+                        </button>*/}
                     </div>
                     <div className="service-image">
                         <img src="/images/IT/05_maintenance.png" alt="Maintenance Informatiques" />
                     </div>
                 </div>
+
+                <div className="service-content">
+                    <ContactPrompt />
+                </div>
+
             </section>
 
 
 
-            <ContactPrompt />
             <PartnersLogo />
         </div>
   );

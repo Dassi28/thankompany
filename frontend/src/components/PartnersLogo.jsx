@@ -18,7 +18,7 @@ const PartnersLogo = () => {
         <div className="partners-slide-track">
           {/* On duplique la liste des partenaires pour un effet de boucle infini */}
           {[...partners, ...partners].map((partner, index) => (
-            <div className="partner-slide" key={index}>
+            <div className="partner-slide delete-background-image " key={index}>
               <img src={partner.logo} alt={partner.name} />
             </div>
           ))}
