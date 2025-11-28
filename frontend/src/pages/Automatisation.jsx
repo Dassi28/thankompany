@@ -99,19 +99,19 @@ const Automatisation = () => {
                   {activeTab === 'backend' && (
                       <div className="technologies-grid">
                           <div className="tech-item">
-                              <img src="https://upload.wikimedia.org/wikipedia/en/thumb/3/30/Java_programming_language_logo.svg/1200px-Java_programming_language_logo.svg.png" alt="Java" />
+                              <img src="/images/logo/IoT.png" alt="IoT" className="tech-logo" />
                               <span>IoT</span>
                           </div>
                           <div className="tech-item">
-                              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Spring_Framework_Logo_2018.svg/1200px-Spring_Framework_Logo_2018.svg.png" alt="Spring Boot" />
+                              <img src="/images/logo/cloud.png" alt="Cloud" className="tech-logo" />
                               <span>Cloud</span>
                           </div>
                           <div className="tech-item">
-                              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/.NET_Core_Logo.svg/1200px-.NET_Core_Logo.svg.png" alt=".NET Core" />
+                              <img src="/images/logo/AI.png" alt="AI" className="tech-logo" />
                               <span>AI</span>
                           </div>
                           <div className="tech-item">
-                              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/1200px-Node.js_logo.svg.png" alt="Node.js" />
+                              <img src="/images/logo/AI-2.png" alt="Automation" className="tech-logo" />
                               <span>Automation</span>
                           </div>
                          
@@ -121,35 +121,35 @@ const Automatisation = () => {
                   {activeTab === 'frontend' && (
                       <div className="technologies-grid">
                           <div className="tech-item">
-                              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png" alt="React" />
+                              <img src="/images/logo/mqt.png" alt="MQTT" className="tech-logo" />
                               <span>MQTT</span>
                           </div>
                           <div className="tech-item">
-                              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/1200px-Angular_full_color_logo.svg.png" alt="Angular" />
+                              <img src="/images/logo/opc-ua.png" alt="OPC-UA" className="tech-logo" />
                               <span>OPC-UA</span>
                           </div>
                           <div className="tech-item">
-                              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Vue.js_Logo_2.svg/1200px-Vue.js_Logo_2.svg.png" alt="Vue.js" />
+                              <img src="/images/logo/knx.png" alt="KNX" className="tech-logo" />
                               <span>KNX</span>
                           </div>
                           <div className="tech-item">
-                              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/1200px-Typescript_logo_2020.svg.png" alt="TypeScript" />
+                              <img src="/images/logo/bacnet.png" alt="BACnet" className="tech-logo" />
                               <span>BACnet</span>
                           </div>
                           <div className="tech-item">
-                              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/1200px-Typescript_logo_2020.svg.png" alt="TypeScript" />
+                              <img src="/images/logo/modbus.png" alt="Modbus" className="tech-logo" />
                               <span>Modbus </span>
                           </div>
                           <div className="tech-item">
-                              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/1200px-Typescript_logo_2020.svg.png" alt="TypeScript" />
+                              <img src="/images/logo/profinet.png" alt="Profinet" className="tech-logo" />
                               <span>Profinet</span>
                           </div>
                           <div className="tech-item">
-                              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/1200px-Typescript_logo_2020.svg.png" alt="TypeScript" />
+                              <img src="/images/logo/profibus.png" alt="Profibus" className="tech-logo" />
                               <span>Profibus</span>
                           </div>
                           <div className="tech-item">
-                              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/1200px-Typescript_logo_2020.svg.png" alt="TypeScript" />
+                              <img src="/images/logo/can.png" alt="CAN" className="tech-logo" />
                               <span>CAN</span>
                           </div>
                       </div>
@@ -158,19 +158,19 @@ const Automatisation = () => {
                   {activeTab === 'mobile' && (
                       <div className="technologies-grid">
                           <div className="tech-item">
-                              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Google-flutter-logo.png/1200px-Google-flutter-logo.png" alt="Flutter" />
+                              <img src="/images/logo/plc.png" alt="PLC" className="tech-logo" />
                               <span>PLC </span>
                           </div>
                           <div className="tech-item">
-                              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png" alt="React Native" />
+                              <img src="/images/logo/knx.png" alt="KNX Control" className="tech-logo" />
                               <span>KNX Control</span>
                           </div>
                           <div className="tech-item">
-                              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Kotlin_Icon.png/1200px-Kotlin_Icon.png" alt="Kotlin" />
+                              <img src="/images/logo/functional-logic.png" alt="Functional Logic" className="tech-logo" />
                               <span>Functional Logic</span>
                           </div>
                           <div className="tech-item">
-                              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Swift_logo.svg/1200px-Swift_logo.svg.png" alt="Swift" />
+                              <img src="/images/logo/safety.png" alt="Safety Systems" className="tech-logo" />
                               <span>Safety Systems</span>
                           </div>
                       </div>

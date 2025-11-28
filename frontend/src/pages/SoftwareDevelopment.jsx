@@ -101,27 +101,27 @@ const SoftwareDevelopment = () => {
                     {activeTab === 'backend' && (
                         <div className="technologies-grid">
                             <div className="tech-item">
-                                <img src="https://upload.wikimedia.org/wikipedia/en/thumb/3/30/Java_programming_language_logo.svg/1200px-Java_programming_language_logo.svg.png" alt="Java" />
+                                <img src="/images/logo/java.png" alt="Java" />
                                 <span>Java</span>
                             </div>
                             <div className="tech-item">
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Spring_Framework_Logo_2018.svg/1200px-Spring_Framework_Logo_2018.svg.png" alt="Spring Boot" />
+                                <img src="/images/logo/springboot.png" alt="Spring Boot" />
                                 <span>Spring Boot</span>
                             </div>
                             <div className="tech-item">
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/.NET_Core_Logo.svg/1200px-.NET_Core_Logo.svg.png" alt=".NET Core" />
+                                <img src="/images/logo/netcore.png" alt=".NET Core" />
                                 <span>.NET Core</span>
                             </div>
                             <div className="tech-item">
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/1200px-Node.js_logo.svg.png" alt="Node.js" />
+                                <img src="/images/logo/nodejs.png" alt="Node.js" />
                                 <span>Node.js</span>
                             </div>
                             <div className="tech-item">
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1200px-Python-logo-notext.svg.png" alt="Python" />
+                                <img src="/images/logo/python.png" alt="Python" />
                                 <span>Python</span>
                             </div>
                             <div className="tech-item">
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Go_Logo_Blue.svg/1200px-Go_Logo_Blue.svg.png" alt="Go" />
+                                <img src="/images/logo/go.png" alt="Go" />
                                 <span>Go</span>
                             </div>
                         </div>
@@ -129,19 +129,19 @@ const SoftwareDevelopment = () => {
                     {activeTab === 'frontend' && (
                         <div className="technologies-grid">
                             <div className="tech-item">
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png" alt="React" />
+                                <img src="/images/logo/react.png" alt="React" />
                                 <span>React</span>
                             </div>
                             <div className="tech-item">
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/1200px-Angular_full_color_logo.svg.png" alt="Angular" />
+                                <img src="/images/logo/angular.png" alt="Angular" />
                                 <span>Angular</span>
                             </div>
                             <div className="tech-item">
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Vue.js_Logo_2.svg/1200px-Vue.js_Logo_2.svg.png" alt="Vue.js" />
+                                <img src="/images/logo/vuejs.png" alt="Vue.js" />
                                 <span>Vue.js</span>
                             </div>
                             <div className="tech-item">
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/1200px-Typescript_logo_2020.svg.png" alt="TypeScript" />
+                                <img src="/images/logo/ts.png" alt="TypeScript" />
                                 <span>TypeScript</span>
                             </div>
                         </div>
@@ -149,19 +149,19 @@ const SoftwareDevelopment = () => {
                     {activeTab === 'mobile' && (
                         <div className="technologies-grid">
                             <div className="tech-item">
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Google-flutter-logo.png/1200px-Google-flutter-logo.png" alt="Flutter" />
+                                <img src="/images/logo/flutter.png" alt="Flutter" />
                                 <span>Flutter</span>
                             </div>
                             <div className="tech-item">
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png" alt="React Native" />
+                                <img src="/images/logo/react.png" alt="React Native" />
                                 <span>React Native</span>
                             </div>
                             <div className="tech-item">
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Kotlin_Icon.png/1200px-Kotlin_Icon.png" alt="Kotlin" />
+                                <img src="/images/logo/kotlin.png" alt="Kotlin" />
                                 <span>Kotlin</span>
                             </div>
                             <div className="tech-item">
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Swift_logo.svg/1200px-Swift_logo.svg.png" alt="Swift" />
+                                <img src="/images/logo/swift.png" alt="Swift" />
                                 <span>Swift</span>
                             </div>
                         </div>
@@ -169,26 +169,27 @@ const SoftwareDevelopment = () => {
                     {activeTab === 'devops' && (
                         <div className="technologies-grid">
                             <div className="tech-item">
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/1200px-Amazon_Web_Services_Logo.svg.png" alt="AWS" />
+                                <img src="/images/logo/aws.png" alt="AWS" />
                                 <span>AWS</span>
                             </div>
                             <div className="tech-item">
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Microsoft_Azure_Logo.svg/1200px-Microsoft_Azure_Logo.svg.png" alt="Azure" />
+                                <img src="/images/logo/azure.png" alt="Azure" />
                                 <span>Azure</span>
                             </div>
                             <div className="tech-item">
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Google_Cloud_Logo.svg/1200px-Google_Cloud_Logo.svg.png" alt="Google Cloud" />
+                                <img src="/images/logo/google-cloud.png" alt="Google Cloud" />
                                 <span>Google Cloud</span>
                             </div>
                             <div className="tech-item">
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Docker_logo.svg/1200px-Docker_logo.svg.png" alt="Docker" />
+                                <img src="/images/logo/docker.png" alt="Docker" />
                                 <span>Docker</span>
                             </div>
                             <div className="tech-item">
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Kubernetes_logo_without_workmark.svg/1200px-Kubernetes_logo_without_workmark.svg.png" alt="Kubernetes" />
+                                <img src="/images/logo/kubernetes.png" alt="Kubernetes" />
                                 <span>Kubernetes</span>
                             </div>
                             <div className="tech-item">
+                                <img src="/images/logo/ci-cd.png" alt="CI/CD" />
                                 <span>CI/CD</span>
                             </div>
                         </div>
