@@ -17,11 +17,11 @@ const Contact = () => {
                     </div>
                     <div className="info-item">
                         <strong>{t('contact.phone')}:</strong>
-                        <p>+33 1 23 45 67 89</p>
+                        <p>+49 176 684 054 56</p>
                     </div>
                     <div className="info-item">
                         <strong>{t('contact.address')}:</strong>
-                        <p>123 Rue de Paris, 75001 Paris, France</p>
+                        <p>Mundenheimer Str. 177 67061 Ludwigshafen</p>
                     </div>
                 </div>
                 <div className="contact-form">
