@@ -6,7 +6,7 @@ const DataPrivacy = () => {
   return (
     <div className="data-privacy-page">
       <div className="container">
-        <h1>Data Privacy</h1>
+        <h1>Datenschutzerklärung der THANK KOMPANY GmbH Stand: Januar 2025</h1>
 
         <section>
           <h2>Our Commitment to Your Privacy</h2>

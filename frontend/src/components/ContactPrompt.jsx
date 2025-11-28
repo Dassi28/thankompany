@@ -8,12 +8,16 @@ const ContactPrompt = () => {
 
   return (
     <div className="contact-prompt-section">
-      <div className="contact-prompt-content">
-        <h2 className='highlight'>{t('contactPrompt.title')}</h2>
-        <p dangerouslySetInnerHTML={{ __html: t('contactPrompt.paragraph') }} /> 
-        <Link to="/contact" className="contact-prompt-cta">
-          {t('contactPrompt.button')}
-        </Link>
+      <div className="contact-prompt-content"> 
+        <div className="service-text">
+          <h2 className='highlight'>{t('contactPrompt.title')}</h2>
+          <p dangerouslySetInnerHTML={{ __html: t('contactPrompt.paragraph') }} />
+        </div> 
+        <div className="service-text">
+          <Link to="/contact" className="contact-prompt-cta">
+            {t('contactPrompt.button')}
+          </Link>
+        </div>
       </div>
     </div>
   );

@@ -4,7 +4,6 @@
   padding: 10px;
   text-align: start;
   display: grid;
-  align-items: start;
   justify-content: space-between;
 
   .contact-prompt-content {
@@ -13,7 +12,7 @@
 
     h2 {
       font-size: 2.2rem;
-      font-weight: 300;
+      font-weight: 400;
       margin-bottom: 20px;
     }
 
@@ -21,6 +20,7 @@
       line-height: 1.8;
       color: #555;
       margin-bottom: 30px;
+      font-size: 1.1rem;
     }
 
     .contact-prompt-cta {

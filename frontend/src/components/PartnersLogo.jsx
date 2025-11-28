@@ -3,12 +3,12 @@ import './PartnersLogo.scss';
 
 const partners = [
   { name: 'Partner 1', logo: './images/logo/logo-1.jpg' },
-  { name: 'Partner 2', logo: './images/logo/logo-2.jpg' },
-  { name: 'Partner 3', logo: './images/logo/logo-3.jpg' },
-  { name: 'Partner 4', logo: './images/logo/logo-4.jpg' },
-  { name: 'Partner 5', logo: './images/logo/logo-5.jpg' },
-  { name: 'Partner 6', logo: './images/logo/logo-6.jpg' },
-  { name: 'Partner 7', logo: './images/logo/logo-7.jpg' },
+  { name: 'Partner 2', logo: './images/logo/logo-2.png' },
+  { name: 'Partner 3', logo: './images/logo/logo-3.png' },
+  { name: 'Partner 4', logo: './images/logo/logo-4.png' },
+  { name: 'Partner 5', logo: './images/logo/logo-5.png' },
+  { name: 'Partner 6', logo: './images/logo/ci-cd.png' },
+  { name: 'Partner 7', logo: './images/logo/java.png' },
 ];
 
 const PartnersLogo = () => {
