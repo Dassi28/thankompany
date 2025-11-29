@@ -24,7 +24,7 @@ const Home = () => {
                         <h3>{t('home_sap_eam_title')}</h3>
                         <h3>{t('home_automation_title')}</h3>
                         <h3>{t('home_software_dev_title')}</h3>
-                        <a href="#contact" className="hero-cta-button">
+                        <a href="#offer" className="hero-cta-button">
                             <span>{t('discover_solutions_cta')}</span>
                             <FaArrowRight className="arrow-icon" />
                         </a>
@@ -125,7 +125,7 @@ const Home = () => {
 
                     <div className="service-card">
                         <div className="card-icon">
-                            <img src="/images/Home/HP_service-logist.png" alt="Logistics Services Icon" />
+                            <img src="/images/software.jpg" alt="Logistics Services Icon" />
                         </div>
                         <h4 className='highlight'>{t('home_software_dev_expertise_title')}</h4>
                         <h5>{t('home_software_dev_expertise_description')}</h5>

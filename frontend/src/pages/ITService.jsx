@@ -54,7 +54,7 @@ const ITService = () => {
                         </ul>
                     </div>
                     <div className="service-image">
-                        <img src="/images/IT/2_Gestion_Donnees.png" alt="Gestion des Données" />
+                        <img src="/images/img-18.jpg" alt="Gestion des Données" />
                     </div>
                 </div>
             </section>
@@ -76,7 +76,7 @@ const ITService = () => {
                         <p>{t('sap_eam_why_conclusion')}</p>
                     </div>
                     <div className="service-image">
-                        <img src="/images/IT/3_Developement_Web.png" alt="Développement Web" />
+                        <img src="/images/img-16.jpg" alt="Développement Web" />
                     </div>
                 </div>
             </section>
@@ -98,7 +98,7 @@ const ITService = () => {
                         <p>{t('sap_eam_why_conclusion')}</p>
                     </div>
                     <div className="service-image">
-                        <img src="/images/IT/4_Development.png" alt="Développement Logiciels" />
+                        <img src="/images/img-13.jpg" alt="Développement Logiciels" />
                     </div>
                 </div>
             </section>
@@ -120,7 +120,7 @@ const ITService = () => {
                         <p className="quote">{t('sap_eam_maintenance_quote')}</p>
                     </div>
                     <div className="service-image">
-                        <img src="/images/IT/05_maintenance.png" alt="Maintenance Informatiques" />
+                        <img src="/images/img-23.jpg" alt="Maintenance Informatiques" />
                     </div>
                 </div>
 
