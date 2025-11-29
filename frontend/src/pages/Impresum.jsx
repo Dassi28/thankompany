@@ -20,7 +20,8 @@ const Impresum = () => {
         <section>
           <h2>Vertreten durch:</h2>
           <p>
-            Herrn Thankeu Tatchum<br />
+            Herrn Justard Tankou<br />
+            Herrn Hector Kamdoum<br />
             Geschäftsführer
           </p>
         </section>
@@ -37,8 +38,8 @@ const Impresum = () => {
           <h2>Registereintrag</h2>
           <p>
             Eintragung im Handelsregister.<br />
-            Registergericht: Amtsgericht Ludwigshafen<br />
-            Registernummer: HRB 67649
+            Registergericht: Amtsgericht Mannheim<br />
+            Registernummer: HRB 746268
           </p>
         </section>
 
@@ -46,7 +47,7 @@ const Impresum = () => {
           <h2>Umsatzsteuer-ID</h2>
           <p>
             Umsatzsteuer-Identifikationsnummer gemäß §27 a Umsatzsteuergesetz:<br />
-            DE336588139
+            DE358414376
           </p>
         </section>
       </div>
