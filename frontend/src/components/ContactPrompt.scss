@@ -38,6 +38,7 @@
       cursor: pointer;
       text-decoration: none;
       transition: background-color 0.3s ease;
+      
 
       &:hover {
         background-color: darken($primary-color, 10%);
