@@ -1,8 +1,10 @@
-import React from 'react';
+import React, { useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import Odometer from 'react-odometerjs';
 import 'odometer/themes/odometer-theme-default.css';
 import './Home.scss';
+import { useNavigate } from 'react-router-dom';
+import emailjs from '@emailjs/browser';
 // Importation des icônes
 import { FaShieldAlt, FaChartLine, FaCogs, FaHandshake, FaStoreAlt, FaSyncAlt, FaCog, FaLightbulb, FaUsers, FaWhatsapp, FaArrowRight, FaDesktop, FaBolt, FaStar, FaAtlas, GiFaceToFace, SiAwsfargate, FaArrowTrendUp } from 'react-icons/fa';
 
@@ -10,6 +12,27 @@ import PartnersLogo from '../components/PartnersLogo';
 
 const Home = () => {
     const { t } = useTranslation();
+    const form = useRef();
+    const navigate = useNavigate();
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        const serviceID = process.env.REACT_APP_EMAILJS_SERVICE_ID;
+        const templateID = process.env.REACT_APP_EMAILJS_TEMPLATE_ID;
+        const publicKey = process.env.REACT_APP_EMAILJS_PUBLIC_KEY;
+
+        emailjs.sendForm(serviceID, templateID, form.current, publicKey)
+            .then((result) => {
+                console.log(result.text);
+                form.current.reset();
+            }, (error) => {
+                console.log(error.text);
+            });
+    };
+
+
+
     return (
         <div className="home">
             {/* Section Héro */}
@@ -365,18 +388,18 @@ const Home = () => {
                                 {/* 3. Formulaire (Droite) */}
                                 <div className="contact-box form-box">
                                     <h4 className="form-title">{t('contact_form_title')}</h4>
-                                    <form>
+                                    <form ref={form} onSubmit={sendEmail}>
                                         <div className="input-group">
-                                            <input type="text" placeholder={t('contact_form_name_placeholder')} />
+                                            <input type="text" name="name" placeholder={t('contact_form_name_placeholder')} required/>
                                         </div>
                                         <div className="input-group">
-                                            <input type="email" placeholder={t('contact_form_email_placeholder')} />
+                                            <input type="email" name="email" placeholder={t('contact_form_email_placeholder')} required/>
                                         </div>
                                         <div className="input-group">
-                                            <input type="text" placeholder={t('contact_form_subject_placeholder')} />
+                                            <input type="text" name="title" placeholder={t('contact_form_subject_placeholder')} required/>
                                         </div>
                                         <div className="input-group">
-                                            <textarea placeholder={t('contact_form_message_placeholder')}></textarea>
+                                            <textarea name="message" placeholder={t('contact_form_message_placeholder')} required></textarea>
                                         </div>
                                         <button type="submit" className="submit-btn">{t('contact_form_submit_button')}</button>
                                     </form>
@@ -386,8 +409,6 @@ const Home = () => {
                         </section>
 
             <PartnersLogo />
-
-
         </div>
     );
 };
