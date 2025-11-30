@@ -12,7 +12,7 @@ const ITService = () => {
             {/* 01: Hero Section */}
 
             {/* 01: Hero Section */}
-            <section className="it-hero" style={{ backgroundImage: `url(/images/img-24.jpg)` }}>
+            <section className="it-hero" style={{ backgroundImage: `url(/images/img-37.jpg)` }}>
                 <div className="it-hero-overlay"></div>
                 <div className="it-hero-content">
                     <h1 className="it-hero-title">{t('sap_eam_title')}</h1>
@@ -28,7 +28,7 @@ const ITService = () => {
                         <p>{t('sap_eam_sap_description')}</p>
                     </div>
                     <div className="service-image">
-                        <img src="/images/about-sap.jpg" alt="Conseils SAP" />
+                        <img src="/images/sap_int.jpg" alt="Conseils SAP" />
                     </div>
                 </div>
             </section>

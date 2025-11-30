@@ -13,11 +13,11 @@ const Contact = () => {
     const sendEmail = (e) => {
         e.preventDefault();
 
-        const serviceID = process.env.REACT_APP_EMAILJS_SERVICE_ID;
-        const templateID = process.env.REACT_APP_EMAILJS_TEMPLATE_ID;
-        const publicKey = process.env.REACT_APP_EMAILJS_PUBLIC_KEY;
+        //const serviceID = process.env.REACT_APP_EMAILJS_SERVICE_ID;
+        //const templateID = process.env.REACT_APP_EMAILJS_TEMPLATE_ID;
+        //const publicKey = process.env.REACT_APP_EMAILJS_PUBLIC_KEY;
 
-        emailjs.sendForm(serviceID, templateID, form.current, publicKey)
+        emailjs.sendForm('service_gj9voic', 'template_4ulkqjj', form.current, 'Xni-n079fx_He87jX')
             .then((result) => {
                 console.log(result.text);
                 setShowPopup(true);

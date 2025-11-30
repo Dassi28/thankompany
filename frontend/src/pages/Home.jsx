@@ -18,11 +18,11 @@ const Home = () => {
     const sendEmail = (e) => {
         e.preventDefault();
 
-        const serviceID = process.env.REACT_APP_EMAILJS_SERVICE_ID;
-        const templateID = process.env.REACT_APP_EMAILJS_TEMPLATE_ID;
-        const publicKey = process.env.REACT_APP_EMAILJS_PUBLIC_KEY;
+        //const serviceID = process.env.REACT_APP_EMAILJS_SERVICE_ID;
+        //const templateID = process.env.REACT_APP_EMAILJS_TEMPLATE_ID;
+        //const publicKey = process.env.REACT_APP_EMAILJS_PUBLIC_KEY;
 
-        emailjs.sendForm(serviceID, templateID, form.current, publicKey)
+        emailjs.sendForm('service_gj9voic', 'template_4ulkqjj', form.current, 'Xni-n079fx_He87jX')
             .then((result) => {
                 console.log(result.text);
                 form.current.reset();
@@ -43,7 +43,7 @@ const Home = () => {
                 <div className="hero-content">
                     <div className="hero-text">
                         <h1>{t('home_intro_title')}</h1>
-                        <h2>{t('home_intro_subtitle')}</h2>
+                        <h2 className='highlight'>{t('home_intro_subtitle')}</h2>
                         <h3>{t('home_sap_eam_title')}</h3>
                         <h3>{t('home_automation_title')}</h3>
                         <h3>{t('home_software_dev_title')}</h3>
