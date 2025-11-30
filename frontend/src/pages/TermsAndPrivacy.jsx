@@ -105,7 +105,7 @@ const TermsAndPrivacy = () => {
           <p>
             <b>(1)</b> Beide Parteien verpflichten sich zur vertraulichen Behandlung aller im Rahmen der Zusammenarbeit erlangten Informationen gemäß DSGVO und geltendem Datenschutzrecht. <br />
             <b>(2)</b> Vertrauliche Informationen dürfen nur mit schriftlicher Zustimmung weitergegeben werden. <br />
-            <b>(3)</b> Die jeweils aktuelle Datenschutzerklärung ist unter [URL] abrufbar. <br />
+                      <b>(3)</b> Die jeweils aktuelle Datenschutzerklärung ist unter https://www.thankompany.com/terms-and-privacy abrufbar. <br />
 
           </p>
         </section>

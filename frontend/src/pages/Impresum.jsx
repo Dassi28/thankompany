@@ -29,7 +29,7 @@ const Impresum = () => {
         <section>
           <h2>Kontakt</h2>
           <p>
-            Telefon: +49 176 684 054 66<br />
+            Telefon: +49 176 267 792 75<br />
             E-Mail: info@thankompany.com
           </p>
         </section>

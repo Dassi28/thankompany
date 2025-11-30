@@ -137,7 +137,7 @@ const DataPrivacy = () => {
         <section>
           <h2>Änderungen dieser Datenschutzerklärung</h2>
             <p>
-                Wir behalten uns vor, diese Erklärung bei Bedarf anzupassen, um rechtliche oder technische Änderungen zu berücksichtigen. Die aktuelle Version ist jederzeit unter www.thankompany/privacy abrufbar.
+                Wir behalten uns vor, diese Erklärung bei Bedarf anzupassen, um rechtliche oder technische Änderungen zu berücksichtigen. Die aktuelle Version ist jederzeit unter https://www.thankompany.com/data-privacy abrufbar.
             </p>
         </section>
       </div>

@@ -29,7 +29,7 @@ const Automatisation = () => {
                       <p>{t('automation_automation_description')}</p>
                   </div>
                   <div className="service-image">
-                      <img src="/images/Electronic/0_Home_Screen.png" alt="Conseils SAP" />
+                      <img src="/images/auto_intro.png" alt="Conseils SAP" />
                   </div>
               </div>
           </section>
@@ -52,7 +52,7 @@ const Automatisation = () => {
                       <p>{t('automation_expertise_service_conclusion')}</p>
                   </div>
                   <div className="service-image">
-                      <img src="/images/img-28.jpg" alt="Gestion des Données" />
+                      <img src="/images/auto_expertise.png" alt="Gestion des Données" />
                   </div>
               </div>
           </section>
@@ -74,7 +74,7 @@ const Automatisation = () => {
                       <p>{t('automation_why_conclusion')}</p>
                   </div>
                   <div className="service-image">
-                      <img src="/images/img-27.jpg" alt="Développement Web" />
+                      <img src="/images/auto_why.png" alt="Développement Web" />
                   </div>
               </div>
           </section>
@@ -196,7 +196,7 @@ const Automatisation = () => {
                       <p>{t('automation_why_conclusion')}</p>
                   </div>
                   <div className="service-image">
-                      <img src="/images/img-29.jpg" alt="Développement Logiciels" />
+                      <img src="/images/auto_challenge.png" alt="Développement Logiciels" />
                   </div>
               </div>
           </section>
@@ -223,7 +223,7 @@ const Automatisation = () => {
                       </button>*/}
                   </div>
                   <div className="service-image">
-                      <img src="/images/img-31.jpg" alt="Maintenance Informatiques" />
+                      <img src="/images/auto_commitment.png" alt="Maintenance Informatiques" />
                   </div>
               </div>
 
