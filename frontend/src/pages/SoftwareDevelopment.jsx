@@ -29,7 +29,7 @@ const SoftwareDevelopment = () => {
                         <p>{t('software_dev_sd_description')}</p>
                     </div>
                     <div className="service-image">
-                        <img src="/images/sw_int.jpg" alt="Conseils SAP" />
+                        <img src="/images/sw_intro.png" alt="Software Developement" />
                     </div>
                 </div>
             </section>

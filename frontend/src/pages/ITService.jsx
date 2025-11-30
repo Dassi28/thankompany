@@ -28,7 +28,7 @@ const ITService = () => {
                         <p>{t('sap_eam_sap_description')}</p>
                     </div>
                     <div className="service-image">
-                        <img src="/images/sap_int.jpg" alt="Conseils SAP" />
+                        <img src="/images/sap_intro.png" alt="Conseils SAP" />
                     </div>
                 </div>
             </section>
@@ -76,7 +76,7 @@ const ITService = () => {
                         <p>{t('sap_eam_why_conclusion')}</p>
                     </div>
                     <div className="service-image">
-                        <img src="/images/sap_why.png" alt="Développement Web" />
+                        <img src="/images/img-16.jpg" alt="Développement Web" />
                     </div>
                 </div>
             </section>
