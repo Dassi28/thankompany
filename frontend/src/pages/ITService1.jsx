@@ -39,7 +39,7 @@ const ITService = () => {
       <section className="is-data-section">
         <div className="is-data-content">
           <div className="is-data-image">
-            <img src="/images/IT/2_Gestion_Donnees.png" alt="Gestion des Données" />
+            <img src="/images/sap_expertise.png" alt="Gestion des Données" />
           </div>
           <div className="is-data-text">
             <h2 className='highlight'>{t('it_service_data_management_title')}</h2>

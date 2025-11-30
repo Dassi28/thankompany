@@ -28,7 +28,7 @@ const ITService = () => {
                         <p>{t('sap_eam_sap_description')}</p>
                     </div>
                     <div className="service-image">
-                        <img src="/images/about-sap.jpg" alt="Conseils SAP" />
+                        <img src="/images/sap_Introduction.png" alt="Conseils SAP" />
                     </div>
                 </div>
             </section>
@@ -54,7 +54,7 @@ const ITService = () => {
                         </ul>
                     </div>
                     <div className="service-image">
-                        <img src="/images/img-18.jpg" alt="Gestion des Données" />
+                        <img src="/images/sap_expertise.png" alt="Gestion des Données" />
                     </div>
                 </div>
             </section>
@@ -76,7 +76,7 @@ const ITService = () => {
                         <p>{t('sap_eam_why_conclusion')}</p>
                     </div>
                     <div className="service-image">
-                        <img src="/images/img-16.jpg" alt="Développement Web" />
+                        <img src="/images/sap_why.png" alt="Développement Web" />
                     </div>
                 </div>
             </section>
@@ -98,7 +98,7 @@ const ITService = () => {
                         <p>{t('sap_eam_why_conclusion')}</p>
                     </div>
                     <div className="service-image">
-                        <img src="/images/img-13.jpg" alt="Développement Logiciels" />
+                        <img src="/images/sap_challenge.png" alt="Développement Logiciels" />
                     </div>
                 </div>
             </section>
@@ -120,7 +120,7 @@ const ITService = () => {
                         <p className="quote">{t('sap_eam_maintenance_quote')}</p>
                     </div>
                     <div className="service-image">
-                        <img src="/images/img-23.jpg" alt="Maintenance Informatiques" />
+                        <img src="/images/sap_commitment.png" alt="Maintenance Informatiques" />
                     </div>
                 </div>
 
