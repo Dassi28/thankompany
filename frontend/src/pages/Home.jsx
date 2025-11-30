@@ -38,7 +38,7 @@ const Home = () => {
             {/* Section Héro */}
             <section className="hero">
                 <div className="hero-bg-overlay"></div>
-                <img src="/images/img-15.jpg" alt="Hero Transport" className="hero-bg-image" />
+                <img src="/images/img-25.jpg" alt="Hero Transport" className="hero-bg-image" />
 
                 <div className="hero-content">
                     <div className="hero-text">
@@ -102,7 +102,7 @@ const Home = () => {
                     </p>
                 </div>
                 <div className="about-img">
-                    <img src="/images/img-25.jpg" alt="About illustration" />
+                    <img src="/images/logo_thank_kompany_Final.png" alt="About illustration" />
                 </div>
             </section>
 
