@@ -12,7 +12,7 @@ const SoftwareDevelopment = () => {
     return (
         <div className="software-development-page">
             {/* 01: Hero Section */}
-            <section className="sd-hero" style={{ backgroundImage: `url(/images/IT/3_Developement_Web.png)` }}>
+            <section className="sd-hero" style={{ backgroundImage: `url(/images/img-32.jpg)` }}>
                 <div className="sd-hero-overlay"></div>
                 <div className="sd-hero-content">
                     <h1 className="sd-hero-title">{t('software_dev_title')}</h1>
@@ -29,7 +29,7 @@ const SoftwareDevelopment = () => {
                         <p>{t('software_dev_sd_description')}</p>
                     </div>
                     <div className="service-image">
-                        <img src="/images/IT/1_SAP_Conseils.png" alt="Conseils SAP" />
+                        <img src="/images/img-36.jpg" alt="Conseils SAP" />
                     </div>
                 </div>
             </section>
@@ -51,7 +51,7 @@ const SoftwareDevelopment = () => {
                         </ul>
                     </div>
                     <div className="service-image">
-                        <img src="/images/IT/2_Gestion_Donnees.png" alt="Gestion des Donn�es" />
+                        <img src="/images/img-33.jpg" alt="Gestion des Donn�es" />
                     </div>
                 </div>
             </section>
@@ -75,7 +75,7 @@ const SoftwareDevelopment = () => {
                         <p>{t('software_dev_why_conclusion2')}</p>
                     </div>
                     <div className="service-image">
-                        <img src="/images/IT/3_Developement_Web.png" alt="D�veloppement Web" />
+                        <img src="/images/img-34.jpg" alt="D�veloppement Web" />
                     </div>
                 </div>
             </section>
@@ -240,7 +240,7 @@ const SoftwareDevelopment = () => {
                         </button>*/}
                     </div>
                     <div className="service-image">
-                        <img src="/images/IT/05_maintenance.png" alt="Maintenance Informatiques" />
+                        <img src="/images/img-35.jpg" alt="Maintenance Informatiques" />
                     </div>
                 </div>
 

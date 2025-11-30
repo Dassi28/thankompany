@@ -349,7 +349,9 @@ const Home = () => {
                                 <div className="contact-box whatsapp-box">
                                     <p className="wa-top-text">{t('whatsapp_write_to_us_home')}</p>
                                     <div className="wa-icon-wrapper">
-                                        <FaWhatsapp />
+                                        <a href="https://wa.me/+4917626779275" target="_blank" rel="noopener noreferrer" style={{ color: 'inherit', textDecoration: 'none' }}>
+                                            <FaWhatsapp />
+                                        </a>
                                     </div>
                                     <p className="wa-bottom-text">{t('whatsapp_label_home')}</p>
                                 </div>

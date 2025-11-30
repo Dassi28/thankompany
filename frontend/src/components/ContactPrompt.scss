@@ -8,9 +8,11 @@
   .contact-prompt-content {
     max-width: 800px;
     margin: 0 auto;
-    display: grid;
-    flex-direction: column;
-    row-gap: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
 
     h2 {
       font-size: 2.2rem;

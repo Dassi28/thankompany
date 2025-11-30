@@ -12,7 +12,7 @@ const Automatisation = () => {
   return (
     <div className="automatisation-page">
       {/* 01: Hero Section */}
-      <section className="auto-hero" style={{backgroundImage: `url(/images/Electronic/0_Home_Screen.png)`}}>
+      <section className="auto-hero" style={{backgroundImage: `url(/images/img-26.jpg)`}}>
         <div className="auto-hero-overlay"></div>
         <div className="auto-hero-content">
           <h1 className="auto-hero-title">{t('automation_title')}</h1>
@@ -29,7 +29,7 @@ const Automatisation = () => {
                       <p>{t('automation_automation_description')}</p>
                   </div>
                   <div className="service-image">
-                      <img src="/images/IT/1_SAP_Conseils.png" alt="Conseils SAP" />
+                      <img src="/images/Electronic/0_Home_Screen.png" alt="Conseils SAP" />
                   </div>
               </div>
           </section>
@@ -52,7 +52,7 @@ const Automatisation = () => {
                       <p>{t('automation_expertise_service_conclusion')}</p>
                   </div>
                   <div className="service-image">
-                      <img src="/images/IT/2_Gestion_Donnees.png" alt="Gestion des Donn�es" />
+                      <img src="/images/img-28.jpg" alt="Gestion des Données" />
                   </div>
               </div>
           </section>
@@ -74,7 +74,7 @@ const Automatisation = () => {
                       <p>{t('automation_why_conclusion')}</p>
                   </div>
                   <div className="service-image">
-                      <img src="/images/IT/3_Developement_Web.png" alt="D�veloppement Web" />
+                      <img src="/images/img-27.jpg" alt="Développement Web" />
                   </div>
               </div>
           </section>
@@ -196,7 +196,7 @@ const Automatisation = () => {
                       <p>{t('automation_why_conclusion')}</p>
                   </div>
                   <div className="service-image">
-                      <img src="/images/IT/4_Development.png" alt="D�veloppement Logiciels" />
+                      <img src="/images/img-29.jpg" alt="Développement Logiciels" />
                   </div>
               </div>
           </section>
@@ -223,7 +223,7 @@ const Automatisation = () => {
                       </button>*/}
                   </div>
                   <div className="service-image">
-                      <img src="/images/IT/05_maintenance.png" alt="Maintenance Informatiques" />
+                      <img src="/images/img-31.jpg" alt="Maintenance Informatiques" />
                   </div>
               </div>
 

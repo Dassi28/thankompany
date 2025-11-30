@@ -28,7 +28,7 @@ const ITService = () => {
                         <p>{t('sap_eam_sap_description')}</p>
                     </div>
                     <div className="service-image">
-                        <img src="/images/IT/1_SAP_Conseils.png" alt="Conseils SAP" />
+                        <img src="/images/about-sap.jpg" alt="Conseils SAP" />
                     </div>
                 </div>
             </section>
