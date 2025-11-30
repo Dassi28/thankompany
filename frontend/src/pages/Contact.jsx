@@ -44,11 +44,13 @@ const Contact = () => {
                     </div>
                     <div className="info-item">
                         <strong>{t('contact.phone')}:</strong>
-                        <p>+49 176 684 054 56</p>
+                        <p>+49 176 267 792 75</p>
                     </div>
                     <div className="info-item">
                         <strong>{t('contact.address')}:</strong>
-                        <p>Mundenheimer Str. 177 67061 Ludwigshafen</p>
+                        <p>Mundenheimer Str. 177</p>
+                        <p>67061 Ludwigshafen</p>
+                        <p>Germany</p>
                     </div>
                 </div>
                 <div className="contact-form">
