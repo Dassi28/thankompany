@@ -29,7 +29,7 @@ const SoftwareDevelopment = () => {
                         <p>{t('software_dev_sd_description')}</p>
                     </div>
                     <div className="service-image">
-                        <img src="/images/img-36.jpg" alt="Conseils SAP" />
+                        <img src="/images/sw_introduction.png" alt="Conseils SAP" />
                     </div>
                 </div>
             </section>
@@ -51,7 +51,7 @@ const SoftwareDevelopment = () => {
                         </ul>
                     </div>
                     <div className="service-image">
-                        <img src="/images/img-33.jpg" alt="Gestion des Donn�es" />
+                        <img src="/images/sw_expertise.png" alt="Gestion des Données" />
                     </div>
                 </div>
             </section>
@@ -75,7 +75,7 @@ const SoftwareDevelopment = () => {
                         <p>{t('software_dev_why_conclusion2')}</p>
                     </div>
                     <div className="service-image">
-                        <img src="/images/img-34.jpg" alt="D�veloppement Web" />
+                        <img src="/images/sw_why.png" alt="Développement Web" />
                     </div>
                 </div>
             </section>
@@ -214,7 +214,7 @@ const SoftwareDevelopment = () => {
                         <p>{t('software_dev_why_conclusion')}</p>
                     </div>
                     <div className="service-image">
-                        <img src="/images/IT/4_Development.png" alt="D�veloppement Logiciels" />
+                        <img src="/images/sw_challenge.png" alt="D�veloppement Logiciels" />
                     </div>
                 </div>
             </section>
@@ -240,7 +240,7 @@ const SoftwareDevelopment = () => {
                         </button>*/}
                     </div>
                     <div className="service-image">
-                        <img src="/images/img-35.jpg" alt="Maintenance Informatiques" />
+                        <img src="/images/sw_commitment.png" alt="Maintenance Informatiques" />
                     </div>
                 </div>
 
