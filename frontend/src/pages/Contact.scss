@@ -154,3 +154,146 @@
     }
 }
 
+/* --- styles généraux existants (garde ton précédent contenu si tu veux) --- */
+/* Assure-toi que .contact-container utilise une mise en page en deux colonnes (info + form) */
+.contact-container {
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+  padding: 30px;
+}
+
+/* left info panel */
+.contact-info {
+  width: 40%;
+  background: #2f77b5;
+  color: #fff;
+  padding: 36px;
+  border-radius: 8px;
+}
+
+/* wrapper du formulaire — relative pour positionner le popup par dessus */
+.contact-form-wrapper {
+  width: 60%;
+  position: relative; /* -> important */
+}
+
+/* le formulaire lui-même */
+.contact-form {
+  background: #fff;
+  padding: 28px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  min-height: 420px; /* ajuste si besoin pour correspondre à la hauteur souhaitée */
+  display: flex;
+  flex-direction: column;
+}
+
+/* --- popup qui recouvre exactement .contact-form (100% width/height du wrapper) --- */
+.popup-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* facultatif : si tu veux un léger overlay semi-transparent derrière la popup,
+     tu peux décommenter la ligne suivante et ajouter un wrapper interne affichant la popup blanche */
+  /* background: rgba(0,0,0,0.15); */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: auto;
+  z-index: 50;
+}
+
+/* popup card — prend toute la surface du formulaire */
+.popup {
+  width: 100%;
+  height: 100%;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  padding: 20px 28px;
+  box-sizing: border-box;
+}
+
+/* Chaque row occupe un espace précis :
+   - logo : hauteur auto
+   - message : prise d'espace disponible (flex:1)
+   - actions : aligné en bas
+*/
+.popup-row {
+  padding: 8px 12px;
+}
+
+.popup-row--logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+}
+.popup-logo {
+  max-height: 80px; /* ajuste si besoin */
+  max-width: 100%;
+  object-fit: contain;
+}
+
+/* texte central (scroll si long) */
+.popup-row--message {
+  flex: 1 1 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+}
+.popup-text {
+  font-size: 18px;
+  line-height: 1.35;
+  color: #0b4ab3; /* bleu similaire à l'exemple */
+  margin: 0;
+  white-space: pre-wrap;
+}
+
+/* row d'actions en bas */
+.popup-row--actions {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 12px;
+  padding-bottom: 4px;
+}
+.popup-btn {
+  width: 60%;
+  max-width: 360px;
+  padding: 12px 18px;
+  border-radius: 6px;
+  background: #2f77b5;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* rendre le bouton visible au focus */
+.popup-btn:focus {
+  outline: 2px solid rgba(47,119,181,0.25);
+}
+
+/* responsive : sur petits écrans empiler la colonne info + form */
+@media (max-width: 900px) {
+  .contact-container {
+    flex-direction: column;
+  }
+  .contact-info, .contact-form-wrapper {
+    width: 100%;
+  }
+  .popup-btn {
+    width: 100%;
+  }
+}
+
+
