@@ -91,11 +91,11 @@ const Contact = () => {
                                 </div>
 
                                 <div className="popup-row popup-row--message">
-                                    <p className="popup-text">{t('contact_success_message')}</p>
-                                    <p className="popup-text">{t('contact_success_message1')}</p>
-                                    <p className="popup-text">{t('contact_success_message2')}</p>
+                                    <h2>{t('contact_success_message')}</h2>
+                                    <h3>{t('contact_success_message1')}</h3>
+                                    <p className="popup-text-confirmation">{t('contact_success_message2')}</p>
                                 </div>
-
+                               
                                 <div className="popup-row popup-row--actions">
                                     <button className="popup-btn" onClick={handlePopupClose}>
                                         {t('contact_success_button')}

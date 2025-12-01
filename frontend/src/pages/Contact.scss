@@ -247,14 +247,22 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  text-align: left;
+  text-align: center;
 }
+
 .popup-text {
-  font-size: 18px;
-  line-height: 1.35;
-  color: #0b4ab3; /* bleu similaire à l'exemple */
-  margin: 0;
-  white-space: pre-wrap;
+    font-size: 18px;
+    line-height: 1.35;
+    color: #0b4ab3; /* bleu similaire à l'exemple */
+    margin: 0;
+    white-space: pre-wrap;
+}
+.popup-text-confirmation {
+    font-size: 26px;
+    line-height: 1.35;
+    color: #0b4ab3;
+    margin-bottom: 0rem;
+    white-space: pre-wrap;
 }
 
 /* row d'actions en bas */

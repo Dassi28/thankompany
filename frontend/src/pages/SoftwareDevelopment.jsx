@@ -40,7 +40,7 @@ const SoftwareDevelopment = () => {
                     <div className="service-text">
                         <h2 className='highlight'>{t('software_dev_expertise_title')}</h2>
                         <p>{t('software_dev_expertise_description')}</p>
-                        <h4>{t('software_dev_expertise_service_title')}</h4>
+                        <h4 className='highlight'>{t('software_dev_expertise_service_title')}</h4>
                         <ul>
                             <li>{t('software_dev_expertise_service_1')}</li>
                             <li>{t('software_dev_expertise_service_2')}</li>
@@ -62,7 +62,7 @@ const SoftwareDevelopment = () => {
                     <div className="service-text">
                         <h2 className='highlight'>{t('software_dev_why_title')}</h2>
                         <p>{t('software_dev_why_description')}</p>
-                        <h4>{t('software_dev_why_service_title')}</h4>
+                       <h4 className='highlight'>{t('software_dev_why_service_title')}</h4>
                         <ul>
                             <li>{t('software_dev_why_service_1')}</li>
                             <li>{t('software_dev_why_service_2')}</li>
@@ -203,7 +203,7 @@ const SoftwareDevelopment = () => {
                     <div className="service-text">
                         <h2 className='highlight'>{t('software_dev_solution_title')}</h2>
                         <p>{t('software_dev_solution_description')}</p>
-                        <h4>{t('software_dev_solution_service_title')}</h4>
+                        <h4 className='highlight'>{t('software_dev_solution_service_title')}</h4>
                         <ul>
                             <li>{t('software_dev_solution_service_1')}</li>
                             <li>{t('software_dev_solution_service_2')}</li>
@@ -224,8 +224,8 @@ const SoftwareDevelopment = () => {
                 <div className="service-content">
                     <div className="service-text">
                         <h2 className='highlight'>{t('software_dev_guarantee_title')}</h2>
-                        <p>{t('software_dev_guarantee_description')}</p>
-                        <h4>{t('software_dev_guarantee_service_title')}</h4>
+                        <p>{t('software_dev_guarantee_description')}</p>                       
+                        <h4 className='highlight'>{t('software_dev_guarantee_service_title')}</h4>
                         <ul>
                             <li>{t('software_dev_guarantee_service_1')}</li>
                             <li>{t('software_dev_guarantee_service_2')}</li>

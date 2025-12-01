@@ -31,7 +31,7 @@ const Navbar = ({ changeLanguage }) => {
           <div className="contact-block">
             <span className="icon">✉️</span>
             <span className="label">{t('mail_us')}</span>
-            <span className="value">info@thankompany.com</span>
+            <span className="value">contact@thankompany.com</span>
           </div>
           {/*<div className="social-icons">*/}
           {/*  <span>🌐</span>*/}
@@ -40,10 +40,10 @@ const Navbar = ({ changeLanguage }) => {
           {/*</div>*/}
           <div className="lang-select">
             <button onClick={() => changeLanguage('fr')} className="lang-button">
-              <img src="/images/flags/fr.jpg" alt="French" />
+              <img src="/images/flags/fr.png" alt="French" />
             </button>
             <button onClick={() => changeLanguage('en')} className="lang-button">
-              <img src="/images/flags/en.jpeg" alt="English" />
+              <img src="/images/flags/en.png" alt="English" />
             </button>
             <button onClick={() => changeLanguage('de')} className="lang-button">
               <img src="/images/flags/de.png" alt="German" />
