@@ -14,7 +14,7 @@ const TermsAndPrivacy = () => {
         <section>
           <h2>Geltungsbereich</h2>
           <p>
-             <b>(1)</b>   Diese Allgemeinen Geschäftsbedingungen gelten für alle Verträge, Leistungen und Geschäftsbeziehungen zwischen der THANK KOMPANY GmbH (nachfolgend „Auftragnehmer“ oder „THANK KOMPANY“) und ihren Kunden (nachfolgend „Auftraggeber“). <br />
+             <b>(1)</b>  npDiese Allgemeinen Geschäftsbedingungen gelten für alle Verträge, Leistungen und Geschäftsbeziehungen zwischen der THANK KOMPANY GmbH (nachfolgend „Auftragnehmer“ oder „THANK KOMPANY“) und ihren Kunden (nachfolgend „Auftraggeber“). <br />
              <b>(2)</b>  Die AGB gelten ausschließlich gegenüber Unternehmern im Sinne des § 14 BGB. <br />
              <b>(3)</b>  Abweichende, entgegenstehende oder ergänzende Geschäftsbedingungen des Auftraggebers werden nur Vertragsbestandteil, sofern THANK KOMPANY deren Geltung ausdrücklich schriftlich zustimmt. <br />
 
