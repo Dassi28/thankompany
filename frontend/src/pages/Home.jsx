@@ -128,7 +128,7 @@ const Home = () => {
                             <li>{t('home_sap_eam_expertise_6')}</li>
                         </ul>
                         {/*Add a Buttom to navigate to the service page*/}
-                         <a href="/sap" className="service-link">{t('home_learn_more')} </a>
+                         <a href="/sap" className="learnmore-link">{t('home_learn_more')} </a>
                     </div>
 
                     <div className="service-card">
@@ -145,7 +145,7 @@ const Home = () => {
                             <li>{t('home_automation_expertise_5')}</li>
                             <li>{t('home_automation_expertise_6')}</li>
                         </ul>
-                        <a href="/automatisation" className="service-link">{t('home_learn_more')} </a>
+                        <a href="/automatisation" className="learnmore-link">{t('home_learn_more')} </a>
                     </div>
 
 
@@ -163,7 +163,7 @@ const Home = () => {
                             <li>{t('home_software_dev_expertise_5')}</li>
                             <li>{t('home_software_dev_expertise_6')}</li>
                         </ul>
-                        <a href="/software-development" className="service-link">{t('home_learn_more')} </a>
+                        <a href="/software-development" className="learnmore-link">{t('home_learn_more')} </a>
                     </div>
                 </div>
             </section>
