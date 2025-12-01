@@ -13,9 +13,9 @@ const ContactPrompt = () => {
           <h2 className='highlight'>{t('contactPrompt.title')}</h2>
           <p dangerouslySetInnerHTML={{ __html: t('contactPrompt.paragraph') }} /> 
         </div> 
-        <Link to="/contact" className="contact-prompt-cta">
+        <a href="/contact" className="contact-prompt-cta">
             {t('contactPrompt.button')}
-        </Link>
+        </a>
       </div>
     </div>
   );

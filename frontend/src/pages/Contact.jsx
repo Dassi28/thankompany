@@ -64,6 +64,10 @@ const Contact = () => {
                             <input type="email" id="email" name="email" required />
                         </div>
                         <div className="form-group">
+                            <label htmlFor="phone">{t('contact.form.phone')}</label>
+                            <input type="tel" id="phone" name="phone" />
+                        </div>
+                        <div className="form-group">
                             <label htmlFor="subject">{t('contact.form.subject')}</label>
                             <input type="text" id="subject" name="title" required />
                         </div>
@@ -79,7 +83,7 @@ const Contact = () => {
             {showPopup && (
                 <div className="popup-overlay">
                     <div className="popup">
-                        <p>{t('contact.success_message')}</p>
+                        <p>{t('contact_success_message')}</p>
                         <button onClick={handlePopupClose}>OK</button>
                     </div>
                 </div>
