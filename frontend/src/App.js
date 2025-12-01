@@ -28,7 +28,7 @@ function App() {
       <div className="main-content-wrapper">
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/it-service" element={<ITService />} />
+          <Route path="/sap" element={<ITService />} />
           <Route path="/automatisation" element={<Automatisation />} />
           <Route path="/electronics" element={<Electronics />} />
           <Route path="/logistics" element={<Logistics />} />

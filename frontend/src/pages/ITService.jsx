@@ -8,7 +8,7 @@ import ContactPrompt from '../components/ContactPrompt';
 const ITService = () => {
     const { t } = useTranslation();
     return (
-        <div className="it-service-page">
+        <div className="sap-page">
             {/* 01: Hero Section */}
 
             {/* 01: Hero Section */}
