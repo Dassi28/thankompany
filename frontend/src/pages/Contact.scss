@@ -212,7 +212,7 @@
   height: 100%;
   background: #ffffff;
   border-radius: 8px;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+  box-shadow: 0 10px 18px rgba(0,0,0,0.12);
   display: flex;
   flex-direction: column;
   overflow: hidden;
@@ -226,24 +226,24 @@
    - actions : aligné en bas
 */
 .popup-row {
-  padding: 8px 12px;
+  padding: 8px 9px;
 }
 
 .popup-row--logo {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex: 0 0 auto;
+  flex: 1 0 auto;
 }
 .popup-logo {
-  max-height: 80px; /* ajuste si besoin */
+  max-height: 120px; /* ajuste si besoin */
   max-width: 100%;
   object-fit: contain;
 }
 
 /* texte central (scroll si long) */
 .popup-row--message {
-  flex: 1 1 auto;
+  flex: 0 0 auto;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -252,27 +252,27 @@
 
 .popup-text {
     font-size: 18px;
-    line-height: 1.35;
+    line-height: 2.35;
     color: #0b4ab3; /* bleu similaire à l'exemple */
     margin: 0;
     white-space: pre-wrap;
 }
 .popup-text-confirmation {
-    font-size: 26px;
+    font-size: 22px;
     line-height: 1.35;
     color: #0b4ab3;
-    margin-bottom: 0rem;
+    margin-bottom: 2rem;
     white-space: pre-wrap;
 }
 
 /* row d'actions en bas */
 .popup-row--actions {
-  flex: 0 0 auto;
+  flex: 1 1 auto;
   display: flex;
   align-items: center;
   justify-content: center;
   padding-top: 12px;
-  padding-bottom: 4px;
+  padding-bottom: 16px;
 }
 .popup-btn {
   width: 60%;
@@ -288,7 +288,7 @@
 
 /* rendre le bouton visible au focus */
 .popup-btn:focus {
-  outline: 2px solid rgba(47,119,181,0.25);
+  outline: 4px solid rgba(47,119,181,0.25);
 }
 
 /* responsive : sur petits écrans empiler la colonne info + form */

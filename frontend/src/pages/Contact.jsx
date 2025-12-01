@@ -89,10 +89,15 @@ const Contact = () => {
                                     <img src="/images/logo_thank_kompany_Final.png" alt="Logo" className="popup-logo" />
                                     {/* <h3 className="popup-logo-text">THANK KOMPANY</h3> */}
                                 </div>
-
+                                                    
                                 <div className="popup-row popup-row--message">
-                                    <h2>{t('contact_success_message')}</h2>
-                                    <h3>{t('contact_success_message1')}</h3>
+                                    <h2>{t('contact_success_message')}</h2>                               
+                                </div>
+                                <div className="popup-row popup-row--message">
+                                    <h2 className='highlight'>{t('contact_success_message1')}</h2>
+                                    {/*<h3>{t('contact_success_message1')}</h3>                                   */}
+                                </div>
+                                <div className="popup-row popup-row--message">
                                     <p className="popup-text-confirmation">{t('contact_success_message2')}</p>
                                 </div>
                                
