@@ -79,4 +79,4 @@ const Navbar = ({ changeLanguage }) => {
   );
 };
 
-export default Navbar;
+export default Navbar; 

@@ -294,5 +294,6 @@
     "contactPrompt.title":  "Beschleunigen Sie Ihre digitale Transformation.",
     "contactPrompt.paragraph":  "Bereit, operative Exzellenz zu steigern? \u003cbr /\u003e \u003cspan class=\u0027highlight\u0027\u003eLassen Sie uns gemeinsam einen maßgeschneiderten Fahrplan entwickeln\u003c/span\u003e  der Effizienz freisetzt und nachhaltiges Wachstum fördert.",
     "contactPrompt.button":  "Sprechen Sie mit unserem Experten",
-    "contact_success_message":  "Ihre E-Mail wurde erfolgreich versendet."
+    "contact_success_message":  "Ihre E-Mail wurde erfolgreich versendet.",
+    "contact.form.phone": "Telefon"
 }
