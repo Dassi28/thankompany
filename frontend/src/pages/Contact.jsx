@@ -92,6 +92,8 @@ const Contact = () => {
 
                                 <div className="popup-row popup-row--message">
                                     <p className="popup-text">{t('contact_success_message')}</p>
+                                    <p className="popup-text">{t('contact_success_message1')}</p>
+                                    <p className="popup-text">{t('contact_success_message2')}</p>
                                 </div>
 
                                 <div className="popup-row popup-row--actions">

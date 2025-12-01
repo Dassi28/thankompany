@@ -291,7 +291,9 @@
   "contactPrompt.title": "Beschleunigen Sie Ihre digitale Transformation.",
   "contactPrompt.paragraph": "Ready to boost operational excellence? <br /> <span class='highlight'>Let's craft a tailored roadmap.</span> that unlocks efficiency and drives sustainable growth together.",
   "contactPrompt.button": "Sprechen Sie mit unserem Experten",
-  "contact_success_message": "Vielen Dank! Ihre Anfrage wurde erfolgreich übermittelt. Ein Experte aus unserem Team wird sie prüfen und sich in Kürze bei Ihnen melden",
+  "contact_success_message": "Vielen Dank!",
+  "contact_success_message1": "Ihre Anfrage wurde erfolgreich übermittelt. ",
+  "contact_success_message2": "Ein Experte aus unserem Team wird sie prüfen und sich in Kürze bei Ihnen melden",
   "contact.form.phone": "Phone",
   "contact_success_button": "Weiter zur Startseite"
 }

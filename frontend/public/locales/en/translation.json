@@ -291,7 +291,9 @@
   "contactPrompt.title": "Accelerate Your Digital Transformation.",
   "contactPrompt.paragraph": "Ready to boost operational excellence? \u003cbr /\u003e \u003cspan class=\u0027highlight\u0027\u003eLet\u0027s craft a tailored roadmap.\u003c/span\u003e that unlocks efficiency and drives sustainable growth together.",
   "contactPrompt.button": "Speak to our Expert",
-  "contact_success_message": "Thank you! Your request has been successfully submitted. An expert from our team will review it and get back to you shortly",
+  "contact_success_message": "Thank you!",
+  "contact_success_message1": "Your request has been successfully submitted.",
+  "contact_success_message2": "An expert from our team will review it and get back to you shortly",
   "contact.form.phone": "Phone",
-  "contact_success_button":"Continue to Homepage"
+  "contact_success_button": "Continue to Homepage"
 }
