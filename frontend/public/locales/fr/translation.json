@@ -292,8 +292,8 @@
   "contactPrompt.paragraph": "Ready to boost operational excellence? <br /> <span class='highlight'>Let's craft a tailored roadmap.</span> that unlocks efficiency and drives sustainable growth together.",
   "contactPrompt.button": "Parlez à notre expert",
   "contact_success_message": "Merci !",
-  "contact_success_message": "Votre demande a été soumise avec succès.",
-  "contact_success_message": "Un expert de notre équipe l'examinera et vous répondra sous peu",
+  "contact_success_message1": "Votre demande a été soumise avec succès.",
+  "contact_success_message2": "Un expert de notre équipe l'examinera et vous répondra sous peu",
   "contact.form.phone": "Phone",
   "contact_success_button": "Continuer vers la page d'accueil"
 }
