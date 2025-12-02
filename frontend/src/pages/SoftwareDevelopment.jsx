@@ -19,8 +19,7 @@ const SoftwareDevelopment = () => {
                     <p className="sd-hero-slogan">{t('software_dev_slogan')}</p>
                 </div>
             </section>
-
-     
+           
             {/* Empower Your Digital Solutions*/}
             <section className="service-section"> 
                 <div className="service-content">

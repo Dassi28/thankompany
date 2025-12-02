@@ -13,10 +13,10 @@ i18n
     // init i18next
     .init({
 
-        lng: 'de', // ✅ Default language
+       
         fallbackLng: 'en', // ✅ Fallback if translation is missing
 
-        debug: true,
+        debug: false,
         interpolation: {
             escapeValue: false, // not needed for react as it escapes by default
         },
@@ -24,6 +24,12 @@ i18n
         backend: {
             loadPath: '/locales/{{lng}}/{{ns}}.json',
         },
+
+        detection: {
+            order: ['localStorage', 'cookie', 'navigator'], // Check localStorage first
+            caches: ['localStorage'], // Persist language
+        },
+
     });
 
 // ✅ Add a helper to force reload translations

@@ -1,25 +1,32 @@
 {
   "short_name": "THANK KOMPANY",
-  "name": "THANK KOMPANY GmbH",
+  "name": "THANK KOMPANY GmbH | Experte für SAP EAM/PM  & Digitalisierungs",
+  "description": "THANK KOMPANY GmbH unterstützt Unternehmen mit SAP Enterprise Asset Management, Automatisierungstechnik, Softwareentwicklung und digitaler Transformation.",
+
   "icons": [
     {
       "src": "favicon.ico",
-      "sizes": "64x64 32x32 24x24 16x16",
+      "sizes": "32x32",
       "type": "image/x-icon"
     },
     {
       "src": "logo192.png",
-      "type": "image/png",
-      "sizes": "192x192"
+      "sizes": "192x192",
+      "type": "image/png"
     },
     {
       "src": "logo512.png",
-      "type": "image/png",
-      "sizes": "512x512"
+      "sizes": "512x512",
+      "type": "image/png"
     }
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "orientation": "portrait",
+  "theme_color": "#4A90E2", // Primary brand color (Blue)
+  "background_color": "#F2F2F2" // Light background for splash screen
 }
+
+
+
+
