@@ -27,7 +27,7 @@ const Home = () => {
                 console.log(result.text);
                 form.current.reset();
             }, (error) => {
-                console.log(error.text);
+                console.log(error.text); 
             });
     };
 
