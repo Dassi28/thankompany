@@ -12,13 +12,13 @@ const Automatisation = () => {
   return (
     <div className="automatisation-page">
       {/* 01: Hero Section */}
-          <section className="auto-hero" style={{ backgroundImage: `url(/images/ELectronic/0_Home_Screen.png)`}}>
-        <div className="auto-hero-overlay"></div>
-        <div className="auto-hero-content">
-          <h1 className="auto-hero-title">{t('automation_title')}</h1>
-          <p className="auto-hero-slogan">{t('automation_slogan')}</p>
-        </div>
-      </section>
+        <section className="auto-hero" style={{ backgroundImage: `url(/images/ELectronic/0_Home_Screen.png)`}}>
+            <div className="auto-hero-overlay"></div>
+            <div className="auto-hero-content">
+            <h1 className="auto-hero-title">{t('automation_title')}</h1>
+            <p className="auto-hero-slogan">{t('automation_slogan')}</p>
+            </div>
+       </section>
 
 
           {/* Smart Automation for Buildings & Industry */}

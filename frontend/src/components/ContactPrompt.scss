@@ -5,50 +5,81 @@
   text-align: start;
   justify-content: space-between;
 
-  .contact-prompt-content {
-    max-width: 800px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    gap: 20px;
-
-    h2 {
-      font-size: 2.2rem;
-      font-weight: 400;
-      margin-bottom: 20px;
-    }
-
-    p {
-      line-height: 1.8;
-      color: #555;
-      margin-bottom: 30px;
-      font-size: 1.1rem;
-    }
-
-    .contact-prompt-cta {
-      background-color: $primary-color;
-      color: white;
-      border: none;
-      padding: 15px 30px;
-      font-size: 1rem;
-      font-weight: bold;
-      border-radius: 8px;
-      cursor: pointer;
-      text-decoration: none;
-      transition: background-color 0.3s ease;
-      
-
-      &:hover {
-        background-color: darken($primary-color, 10%);
-      }
-    }
-  }
-}
+      .contact-prompt-content {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+  
+        .service-text { // New rule for desktop
+          flex: 1; // Occupy available space
+          margin-right: 20px; // Add some space before the button
+        }
+  
+        h2 {
+          font-size: 2.2rem;
+          font-weight: 400;
+          margin-bottom: 20px;
+        }
+  
+        p {
+          line-height: 1.8;
+          color: #555;
+          margin-bottom: 30px;
+          font-size: 1.1rem;
+        }
+  
+        .contact-prompt-cta {
+          background-color: $primary-color;
+          color: white;
+          border: none;
+          padding: 15px 30px;
+          font-size: 1rem;
+          font-weight: bold;
+          border-radius: 8px;
+          cursor: pointer;
+          text-decoration: none;
+          transition: background-color 0.3s ease;
+          
+  
+          &:hover {
+            background-color: darken($primary-color, 10%);
+          }
+        }
+      }}
 
 @media (max-width: 900px) {
   .contact-prompt-section {
     padding: 40px 20px;
+    
+    .contact-prompt-content {
+      flex-direction: column; // Stack text and button
+      text-align: center;
+      gap: 30px; // Space between text and button
+
+      .service-text {
+        margin-right: 0; // Remove desktop margin
+      }
+
+      h2 {
+        font-size: 1.8rem; // Reduce font size for readability
+        margin-bottom: 10px; // Adjust margin
+      }
+
+      p {
+        font-size: 1rem; // Reduce font size
+        margin-bottom: 0; // Remove bottom margin if any
+      }
+
+      .contact-prompt-cta {
+        width: fit-content; // Button width adjusts to content
+        margin-top: 20px; // Add space above button
+        padding: 12px 25px; // Adjust padding
+        font-size: 0.9rem; // Adjust font size
+      }
+    }
   }
 }
