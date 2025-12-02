@@ -250,7 +250,7 @@
 }
 
 
-  .guarantee-section {
+   .guarantee-section {
     position: relative;
     padding: 80px;
     color: white;
@@ -779,6 +779,9 @@
 
 /* Styles de Responsivité pour la page Home */
 @media (max-width: 992px) { // Tablettes
+  .hero{
+    flex-direction: column;
+  }
   .hero .hero-text h1 {
     font-size: 3rem;
   }
@@ -808,6 +811,12 @@
   .guarantee-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+  .guarantee-section .guarantee-item .guarantee-icon-container img {
+    height: 45px;
+  }
+  .contact-section .contact-content-wrapper{
+    flex-direction: column;
+  }
   .contact-content {
     flex-direction: column;
     gap: 30px;
@@ -816,23 +825,41 @@
 
 @media (max-width: 768px) { // Mobiles larges
   .hero {
-    height: 70vh;
+    height: auto; // Changed from 70vh to auto to fit content
+    padding: 60px 0 40px 0; // Add vertical padding
+
     .hero-content {
-      padding-left: 20px;
+      padding: 0 20px; // Use horizontal padding
       text-align: center;
+      margin-bottom: 40px; // Space between text and qualities bar
     }
+
     .hero-text h1 {
       font-size: 2.5rem;
     }
+
     .qualities-bar {
-      position: static;
-      flex-direction: column;
-      gap: 15px;
-      padding: 20px;
+      position: static; // Keep in document flow
+      flex-wrap: wrap;   // Allow items to wrap
+      justify-content: center;
+      gap: 20px 25px; // Vertical and horizontal gap
+      padding: 0 15px; // Padding on the sides of the bar
+    }
+
+    .quality-item {
+      font-size: 1rem; // Reduced font size for text
+      gap: 8px;
+    }
+
+    .quality-icon {
+      font-size: 1.8rem; // Reduced icon size
     }
   }
   .guarantee-grid {
     grid-template-columns: 1fr;
+  }
+  .guarantee-section .guarantee-item .guarantee-icon-container img {
+    height: 35px;
   }
   .offer-section .service-card,
   .results-section .result-card,
