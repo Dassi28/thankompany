@@ -358,4 +358,36 @@
     }
 }
 
+/* Responsive styles for Technologies Section Images */
+@media (max-width: 992px) { /* Tablets */
+  .automatisation-page {
+    .auto-technologies-section {
+      .tab-content {
+        .technologies-grid {
+          .tech-item {
+            img {
+              height: 60px; /* Reduce size for tablets */
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) { /* Mobile */
+  .automatisation-page {
+    .auto-technologies-section {
+      .tab-content {
+        .technologies-grid {
+          .tech-item {
+            img {
+              height: 45px; /* Further reduce size for mobiles */
+            }
+          }
+        }
+      }
+    }
+  }
+}
 /*}*/

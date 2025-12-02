@@ -221,7 +221,7 @@ const Automatisation = () => {
                           <span>{t('discover_our_solutions')}</span>
                           <FaArrowRight />
                       </button>*/}
-                  </div>
+                  </div> 
                   <div className="service-image">
                       <img src="/images/auto_commitment.png" alt="Maintenance Informatiques" />
                   </div>

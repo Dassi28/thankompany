@@ -22,7 +22,7 @@ const SoftwareDevelopment = () => {
 
      
             {/* Empower Your Digital Solutions*/}
-            <section className="service-section">
+            <section className="service-section"> 
                 <div className="service-content">
                     <div className="service-text">
                         <h2 className='highlight'>{t('software_dev_sd_title')}</h2>

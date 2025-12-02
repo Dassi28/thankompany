@@ -266,4 +266,78 @@
       }
     }
   }
+
+/* Responsive styles for Software Development Page */
+@media (max-width: 992px) { /* Tablets and larger mobiles */
+  .software-development-page {
+    .sd-hero {
+      height: 50vh; // Slightly reduce hero height
+      .sd-hero-content {
+        .sd-hero-title {
+          font-size: 3rem;
+        }
+        .sd-hero-slogan {
+          font-size: 1rem;
+        }
+      }
+    }
+    .sd-technologies-section {
+      .tab-content .technologies-grid .tech-item img {
+        height: 60px; // Reduce tech logo size for tablets
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) { /* Mobiles */
+  .software-development-page {
+    .sd-hero {
+      height: 45vh; // Further reduce hero height
+      .sd-hero-content {
+        .sd-hero-title {
+          font-size: 2.5rem;
+        }
+        .sd-hero-slogan {
+          font-size: 1.1rem;
+        }
+      }
+    }
+    .sd-technologies-section {
+      .tab-content .technologies-grid {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); // Adjust grid for smaller screens
+      }
+      .tab-content .technologies-grid .tech-item img {
+        height: 45px; // Further reduce tech logo size for mobiles
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) { /* Small mobiles */
+  .software-development-page {
+    .sd-hero {
+      height: 40vh; // Even smaller hero height
+      .sd-hero-content {
+        .sd-hero-title {
+          font-size: 2rem;
+        }
+        .sd-hero-slogan {
+          font-size: 1rem;
+        }
+      }
+    }
+    .sd-technologies-section {
+      .tab-content .technologies-grid {
+        grid-template-columns: repeat(auto-fit, minmax(80px, 1fr)); // Even smaller grid for small mobiles
+      }
+      .tab-content .technologies-grid .tech-item img {
+        height: 35px; // Even smaller tech logo size for small mobiles
+      }
+    }
+    // Adjust general padding for sections for very small screens
+    section {
+      padding: 2rem 1rem;
+    }
+  }
+}
 }
