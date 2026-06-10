@@ -65,6 +65,7 @@ const Navbar = ({ changeLanguage }) => {
           <li><a href="/sap" className={location.pathname === '/sap' ? 'active' : ''} onClick={closeMenu}>{t('sap_eam')}</a></li>
           <li><a href="/automatisation" className={location.pathname === '/automatisation' ? 'active' : ''} onClick={closeMenu}>{t('automation')}</a></li>
           <li><a href="/software-development" className={location.pathname === '/software-development' ? 'active' : ''} onClick={closeMenu}>{t('navbar_software_development')}</a></li>
+          <li><a href="/logistics" className={location.pathname === '/logistics' ? 'active' : ''} onClick={closeMenu}>{t('logistics')}</a></li>
           {/*<li><a href="/contact" className={location.pathname === '/contact' ? 'active' : ''} onClick={closeMenu}>{t('navbar.contact')}</a></li>*/}
         </ul>
 

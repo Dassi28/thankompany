@@ -1,0 +1,1146 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>THANK KOMPANY GmbH | Logistics Africa — Smart Logistics Partner</title>
+<meta name="description" content="THANK KOMPANY GmbH und Smart Logistics & Services Ltd liefern multimodale Frachtlösungen, Zollabfertigung und 3PL-Logistik für internationale Projekte in der CEMAC-Region."/>
+<link rel="canonical" href="https://www.thankompany.com/logistics-africa"/>
+<meta property="og:type" content="website"/>
+<meta property="og:title" content="THANK KOMPANY × Smart Logistics | CEMAC Logistics Solutions"/>
+<meta property="og:description" content="End-to-end Supply Chain Management für internationale Projekte in der CEMAC-Region."/>
+<meta name="theme-color" content="#0b1e3d"/>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Service","name":"CEMAC Logistics Solutions","provider":{"@type":"Organization","name":"THANK KOMPANY GmbH","url":"https://www.thankompany.com","address":{"@type":"PostalAddress","addressLocality":"Ludwigshafen","addressCountry":"DE"}},"areaServed":["CM","CG","CF","GA","GQ","TD"],"serviceType":"Logistics & Supply Chain Management","hasOfferCatalog":{"@type":"OfferCatalog","name":"CEMAC Logistics Services","itemListElement":[{"@type":"Offer","itemOffered":{"@type":"Service","name":"Air, Sea & Land Freight Forwarding"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Customs Brokerage & Clearance"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Warehousing & 3PL"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Project Cargo Management"}}]}}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&family=Barlow+Condensed:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+<style>
+/* ══════════════════════════════════════════════════════════════
+   THANK KOMPANY GmbH — Enterprise Design System v4
+   Logistics Africa · Smart Logistics Partnership Page
+   Optimized: Typography · Color · Spacing · Components · Motion
+══════════════════════════════════════════════════════════════ */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+
+:root{
+  /* ── Core Brand Palette ── */
+  --ink-950:  #040c1a;
+  --ink-900:  #060e1d;
+  --ink-800:  #0b1e3d;
+  --ink-700:  #0f2649;
+  --ink-600:  #162e55;
+  --ink-500:  #1d3e6e;
+
+  --azure-800:#0f3d8a;
+  --azure-700:#1245a0;
+  --azure-600:#1a5eb8;
+  --azure-500:#2270d4;
+  --azure-400:#3b87e8;
+  --azure-300:#6aaef7;
+  --azure-200:#a8d0fb;
+  --azure-100:#dbeeff;
+  --azure-50: #f0f7ff;
+
+  --gold-700: #9a610e;
+  --gold-600: #b8791a;
+  --gold-500: #e8a020;
+  --gold-400: #f0b535;
+  --gold-300: #f5c85a;
+  --gold-bg:  rgba(232,160,32,.1);
+  --gold-bd:  rgba(232,160,32,.28);
+
+  --slate-900:#0f172a;
+  --slate-800:#1e293b;
+  --slate-700:#334155;
+  --slate-600:#475569;
+  --slate-500:#64748b;
+  --slate-400:#94a3b8;
+  --slate-300:#cbd5e1;
+  --slate-200:#e2e8f0;
+  --slate-100:#f1f5f9;
+  --slate-50: #f8fafc;
+
+  --white:    #ffffff;
+  --green-600:#16a34a;
+  --green-bg: rgba(22,163,74,.07);
+
+  /* ── Semantic tokens ── */
+  --bg:          var(--white);
+  --surface:     var(--slate-50);
+  --surface-2:   #eef2f8;
+  --border:      var(--slate-200);
+  --border-soft: var(--slate-100);
+  --tx-base:     var(--slate-900);
+  --tx-muted:    var(--slate-600);
+  --tx-faint:    var(--slate-400);
+  --primary:     var(--azure-600);
+  --primary-hv:  var(--azure-700);
+  --accent:      var(--gold-500);
+  --accent-hv:   var(--gold-600);
+
+  /* ── Typography ── */
+  --fh: 'Barlow Condensed',sans-serif;
+  --fb: 'Barlow',sans-serif;
+
+  /* Type scale — fluid */
+  --t-10: 10px;
+  --t-11: 11px;
+  --t-12: 12px;
+  --t-13: 13px;
+  --t-14: 14px;
+  --t-15: 15px;
+  --t-17: 17px;
+  --t-lg: clamp(18px,2vw,22px);
+  --t-xl: clamp(20px,2.4vw,26px);
+  --t-2xl:clamp(26px,3.2vw,36px);
+  --t-3xl:clamp(32px,4.2vw,46px);
+  --t-4xl:clamp(40px,5.5vw,64px);
+
+  /* Line-heights */
+  --lh-tight:  1.08;
+  --lh-snug:   1.2;
+  --lh-normal: 1.5;
+  --lh-relaxed:1.7;
+  --lh-loose:  1.8;
+
+  /* ── Spacing (8px grid) ── */
+  --s1:4px; --s2:8px; --s3:12px; --s4:16px; --s5:20px;
+  --s6:24px; --s8:32px; --s10:40px; --s12:48px; --s14:56px;
+  --s16:64px; --s20:80px; --s24:96px; --s32:128px;
+
+  /* ── Geometry ── */
+  --r2:2px; --r4:4px; --r6:6px; --r8:8px; --r12:12px; --r16:16px; --r24:24px;
+
+  /* ── Shadows ── */
+  --sh-xs: 0 1px 2px rgba(11,30,61,.05);
+  --sh-sm: 0 2px 8px rgba(11,30,61,.07),0 1px 2px rgba(11,30,61,.04);
+  --sh-md: 0 6px 20px rgba(11,30,61,.09),0 2px 6px rgba(11,30,61,.05);
+  --sh-lg: 0 16px 48px rgba(11,30,61,.11),0 4px 12px rgba(11,30,61,.05);
+  --sh-xl: 0 32px 80px rgba(11,30,61,.14),0 8px 24px rgba(11,30,61,.07);
+  --sh-accent: 0 4px 16px rgba(232,160,32,.32);
+  --sh-blue:   0 4px 16px rgba(26,94,184,.25);
+  --sh-focus:  0 0 0 3px rgba(26,94,184,.2);
+
+  /* ── Animation ── */
+  --ease: cubic-bezier(.4,0,.2,1);
+  --ease-out:cubic-bezier(0,0,.2,1);
+  --dur: 200ms;
+  --dur2:300ms;
+
+  /* ── Layout ── */
+  --mw:  1200px;
+  --px:  clamp(20px,5vw,80px);
+}
+
+/* ─── Base ─── */
+html{scroll-behavior:smooth;font-size:16px;-webkit-text-size-adjust:100%}
+body{font-family:var(--fb);background:var(--bg);color:var(--tx-base);line-height:var(--lh-relaxed);
+     -webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;overflow-x:hidden}
+::selection{background:var(--azure-100);color:var(--ink-800)}
+:focus-visible{outline:2px solid var(--azure-500);outline-offset:3px;border-radius:var(--r4)}
+::-webkit-scrollbar{width:5px}::-webkit-scrollbar-track{background:var(--slate-100)}
+::-webkit-scrollbar-thumb{background:var(--slate-300);border-radius:3px}
+img,svg{display:block;max-width:100%}
+
+/* ─── Layout helpers ─── */
+.wrap{max-width:var(--mw);margin:0 auto;padding:0 var(--px)}
+section{padding:var(--s20) 0}
+.section-eyebrow{
+  display:inline-flex;align-items:center;gap:var(--s2);
+  font-size:var(--t-11);font-weight:700;letter-spacing:.2em;text-transform:uppercase;
+  color:var(--primary);margin-bottom:var(--s3);
+}
+.section-eyebrow::before{content:'';display:block;width:16px;height:2px;background:currentColor;border-radius:1px;flex-shrink:0}
+.eyebrow--gold{color:var(--gold-500)}
+.eyebrow--gold::before{background:var(--gold-500)}
+
+.section-title{
+  font-family:var(--fh);font-size:var(--t-3xl);font-weight:700;
+  color:var(--ink-800);line-height:var(--lh-snug);letter-spacing:.01em;
+  margin-bottom:var(--s4);
+}
+.section-title em{color:var(--azure-600);font-style:normal}
+.section-title--w{color:var(--white)}
+.section-title--w em{color:var(--gold-500)}
+.section-lead{
+  font-size:var(--t-17);color:var(--tx-muted);line-height:var(--lh-loose);
+  font-weight:300;max-width:58ch;
+}
+.section-lead--w{color:rgba(255,255,255,.62)}
+
+/* ─── Buttons ─── */
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:var(--s2);
+  font-family:var(--fb);font-size:var(--t-13);font-weight:700;letter-spacing:.08em;
+  text-transform:uppercase;text-decoration:none;border:none;cursor:pointer;
+  border-radius:var(--r6);padding:14px 28px;white-space:nowrap;
+  transition:background var(--dur) var(--ease),box-shadow var(--dur) var(--ease),
+             transform var(--dur) var(--ease),border-color var(--dur) var(--ease),color var(--dur) var(--ease);
+}
+.btn:hover{transform:translateY(-2px)}.btn:active{transform:none}
+.btn--primary{background:var(--gold-500);color:var(--ink-800);box-shadow:var(--sh-accent)}
+.btn--primary:hover{background:var(--gold-600);box-shadow:0 6px 20px rgba(232,160,32,.42)}
+.btn--blue{background:var(--azure-600);color:var(--white);box-shadow:var(--sh-blue)}
+.btn--blue:hover{background:var(--azure-700);box-shadow:0 6px 20px rgba(26,94,184,.38)}
+.btn--ghost{background:transparent;color:var(--white);border:1.5px solid rgba(255,255,255,.32)}
+.btn--ghost:hover{background:rgba(255,255,255,.07);border-color:rgba(255,255,255,.62)}
+.btn--outline{background:transparent;color:var(--primary);border:1.5px solid var(--primary)}
+.btn--outline:hover{background:var(--azure-50);border-color:var(--primary-hv);color:var(--primary-hv)}
+.btn--sm{padding:10px 20px;font-size:var(--t-11)}
+
+/* ─── Lang bar ─── */
+.lang-bar{background:var(--ink-950);display:flex;justify-content:flex-end;align-items:center;
+          padding:5px var(--px);gap:2px;border-bottom:1px solid rgba(255,255,255,.04)}
+.lang-btn{
+  font-family:var(--fh);font-size:var(--t-10);font-weight:700;letter-spacing:.14em;
+  text-transform:uppercase;color:rgba(255,255,255,.28);background:transparent;
+  border:1px solid transparent;border-radius:var(--r2);padding:4px 9px;cursor:pointer;
+  transition:all var(--dur) var(--ease);line-height:1;
+}
+.lang-btn:hover{color:rgba(255,255,255,.65);border-color:rgba(255,255,255,.1)}
+.lang-btn.on{color:var(--gold-500);border-color:var(--gold-bd);background:var(--gold-bg)}
+
+/* ─── Navigation ─── */
+.nav{
+  position:sticky;top:0;z-index:200;background:var(--ink-800);
+  height:68px;display:flex;align-items:center;justify-content:space-between;
+  padding:0 var(--px);border-bottom:2px solid var(--gold-500);
+  box-shadow:0 4px 28px rgba(4,12,26,.45);
+}
+.nav-brand{display:flex;align-items:center;gap:16px;text-decoration:none;flex-shrink:0}
+.nav-wm{
+  font-family:var(--fh);font-size:19px;font-weight:800;color:var(--white);
+  letter-spacing:.05em;line-height:1;text-transform:uppercase;
+}
+.nav-wm em{font-style:normal;color:var(--gold-500)}
+.nav-div{width:1px;height:28px;background:rgba(255,255,255,.16)}
+.nav-sub-label{font-size:10px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;
+                color:var(--gold-500);line-height:1;margin-bottom:3px}
+.nav-sub-name{font-family:var(--fh);font-size:14px;font-weight:600;
+              color:rgba(255,255,255,.88);line-height:1;letter-spacing:.02em}
+.nav-links{display:flex;align-items:center;list-style:none}
+.nav-links a{
+  display:flex;align-items:center;padding:0 16px;height:68px;
+  font-size:var(--t-11);font-weight:700;letter-spacing:.1em;text-transform:uppercase;
+  color:rgba(255,255,255,.5);text-decoration:none;
+  border-bottom:2px solid transparent;margin-bottom:-2px;
+  transition:color var(--dur) var(--ease),border-color var(--dur) var(--ease);white-space:nowrap;
+}
+.nav-links a:hover{color:rgba(255,255,255,.9)}
+.nav-links a.active{color:var(--white);border-bottom-color:var(--gold-500)}
+.nav-cta{
+  margin-left:var(--s3);display:inline-flex!important;align-items:center;
+  height:auto!important;padding:10px 22px!important;border:none!important;
+  margin-bottom:0!important;background:var(--gold-500)!important;
+  color:var(--ink-800)!important;font-size:var(--t-11)!important;font-weight:800!important;
+  border-radius:var(--r6)!important;letter-spacing:.08em!important;
+  box-shadow:var(--sh-accent)!important;
+  transition:background var(--dur) var(--ease),box-shadow var(--dur) var(--ease),transform var(--dur) var(--ease)!important;
+}
+.nav-cta:hover{background:var(--gold-600)!important;box-shadow:0 6px 20px rgba(232,160,32,.45)!important;
+               transform:translateY(-1px)!important;border-bottom-color:transparent!important}
+
+/* Breadcrumb */
+.breadcrumb{background:var(--surface-2);border-bottom:1px solid var(--border-soft);
+            padding:10px var(--px);display:flex;align-items:center;gap:6px;flex-wrap:wrap}
+.breadcrumb a{font-size:var(--t-12);font-weight:500;color:var(--primary);text-decoration:none;
+              transition:color var(--dur) var(--ease)}
+.breadcrumb a:hover{color:var(--primary-hv);text-decoration:underline}
+.breadcrumb-sep{font-size:var(--t-12);color:var(--slate-300)}
+.breadcrumb [aria-current]{font-size:var(--t-12);color:var(--tx-faint)}
+
+/* ─── HERO ─── */
+.hero{
+  position:relative;background:var(--ink-800);overflow:hidden;
+  padding:112px var(--px) 92px;
+  display:grid;grid-template-columns:1.1fr .9fr;gap:var(--s16);align-items:center;
+  min-height:580px;
+}
+.hero::before{
+  content:'';position:absolute;inset:0;pointer-events:none;
+  background:
+    radial-gradient(ellipse 55% 90% at 85% 45%,rgba(26,94,184,.2) 0%,transparent 65%),
+    radial-gradient(ellipse 28% 38% at 15% 85%,rgba(232,160,32,.05) 0%,transparent 60%),
+    repeating-linear-gradient(90deg,transparent,transparent 79px,rgba(255,255,255,.016) 80px),
+    repeating-linear-gradient(0deg, transparent,transparent 79px,rgba(255,255,255,.010) 80px);
+}
+.hero::after{
+  content:'';position:absolute;top:0;left:0;right:0;height:1px;
+  background:linear-gradient(90deg,transparent 5%,rgba(232,160,32,.35) 40%,rgba(26,94,184,.35) 70%,transparent 95%);
+}
+.hero-content{position:relative;z-index:1}
+.hero-badge{
+  display:inline-flex;align-items:center;gap:var(--s2);
+  background:rgba(232,160,32,.08);border:1px solid rgba(232,160,32,.28);
+  color:var(--gold-400);font-size:var(--t-11);font-weight:700;
+  letter-spacing:.16em;text-transform:uppercase;
+  padding:7px 14px;border-radius:var(--r4);margin-bottom:var(--s6);
+  backdrop-filter:blur(6px);
+}
+.badge-dot{width:6px;height:6px;border-radius:50%;background:var(--gold-500);
+           flex-shrink:0;animation:pulse 2.2s ease-in-out infinite}
+@keyframes pulse{
+  0%,100%{box-shadow:0 0 0 0 rgba(232,160,32,.45)}
+  55%    {box-shadow:0 0 0 7px rgba(232,160,32,0)}
+}
+.hero-sup{
+  display:block;font-size:var(--t-13);font-weight:600;letter-spacing:.18em;
+  text-transform:uppercase;color:var(--azure-400);margin-bottom:var(--s3);
+  line-height:1;
+}
+.hero-title{
+  font-family:var(--fh);font-size:var(--t-4xl);font-weight:800;color:var(--white);
+  line-height:var(--lh-tight);letter-spacing:.01em;margin-bottom:var(--s5);
+}
+.hero-title em{font-style:normal;color:var(--gold-500)}
+.hero-desc{
+  font-size:var(--t-17);font-weight:300;color:rgba(255,255,255,.7);
+  line-height:1.78;max-width:50ch;margin-bottom:var(--s10);
+}
+.hero-actions{display:flex;gap:var(--s4);flex-wrap:wrap;align-items:center}
+.hero-panel{position:relative;z-index:1;display:flex;flex-direction:column;gap:var(--s3)}
+.stat-card{
+  background:rgba(255,255,255,.052);border:1px solid rgba(255,255,255,.09);
+  border-left:3px solid var(--gold-500);border-radius:var(--r8);
+  padding:20px 24px;display:flex;align-items:center;gap:20px;
+  backdrop-filter:blur(8px);
+  transition:background var(--dur) var(--ease),transform var(--dur) var(--ease),border-color var(--dur) var(--ease);
+  cursor:default;
+}
+.stat-card:hover{background:rgba(255,255,255,.088);border-left-color:var(--azure-400);transform:translateX(4px)}
+.stat-num{
+  font-family:var(--fh);font-size:38px;font-weight:800;color:var(--gold-500);
+  line-height:1;min-width:94px;text-align:center;letter-spacing:-.01em;
+}
+.stat-title{display:block;font-size:var(--t-14);font-weight:700;color:var(--white);
+            margin-bottom:3px;letter-spacing:.01em;line-height:1.3}
+.stat-sub{font-size:var(--t-13);color:rgba(255,255,255,.45);line-height:1.4;font-weight:300}
+
+/* ─── Partner band ─── */
+.partner-band{
+  background:var(--gold-500);padding:14px var(--px);
+  display:flex;align-items:center;justify-content:center;gap:var(--s4);flex-wrap:wrap;
+}
+.partner-band p{font-size:var(--t-14);font-weight:600;color:var(--ink-800);
+                letter-spacing:.02em;line-height:1.4}
+.partner-band strong{font-weight:800}
+.band-dot{width:3px;height:3px;border-radius:50%;background:rgba(11,30,61,.35);flex-shrink:0}
+
+/* ─── Trust strip ─── */
+.trust-strip{
+  background:var(--ink-700);padding:20px var(--px);
+  border-bottom:1px solid rgba(255,255,255,.04);
+}
+.trust-label{
+  font-size:var(--t-10);font-weight:700;letter-spacing:.22em;text-transform:uppercase;
+  color:rgba(255,255,255,.22);text-align:center;margin-bottom:12px;
+}
+.trust-logos{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:4px 14px}
+.trust-logo{
+  font-family:var(--fh);font-size:12px;font-weight:700;letter-spacing:.07em;
+  color:rgba(255,255,255,.2);white-space:nowrap;padding:4px 10px;border-radius:var(--r4);
+  border:1px solid transparent;cursor:default;
+  transition:color var(--dur) var(--ease),background var(--dur) var(--ease),border-color var(--dur) var(--ease);
+}
+.trust-logo:hover{color:rgba(255,255,255,.55);background:rgba(255,255,255,.04);border-color:rgba(255,255,255,.07)}
+
+/* ─── Section: Synergy ─── */
+.synergy{background:var(--surface)}
+.synergy-grid{display:grid;grid-template-columns:1fr 1fr;gap:var(--s8);margin-top:var(--s12);align-items:start}
+.co-card{
+  background:var(--white);border:1px solid var(--border);border-radius:var(--r12);padding:36px;
+  position:relative;overflow:hidden;box-shadow:var(--sh-sm);
+  transition:box-shadow var(--dur) var(--ease),transform var(--dur) var(--ease);
+}
+.co-card:hover{box-shadow:var(--sh-md);transform:translateY(-2px)}
+.co-card::before{content:'';position:absolute;top:0;left:0;right:0;height:4px}
+.co-card--blue::before{background:linear-gradient(90deg,var(--azure-600),var(--azure-400))}
+.co-card--gold::before{background:linear-gradient(90deg,var(--gold-500),var(--gold-400))}
+.co-tag{
+  display:inline-flex;align-items:center;gap:6px;font-size:var(--t-10);font-weight:700;
+  letter-spacing:.14em;text-transform:uppercase;padding:5px 12px;
+  border-radius:var(--r4);margin-bottom:20px;
+}
+.tag-b{background:rgba(26,94,184,.07);color:var(--azure-600);border:1px solid rgba(26,94,184,.14)}
+.tag-g{background:rgba(232,160,32,.09);color:var(--gold-700);border:1px solid rgba(232,160,32,.2)}
+.co-name{font-family:var(--fh);font-size:var(--t-xl);font-weight:700;color:var(--ink-800);
+         margin-bottom:var(--s3);letter-spacing:.01em;line-height:var(--lh-snug)}
+.co-desc{font-size:var(--t-15);color:var(--tx-muted);line-height:var(--lh-loose);margin-bottom:22px}
+.chips{display:flex;flex-wrap:wrap;gap:var(--s2)}
+.chip{
+  font-size:12px;font-weight:600;padding:5px 12px;border-radius:var(--r4);
+  background:var(--slate-50);color:var(--ink-800);border:1px solid var(--border);
+  letter-spacing:.02em;white-space:nowrap;cursor:default;
+  transition:background var(--dur) var(--ease),border-color var(--dur) var(--ease),color var(--dur) var(--ease);
+}
+.chip:hover{background:var(--azure-50);border-color:var(--azure-200);color:var(--azure-700)}
+.synergy-bridge{
+  grid-column:1/-1;display:flex;align-items:center;justify-content:center;gap:var(--s6);
+  padding:28px 36px;border-radius:var(--r12);margin-top:-4px;
+  background:linear-gradient(135deg,rgba(26,94,184,.04),rgba(232,160,32,.04));
+  border:1px dashed var(--slate-200);
+}
+.bridge-ico{font-size:22px;flex-shrink:0}
+.synergy-bridge p{font-size:var(--t-15);color:var(--ink-600);font-weight:600;
+                   text-align:center;max-width:56ch;line-height:1.65}
+
+/* ─── Section: Benefits ─── */
+.benefits{background:var(--white)}
+.benefits-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--s6);margin-top:var(--s12)}
+.bene-card{
+  background:var(--white);border:1px solid var(--border);border-radius:var(--r12);padding:32px;
+  position:relative;overflow:hidden;cursor:default;
+  transition:border-color var(--dur) var(--ease),box-shadow var(--dur) var(--ease),transform var(--dur) var(--ease);
+}
+.bene-card::after{
+  content:'';position:absolute;bottom:0;left:0;right:0;height:3px;
+  background:linear-gradient(90deg,var(--gold-500),var(--gold-400));
+  transform:scaleX(0);transform-origin:left;transition:transform .32s var(--ease);
+}
+.bene-card:hover{border-color:var(--azure-200);box-shadow:var(--sh-md);transform:translateY(-4px)}
+.bene-card:hover::after{transform:scaleX(1)}
+.bene-ico{
+  width:52px;height:52px;background:var(--azure-50);border:1px solid var(--azure-100);
+  border-radius:var(--r8);display:flex;align-items:center;justify-content:center;
+  margin-bottom:22px;font-size:24px;
+  transition:background var(--dur) var(--ease),border-color var(--dur) var(--ease);
+}
+.bene-card:hover .bene-ico{background:rgba(26,94,184,.1);border-color:rgba(26,94,184,.2)}
+.bene-title{font-family:var(--fh);font-size:19px;font-weight:700;color:var(--ink-800);
+            margin-bottom:var(--s3);letter-spacing:.02em;line-height:var(--lh-snug)}
+.bene-desc{font-size:var(--t-15);color:var(--tx-muted);line-height:var(--lh-loose)}
+
+/* ─── Section: Services ─── */
+.services-sect{background:var(--surface)}
+.services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--s6);margin-top:var(--s12)}
+.srv-card{
+  background:var(--white);border:1px solid var(--border);border-radius:var(--r12);padding:32px;
+  position:relative;overflow:hidden;cursor:default;
+  transition:border-color var(--dur) var(--ease),box-shadow var(--dur) var(--ease),transform var(--dur) var(--ease);
+}
+.srv-card::after{
+  content:'';position:absolute;bottom:0;left:0;right:0;height:3px;
+  background:linear-gradient(90deg,var(--azure-600),var(--azure-400));
+  transform:scaleX(0);transform-origin:left;transition:transform .32s var(--ease);
+}
+.srv-card:hover{border-color:var(--azure-200);box-shadow:var(--sh-md);transform:translateY(-4px)}
+.srv-card:hover::after{transform:scaleX(1)}
+.srv-ico{
+  width:52px;height:52px;background:var(--azure-50);border:1px solid var(--azure-100);
+  border-radius:var(--r8);display:flex;align-items:center;justify-content:center;
+  margin-bottom:22px;font-size:24px;
+  transition:background var(--dur) var(--ease),border-color var(--dur) var(--ease);
+}
+.srv-card:hover .srv-ico{background:rgba(26,94,184,.1);border-color:rgba(26,94,184,.2)}
+.srv-title{font-family:var(--fh);font-size:19px;font-weight:700;color:var(--ink-800);
+           margin-bottom:var(--s3);letter-spacing:.02em;line-height:var(--lh-snug)}
+.srv-desc{font-size:var(--t-15);color:var(--tx-muted);line-height:var(--lh-loose)}
+
+/* ─── Section: Industries ─── */
+.industries{
+  background:var(--ink-800);position:relative;overflow:hidden;
+}
+.industries::before{
+  content:'';position:absolute;inset:0;pointer-events:none;
+  background:
+    radial-gradient(ellipse 60% 70% at 80% 50%,rgba(26,94,184,.14) 0%,transparent 65%),
+    radial-gradient(ellipse 38% 48% at 12% 30%,rgba(232,160,32,.055) 0%,transparent 60%),
+    repeating-linear-gradient(90deg,transparent,transparent 79px,rgba(255,255,255,.012) 80px);
+}
+.industries .wrap{position:relative;z-index:1}
+.ind-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:var(--s4);margin-top:var(--s12)}
+.ind-card{
+  background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.07);
+  border-radius:var(--r12);padding:28px 20px;text-align:center;cursor:default;
+  transition:background var(--dur) var(--ease),border-color var(--dur) var(--ease),transform var(--dur) var(--ease);
+}
+.ind-card:hover{background:rgba(255,255,255,.08);border-color:rgba(232,160,32,.32);transform:translateY(-3px)}
+.ind-ico{
+  width:58px;height:58px;margin:0 auto 18px;
+  background:rgba(26,94,184,.18);border:1px solid rgba(26,94,184,.22);
+  border-radius:var(--r8);display:flex;align-items:center;justify-content:center;font-size:26px;
+  transition:background var(--dur) var(--ease),border-color var(--dur) var(--ease);
+}
+.ind-card:hover .ind-ico{background:rgba(232,160,32,.12);border-color:rgba(232,160,32,.28)}
+.ind-name{font-family:var(--fh);font-size:16px;font-weight:700;color:var(--white);
+          margin-bottom:var(--s2);letter-spacing:.02em;line-height:1.25}
+.ind-desc{font-size:13px;color:rgba(255,255,255,.42);line-height:1.6}
+
+/* ─── Section: Coverage ─── */
+.coverage{background:var(--surface)}
+.coverage-grid{display:grid;grid-template-columns:1fr 1fr;gap:var(--s16);margin-top:var(--s12);align-items:center}
+.map-wrap{
+  background:var(--white);border:1px solid var(--border);border-radius:var(--r16);
+  padding:40px;box-shadow:var(--sh-sm);display:flex;align-items:center;justify-content:center;
+}
+.map-wrap svg{width:100%;height:auto;max-width:380px}
+.kpi-stack{display:flex;flex-direction:column;gap:var(--s4)}
+.kpi-card{
+  display:flex;align-items:flex-start;gap:22px;padding:22px 24px;
+  background:var(--white);border:1px solid var(--border);
+  border-left:4px solid var(--azure-600);border-radius:var(--r12);
+  box-shadow:var(--sh-xs);cursor:default;
+  transition:border-left-color var(--dur) var(--ease),box-shadow var(--dur) var(--ease),transform var(--dur) var(--ease);
+}
+.kpi-card:hover{border-left-color:var(--gold-500);box-shadow:var(--sh-md);transform:translateX(4px)}
+.kpi-num{
+  font-family:var(--fh);font-size:34px;font-weight:800;color:var(--azure-600);
+  line-height:1;min-width:84px;letter-spacing:-.01em;
+  transition:color var(--dur) var(--ease);
+}
+.kpi-card:hover .kpi-num{color:var(--gold-500)}
+.kpi-body strong{display:block;font-size:var(--t-14);font-weight:700;color:var(--ink-800);margin-bottom:4px}
+.kpi-body span{font-size:var(--t-13);color:var(--tx-faint);line-height:1.5}
+
+/* ─── Section: Testimonials ─── */
+.testimonials{background:var(--white)}
+.testi-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--s6);margin-top:var(--s12)}
+.testi-card{
+  background:var(--surface);border:1px solid var(--border);border-radius:var(--r12);
+  padding:32px;display:flex;flex-direction:column;position:relative;overflow:hidden;cursor:default;
+  transition:box-shadow var(--dur) var(--ease),transform var(--dur) var(--ease);
+}
+.testi-card::before{
+  content:'';position:absolute;top:0;left:0;right:0;height:3px;
+  background:linear-gradient(90deg,var(--gold-500),var(--gold-400));
+  opacity:0;transition:opacity var(--dur) var(--ease);
+}
+.testi-card:hover{box-shadow:var(--sh-md);transform:translateY(-3px)}
+.testi-card:hover::before{opacity:1}
+.testi-qmark{
+  font-family:Georgia,serif;font-size:52px;line-height:1;color:var(--azure-100);
+  margin-bottom:var(--s2);display:block;letter-spacing:-.02em;
+}
+.testi-text{
+  font-size:var(--t-15);color:var(--slate-700);line-height:1.8;
+  font-style:italic;font-weight:400;margin-bottom:24px;flex:1;
+}
+.testi-author{
+  display:flex;align-items:center;gap:14px;
+  padding-top:20px;border-top:1px solid var(--border-soft);
+}
+.testi-avatar{
+  width:42px;height:42px;border-radius:50%;background:var(--ink-800);
+  border:2px solid var(--gold-500);display:flex;align-items:center;justify-content:center;
+  font-family:var(--fh);font-size:13px;font-weight:800;color:var(--gold-500);
+  letter-spacing:.04em;flex-shrink:0;
+}
+.testi-name{font-size:var(--t-14);font-weight:700;color:var(--ink-800);display:block;margin-bottom:2px}
+.testi-role{font-size:12px;color:var(--tx-faint);line-height:1.4}
+
+/* ─── Section: ESG ─── */
+.esg{background:var(--surface)}
+.esg-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--s6);margin-top:var(--s12)}
+.esg-card{
+  background:var(--white);border:1px solid var(--border);border-radius:var(--r12);
+  padding:36px;position:relative;overflow:hidden;cursor:default;box-shadow:var(--sh-xs);
+  transition:box-shadow var(--dur) var(--ease),transform var(--dur) var(--ease);
+}
+.esg-card:hover{box-shadow:var(--sh-md);transform:translateY(-3px)}
+/* Watermark letter */
+.esg-card::after{
+  content:attr(data-l);font-family:var(--fh);font-size:160px;font-weight:800;
+  position:absolute;right:-16px;top:-16px;opacity:.038;line-height:1;
+  pointer-events:none;color:var(--ink-800);
+}
+.esg-letter{font-family:var(--fh);font-size:58px;font-weight:800;line-height:1;
+            margin-bottom:var(--s4);display:block;opacity:.92}
+.esg-card:nth-child(1) .esg-letter{color:var(--green-600)}
+.esg-card:nth-child(2) .esg-letter{color:var(--azure-600)}
+.esg-card:nth-child(3) .esg-letter{color:var(--gold-500)}
+.esg-title{font-family:var(--fh);font-size:var(--t-xl);font-weight:700;color:var(--ink-800);
+           margin-bottom:var(--s3);letter-spacing:.01em}
+.esg-desc{font-size:var(--t-15);color:var(--tx-muted);line-height:var(--lh-loose)}
+
+/* ─── Section: FAQ ─── */
+.faq-sect{background:var(--white)}
+.faq-layout{display:grid;grid-template-columns:300px 1fr;gap:72px;margin-top:var(--s12);align-items:start}
+.faq-side p{font-size:var(--t-15);color:var(--tx-muted);line-height:var(--lh-loose);
+             font-weight:300;margin-bottom:var(--s3)}
+.faq-side-cta{margin-top:var(--s8)}
+.faq-item{
+  border:1px solid var(--border);border-radius:var(--r8);background:var(--white);
+  margin-bottom:var(--s3);overflow:hidden;
+  transition:border-color var(--dur) var(--ease),box-shadow var(--dur) var(--ease);
+}
+.faq-item:has([aria-expanded="true"]){border-color:var(--azure-300);box-shadow:var(--sh-sm)}
+.faq-btn{
+  width:100%;text-align:left;display:flex;align-items:center;justify-content:space-between;
+  gap:var(--s4);padding:20px 24px;background:transparent;border:none;cursor:pointer;
+  font-family:var(--fb);font-size:var(--t-15);font-weight:600;color:var(--ink-800);
+  line-height:1.4;transition:color var(--dur) var(--ease);
+}
+.faq-btn:hover{color:var(--primary)}
+.faq-btn[aria-expanded="true"]{color:var(--primary)}
+.faq-chevron{
+  flex-shrink:0;width:24px;height:24px;border-radius:50%;
+  background:var(--slate-100);border:1px solid var(--border);
+  display:flex;align-items:center;justify-content:center;
+  font-size:10px;color:var(--tx-faint);
+  transition:transform var(--dur) var(--ease),background var(--dur) var(--ease),color var(--dur) var(--ease);
+}
+.faq-btn[aria-expanded="true"] .faq-chevron{
+  transform:rotate(180deg);background:var(--azure-50);
+  border-color:var(--azure-200);color:var(--primary);
+}
+.faq-body{
+  max-height:0;overflow:hidden;padding:0 24px;
+  transition:max-height .34s var(--ease),padding .34s var(--ease);
+}
+.faq-body.open{max-height:260px;padding-bottom:22px}
+.faq-body p{font-size:var(--t-15);color:var(--tx-muted);line-height:var(--lh-loose);font-weight:300}
+
+/* ─── CTA Section ─── */
+.cta-sect{
+  background:var(--ink-800);text-align:center;padding:100px var(--px);
+  position:relative;overflow:hidden;
+}
+.cta-sect::before{
+  content:'';position:absolute;inset:0;pointer-events:none;
+  background:
+    radial-gradient(ellipse 55% 85% at 50% 110%,rgba(26,94,184,.26) 0%,transparent 65%),
+    radial-gradient(ellipse 35% 38% at 92% 18%,rgba(232,160,32,.065) 0%,transparent 60%),
+    repeating-linear-gradient(90deg,transparent,transparent 79px,rgba(255,255,255,.016) 80px);
+}
+.cta-inner{position:relative;z-index:1;max-width:680px;margin:0 auto}
+.cta-title{
+  font-family:var(--fh);font-size:var(--t-3xl);font-weight:800;color:var(--white);
+  line-height:var(--lh-snug);margin-bottom:var(--s4);letter-spacing:.01em;
+}
+.cta-title em{color:var(--gold-500);font-style:normal}
+.cta-desc{
+  font-size:var(--t-17);color:rgba(255,255,255,.6);line-height:1.78;
+  font-weight:300;margin-bottom:var(--s10);
+}
+.cta-btns{display:flex;gap:var(--s4);justify-content:center;flex-wrap:wrap}
+.cta-contacts{
+  margin-top:var(--s8);display:flex;align-items:center;justify-content:center;
+  gap:var(--s6);flex-wrap:wrap;
+}
+.cta-ci{
+  display:flex;align-items:center;gap:var(--s2);font-size:var(--t-13);
+  color:rgba(255,255,255,.38);text-decoration:none;
+  transition:color var(--dur) var(--ease);
+}
+.cta-ci:hover{color:rgba(255,255,255,.75)}
+.cta-ci svg{flex-shrink:0;opacity:.5}
+.cta-vsep{width:1px;height:14px;background:rgba(255,255,255,.1)}
+
+/* ─── Footer ─── */
+.footer{background:var(--ink-950);border-top:1px solid rgba(255,255,255,.05)}
+.footer-body{
+  display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:var(--s12);
+  padding:56px var(--px) 40px;max-width:var(--mw);margin:0 auto;
+}
+.footer-wm{
+  font-family:var(--fh);font-size:18px;font-weight:800;color:var(--white);
+  letter-spacing:.05em;text-decoration:none;display:block;margin-bottom:var(--s4);
+}
+.footer-wm em{font-style:normal;color:var(--gold-500)}
+.footer-tag{font-size:var(--t-13);color:rgba(255,255,255,.28);line-height:var(--lh-loose);
+            font-weight:300;max-width:28ch}
+.footer-col-head{
+  font-family:var(--fh);font-size:var(--t-10);font-weight:700;letter-spacing:.18em;
+  text-transform:uppercase;color:rgba(255,255,255,.4);margin-bottom:var(--s5);display:block;
+}
+.footer-a{
+  display:block;font-size:var(--t-13);color:rgba(255,255,255,.28);text-decoration:none;
+  margin-bottom:var(--s3);letter-spacing:.02em;
+  transition:color var(--dur) var(--ease);
+}
+.footer-a:hover{color:rgba(255,255,255,.72)}
+.footer-a--accent:hover{color:var(--gold-400)}
+.footer-base{
+  max-width:var(--mw);margin:0 auto;padding:20px var(--px) 24px;
+  border-top:1px solid rgba(255,255,255,.05);
+  display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:var(--s4);
+}
+.footer-copy{font-size:12px;color:rgba(255,255,255,.18)}
+.footer-legal{display:flex;gap:var(--s5)}
+.footer-legal a{font-size:12px;color:rgba(255,255,255,.18);text-decoration:none;
+                transition:color var(--dur) var(--ease)}
+.footer-legal a:hover{color:rgba(255,255,255,.55)}
+
+/* ─── Multilingual ─── */
+[data-t],[data-ti],[data-tf]{display:none}
+[data-t].v{display:block}
+[data-ti].v{display:inline}
+[data-tf].v{display:flex}
+
+/* ─── Scroll reveal ─── */
+.r{opacity:0;transform:translateY(18px);transition:opacity .52s var(--ease),transform .52s var(--ease)}
+.r.in{opacity:1;transform:none}
+
+/* ─── Responsive ─── */
+@media(max-width:1100px){
+  .footer-body{grid-template-columns:1fr 1fr}
+}
+@media(max-width:960px){
+  .hero{grid-template-columns:1fr;padding:72px var(--px) 60px;min-height:auto}
+  .hero-panel{display:none}
+  .synergy-grid{grid-template-columns:1fr}
+  .benefits-grid{grid-template-columns:1fr 1fr}
+  .services-grid{grid-template-columns:1fr 1fr}
+  .ind-grid{grid-template-columns:1fr 1fr}
+  .coverage-grid{grid-template-columns:1fr}
+  .testi-grid{grid-template-columns:1fr}
+  .esg-grid{grid-template-columns:1fr}
+  .faq-layout{grid-template-columns:1fr;gap:var(--s8)}
+  .nav-links{display:none}
+}
+@media(max-width:640px){
+  section{padding:56px 0}
+  .services-grid{grid-template-columns:1fr}
+  .benefits-grid{grid-template-columns:1fr}
+  .ind-grid{grid-template-columns:1fr 1fr}
+  .footer-body{grid-template-columns:1fr 1fr;gap:var(--s8)}
+  .cta-contacts{flex-direction:column;gap:var(--s3)}
+  .cta-vsep{display:none}
+  .hero-desc{font-size:var(--t-15)}
+}
+@media(max-width:420px){
+  .ind-grid{grid-template-columns:1fr}
+  .footer-body{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+
+<!-- LANG BAR -->
+<div class="lang-bar" role="navigation" aria-label="Sprache / Language">
+  <button class="lang-btn on"  onclick="setLang('de')" aria-pressed="true" >DE</button>
+  <button class="lang-btn"     onclick="setLang('en')" aria-pressed="false">EN</button>
+  <button class="lang-btn"     onclick="setLang('fr')" aria-pressed="false">FR</button>
+</div>
+
+<!-- NAV -->
+<header>
+<nav class="nav" role="navigation" aria-label="Hauptnavigation">
+  <a href="https://www.thankompany.com" class="nav-brand" aria-label="THANK KOMPANY GmbH">
+    <div class="nav-wm">THANK <em>KOMPANY</em></div>
+    <div class="nav-div" aria-hidden="true"></div>
+    <div>
+      <div class="nav-sub-label"><span data-ti="de" class="v">Partner-Service</span><span data-ti="en">Partner Service</span><span data-ti="fr">Service Partenaire</span></div>
+      <div class="nav-sub-name">Logistics Africa</div>
+    </div>
+  </a>
+  <ul class="nav-links" role="list">
+    <li><a href="https://www.thankompany.com/sap">SAP EAM/PM</a></li>
+    <li><a href="https://www.thankompany.com/automatisation"><span data-ti="de" class="v">Automatisierung</span><span data-ti="en">Automation</span><span data-ti="fr">Automatisation</span></a></li>
+    <li><a href="https://www.thankompany.com/software-development">Software Dev</a></li>
+    <li><a href="#" class="active">Logistics</a></li>
+    <li><a href="#contact" class="nav-cta"><span data-ti="de" class="v">Anfragen</span><span data-ti="en">Get a Quote</span><span data-ti="fr">Devis</span></a></li>
+  </ul>
+</nav>
+</header>
+
+<!-- BREADCRUMB -->
+<nav class="breadcrumb" aria-label="Breadcrumb">
+  <a href="https://www.thankompany.com/">THANK KOMPANY</a>
+  <span class="breadcrumb-sep" aria-hidden="true">›</span>
+  <a href="https://www.thankompany.com/#services"><span data-ti="de" class="v">Leistungen</span><span data-ti="en">Services</span><span data-ti="fr">Services</span></a>
+  <span class="breadcrumb-sep" aria-hidden="true">›</span>
+  <span aria-current="page">Logistics Africa — Smart Logistics &amp; Services Ltd</span>
+</nav>
+
+
+<!-- ══ HERO ══ -->
+<section class="hero" aria-labelledby="hero-h1">
+  <div class="hero-content">
+    <div class="hero-badge">
+      <span class="badge-dot" aria-hidden="true"></span>
+      <span data-ti="de" class="v">Strategischer Logistik-Partner · CEMAC-Region</span>
+      <span data-ti="en">Strategic Logistics Partner · CEMAC Region</span>
+      <span data-ti="fr">Partenaire Logistique Stratégique · Région CEMAC</span>
+    </div>
+    <span class="hero-sup">Thank Kompany GmbH × Smart Logistics &amp; Services Ltd</span>
+    <h1 id="hero-h1" class="hero-title" data-t="de">Logistik<em>lösungen</em><br>in der CEMAC</h1>
+    <h1 class="hero-title" data-t="en">Logistics <em>Solutions</em><br>Across the CEMAC</h1>
+    <h1 class="hero-title" data-t="fr">Solutions <em>Logistiques</em><br>en Zone CEMAC</h1>
+    <p class="hero-desc" data-t="de">Durch unsere strategische Partnerschaft mit Smart Logistics &amp; Services Ltd liefert THANK KOMPANY GmbH vollständiges Supply-Chain-Management für internationale Projekte in der CEMAC-Subregion — multimodale Frachtabfertigung, Zollbrokerage und WMS-gestützte Lagerung.</p>
+    <p class="hero-desc" data-t="en">Through our strategic partnership with Smart Logistics &amp; Services Ltd, THANK KOMPANY delivers end-to-end supply chain management for international projects across the CEMAC sub-region — multimodal freight, customs brokerage, and WMS-enabled warehousing.</p>
+    <p class="hero-desc" data-t="fr">Grâce à notre partenariat stratégique avec Smart Logistics &amp; Services Ltd, THANK KOMPANY assure la gestion complète de la chaîne d'approvisionnement dans la sous-région CEMAC — transit multimodal, dédouanement et entreposage WMS.</p>
+    <div class="hero-actions" data-tf="de"><a href="#contact" class="btn btn--primary">Logistikleistungen anfragen</a><a href="https://smartls.cm" target="_blank" rel="noopener" class="btn btn--ghost">Smart Logistics besuchen ↗</a></div>
+    <div class="hero-actions" data-tf="en"><a href="#contact" class="btn btn--primary">Request Logistics Services</a><a href="https://smartls.cm" target="_blank" rel="noopener" class="btn btn--ghost">Visit Smart Logistics ↗</a></div>
+    <div class="hero-actions" data-tf="fr"><a href="#contact" class="btn btn--primary">Demander nos services</a><a href="https://smartls.cm" target="_blank" rel="noopener" class="btn btn--ghost">Visiter Smart Logistics ↗</a></div>
+  </div>
+  <div class="hero-panel" aria-hidden="true">
+    <div class="stat-card r"><div class="stat-num">6+</div><div><strong class="stat-title"><span data-ti="de" class="v">CEMAC-Länder</span><span data-ti="en">CEMAC Countries</span><span data-ti="fr">Pays CEMAC couverts</span></strong><span class="stat-sub">CM · TD · CF · CG · GA · GQ</span></div></div>
+    <div class="stat-card r"><div class="stat-num">48h</div><div><strong class="stat-title"><span data-ti="de" class="v">Ø Zollabfertigung</span><span data-ti="en">Avg. Customs Clearance</span><span data-ti="fr">Dédouanement moyen</span></strong><span class="stat-sub">Import/Export · Port of Douala</span></div></div>
+    <div class="stat-card r"><div class="stat-num">3PL</div><div><strong class="stat-title"><span data-ti="de" class="v">Vollständige Drittlogistik</span><span data-ti="en">Full 3rd-Party Logistics</span><span data-ti="fr">Logistique tierce complète</span></strong><span class="stat-sub">Air · Land · Sea · Warehousing</span></div></div>
+    <div class="stat-card r"><div class="stat-num">WCA</div><div><strong class="stat-title"><span data-ti="de" class="v">Globales Netzwerk</span><span data-ti="en">Global Network Member</span><span data-ti="fr">Réseau mondial certifié</span></strong><span class="stat-sub">WCA · FIATA · JC Trans</span></div></div>
+  </div>
+</section>
+
+<!-- PARTNER BAND -->
+<div class="partner-band" role="complementary">
+  <p data-t="de"><strong>Thank Kompany GmbH</strong> und <strong>Smart Logistics &amp; Services Ltd</strong> operieren als strategische Partner für integrierte Logistik- und Digitalisierungslösungen weltweit.</p>
+  <p data-t="en"><strong>Thank Kompany GmbH</strong> and <strong>Smart Logistics &amp; Services Ltd</strong> deliver integrated logistics and digital transformation solutions worldwide.</p>
+  <p data-t="fr"><strong>Thank Kompany GmbH</strong> et <strong>Smart Logistics &amp; Services Ltd</strong> délivrent des solutions logistiques et de transformation digitale à l'échelle mondiale.</p>
+  <div class="band-dot" aria-hidden="true"></div>
+  <p>Douala, Cameroun · CEMAC · <span data-ti="de" class="v">Globale Reichweite</span><span data-ti="en">Global Reach</span><span data-ti="fr">Portée mondiale</span></p>
+</div>
+
+<!-- TRUST STRIP -->
+<div class="trust-strip" aria-label="Referenzkunden / Reference Clients">
+  <p class="trust-label"><span data-ti="de" class="v">Vertrauen globaler Marktführer</span><span data-ti="en">Trusted by global leaders</span><span data-ti="fr">Approuvé par des leaders mondiaux</span></p>
+  <div class="trust-logos">
+    <span class="trust-logo">UNFPA</span><span class="trust-logo">WFP</span><span class="trust-logo">GIZ</span>
+    <span class="trust-logo">Maersk</span><span class="trust-logo">CMA CGM</span><span class="trust-logo">Hapag-Lloyd</span>
+    <span class="trust-logo">Larsen &amp; Toubro</span><span class="trust-logo">Tata Group</span>
+    <span class="trust-logo">DHL</span><span class="trust-logo">MSC</span><span class="trust-logo">SGS</span>
+    <span class="trust-logo">MINUSCA / UN</span><span class="trust-logo">CHAI</span>
+  </div>
+</div>
+
+
+<!-- ══ SYNERGY ══ -->
+<section class="synergy" id="partnership" aria-labelledby="syn-h2">
+  <div class="wrap">
+    <div class="section-eyebrow r"><span data-ti="de" class="v">Partnerschaftsmodell</span><span data-ti="en">Partnership Model</span><span data-ti="fr">Modèle de Partenariat</span></div>
+    <h2 id="syn-h2" class="section-title r" data-t="de">Zwei Unternehmen, <em>eine Vision</em></h2>
+    <h2 class="section-title r" data-t="en">Two Companies, <em>One Vision</em></h2>
+    <h2 class="section-title r" data-t="fr">Deux Entreprises, <em>une Vision</em></h2>
+    <p class="section-lead r" data-t="de">Thank Kompany und Smart Logistics arbeiten eng zusammen, um Industrie-, Humanitär- und Bauprojektkunden zu bedienen, die operative Exzellenz und digitale Infrastruktur gleichermaßen erfordern.</p>
+    <p class="section-lead r" data-t="en">Thank Kompany and Smart Logistics work in close synergy to serve industrial, humanitarian, and construction clients requiring both operational excellence and digital infrastructure.</p>
+    <p class="section-lead r" data-t="fr">Thank Kompany et Smart Logistics collaborent étroitement pour servir les clients qui requièrent à la fois l'excellence opérationnelle et l'infrastructure numérique.</p>
+    <div class="synergy-grid">
+      <div class="co-card co-card--blue r">
+        <div class="co-tag tag-b"><span data-ti="de" class="v">Digital- &amp; Engineering-Partner</span><span data-ti="en">Digital &amp; Engineering Partner</span><span data-ti="fr">Partenaire Digital &amp; Ingénierie</span></div>
+        <div class="co-name">Thank Kompany GmbH</div>
+        <p class="co-desc" data-t="de">Internationales Beratungs- und Technologieunternehmen mit Sitz in Ludwigshafen — spezialisiert auf SAP EAM/PM, Industrieautomatisierung, Softwareentwicklung und digitale Transformation. Thank Kompany liefert das digitale Rückgrat für komplexe internationale Projekte.</p>
+        <p class="co-desc" data-t="en">International consulting and technology company based in Ludwigshafen — specializing in SAP EAM/PM, industrial automation, software development, and digital transformation. Thank Kompany provides the digital backbone for complex international projects.</p>
+        <p class="co-desc" data-t="fr">Cabinet de conseil et technologie international basé à Ludwigshafen — spécialisé en SAP EAM/PM, automatisation industrielle, développement logiciel et transformation digitale. Thank Kompany fournit l'épine dorsale numérique des projets complexes.</p>
+        <div class="chips">
+          <span class="chip">SAP EAM/PM</span>
+          <span class="chip"><span data-ti="de" class="v">Automatisierungstechnik</span><span data-ti="en">Automation Engineering</span><span data-ti="fr">Automatisation industrielle</span></span>
+          <span class="chip"><span data-ti="de" class="v">Softwareentwicklung</span><span data-ti="en">Software Development</span><span data-ti="fr">Développement logiciel</span></span>
+          <span class="chip"><span data-ti="de" class="v">Digitale Transformation</span><span data-ti="en">Digital Transformation</span><span data-ti="fr">Transformation digitale</span></span>
+        </div>
+      </div>
+      <div class="co-card co-card--gold r">
+        <div class="co-tag tag-g"><span data-ti="de" class="v">Logistik- &amp; Supply-Chain-Partner</span><span data-ti="en">Logistics &amp; Supply Chain Partner</span><span data-ti="fr">Partenaire Logistique &amp; Supply Chain</span></div>
+        <div class="co-name">Smart Logistics &amp; Services Ltd</div>
+        <p class="co-desc" data-t="de">Führender 3PL-Anbieter mit Hauptsitz in Douala, Kamerun (gegr. 2021) — bedient Internationale Organisationen und multinationale Konzerne in der CEMAC-Subregion. Smart Logistics übernimmt die physische Lieferkettenebene: Fracht, Zoll, Lagerung und Last-Mile.</p>
+        <p class="co-desc" data-t="en">Leading 3PL provider headquartered in Douala, Cameroon (est. 2021) — serving International Organizations and Multinationals across the CEMAC sub-region. Smart Logistics covers the physical supply chain layer: freight, customs, warehousing, and last-mile delivery.</p>
+        <p class="co-desc" data-t="fr">Prestataire 3PL de premier plan basé à Douala, Cameroun (créé 2021) — au service des Organisations Internationales et multinationales dans la sous-région CEMAC. Smart Logistics prend en charge la couche physique : fret, douane, entreposage et dernier kilomètre.</p>
+        <div class="chips">
+          <span class="chip"><span data-ti="de" class="v">Luftfracht</span><span data-ti="en">Air Freight</span><span data-ti="fr">Fret aérien</span></span>
+          <span class="chip"><span data-ti="de" class="v">Seefracht</span><span data-ti="en">Sea Freight</span><span data-ti="fr">Fret maritime</span></span>
+          <span class="chip"><span data-ti="de" class="v">Landfracht</span><span data-ti="en">Land Freight</span><span data-ti="fr">Fret terrestre</span></span>
+          <span class="chip"><span data-ti="de" class="v">Zollagentur</span><span data-ti="en">Customs Brokerage</span><span data-ti="fr">Courtage douanier</span></span>
+          <span class="chip"><span data-ti="de" class="v">Lagerung</span><span data-ti="en">Warehousing</span><span data-ti="fr">Entreposage</span></span>
+        </div>
+      </div>
+      <div class="synergy-bridge r">
+        <span class="bridge-ico" aria-hidden="true">🤝</span>
+        <p data-t="de">Gemeinsam verbinden Thank Kompany und Smart Logistics technologiegetriebenes Asset-Management mit konformer, zuverlässiger physischer Logistik — internationale Projekte werden zu reibungslosen End-to-End-Operationen.</p>
+        <p data-t="en">Together, Thank Kompany and Smart Logistics bridge technology-driven asset management with compliant, reliable physical logistics — turning complex international projects into streamlined end-to-end operations.</p>
+        <p data-t="fr">Ensemble, ils relient la gestion d'actifs pilotée par la technologie à une logistique physique fiable et conforme — transformant les projets internationaux complexes en opérations rationalisées de bout en bout.</p>
+        <span class="bridge-ico" aria-hidden="true">🌍</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══ BENEFITS ══ -->
+<section class="benefits" id="benefits" aria-labelledby="bene-h2">
+  <div class="wrap">
+    <div class="section-eyebrow r"><span data-ti="de" class="v">Ihre Vorteile</span><span data-ti="en">Why This Partnership</span><span data-ti="fr">Pourquoi ce partenariat</span></div>
+    <h2 id="bene-h2" class="section-title r" data-t="de">Sechs Gründe für unsere <em>Afrika-Logistiklösung</em></h2>
+    <h2 class="section-title r" data-t="en">Six Reasons to Choose Our <em>Africa Logistics Solution</em></h2>
+    <h2 class="section-title r" data-t="fr">Six raisons de choisir notre <em>solution logistique africaine</em></h2>
+    <p class="section-lead r" data-t="de">Operative Vorteile, die die THANK KOMPANY × Smart Logistics-Partnerschaft zur optimalen Wahl für anspruchsvolle internationale Projekte machen.</p>
+    <p class="section-lead r" data-t="en">Operational advantages that make the THANK KOMPANY × Smart Logistics partnership the right choice for demanding international projects.</p>
+    <p class="section-lead r" data-t="fr">Les avantages opérationnels qui font du partenariat THANK KOMPANY × Smart Logistics le bon choix pour les projets internationaux exigeants.</p>
+    <div class="benefits-grid">
+      <article class="bene-card r"><div class="bene-ico">⚡</div><div class="bene-title"><span data-ti="de" class="v">Geschwindigkeit &amp; Zuverlässigkeit</span><span data-ti="en">Speed &amp; Reliability</span><span data-ti="fr">Rapidité &amp; Fiabilité</span></div><p class="bene-desc" data-t="de">Durchschnittliche Zollabfertigung in 48 Stunden, optimierte Transitzeiten für Luft-, See- und Landfracht sowie konsistente Lieferpünktlichkeit für kritische Projekte.</p><p class="bene-desc" data-t="en">48-hour average customs clearance, optimized transit times across air, sea, and land freight, and consistent on-time delivery for critical project timelines.</p><p class="bene-desc" data-t="fr">Dédouanement moyen en 48h, délais de transit optimisés pour tous modes de fret, et livraisons ponctuelles pour les projets critiques.</p></article>
+      <article class="bene-card r"><div class="bene-ico">📑</div><div class="bene-title"><span data-ti="de" class="v">Regulatorische Konformität</span><span data-ti="en">Regulatory Compliance</span><span data-ti="fr">Conformité Réglementaire</span></div><p class="bene-desc" data-t="de">Vollständige Einhaltung des CEMAC-Zollrechts, internationaler Handelsvorschriften und HSE-Standards — proaktives Dokumentenmanagement bei jeder Sendung.</p><p class="bene-desc" data-t="en">Full compliance with CEMAC customs law, international trade regulations, and HSE standards — proactive documentation management on every shipment.</p><p class="bene-desc" data-t="fr">Conformité totale au droit douanier CEMAC, réglementations internationales et normes HSE — gestion documentaire proactive sur chaque expédition.</p></article>
+      <article class="bene-card r"><div class="bene-ico">🗺️</div><div class="bene-title"><span data-ti="de" class="v">Regionale Abdeckung</span><span data-ti="en">Regional Coverage</span><span data-ti="fr">Couverture Régionale</span></div><p class="bene-desc" data-t="de">Operationen in allen sechs CEMAC-Ländern — von der Atlantikküste Kameruns bis in die Binnenländer Tschad und ZAR — mit validierten Zollkorridoren.</p><p class="bene-desc" data-t="en">Operations across all six CEMAC nations — from Cameroon's Atlantic coast to landlocked Chad and CAR — with validated cross-border freight corridors.</p><p class="bene-desc" data-t="fr">Opérations dans les six nations CEMAC — de la côte atlantique camerounaise aux pays enclavés — avec des corridors de fret transfrontaliers validés.</p></article>
+      <article class="bene-card r"><div class="bene-ico">📡</div><div class="bene-title"><span data-ti="de" class="v">Echtzeit-Transparenz</span><span data-ti="en">Real-Time Visibility</span><span data-ti="fr">Visibilité en Temps Réel</span></div><p class="bene-desc" data-t="de">Smart Track-Technologie für lückenlose Sendungsverfolgung. WMS-gestützte Lagerung für Bestandskontrolle vom Hafen bis zur Endlieferung.</p><p class="bene-desc" data-t="en">Smart Track technology for end-to-end shipment visibility. WMS-enabled warehousing for inventory control from port to final delivery point.</p><p class="bene-desc" data-t="fr">Smart Track pour une visibilité bout en bout. Entreposage WMS pour le contrôle des stocks du port à la livraison finale.</p></article>
+      <article class="bene-card r"><div class="bene-ico">🏗️</div><div class="bene-title"><span data-ti="de" class="v">Projektfracht-Expertise</span><span data-ti="en">Project Cargo Expertise</span><span data-ti="fr">Expertise Cargo de Projet</span></div><p class="bene-desc" data-t="de">Maßgeschneiderte Lösungen für Schwerlast-, Sondermaß- und zeitkritische Projektfracht für Infrastruktur-, Energie- und Bauprojekte in der Region.</p><p class="bene-desc" data-t="en">Tailored solutions for heavy-lift, out-of-gauge, and time-critical project cargo supporting infrastructure, energy, and construction projects across the region.</p><p class="bene-desc" data-t="fr">Solutions sur mesure pour cargaisons lourdes, hors-gabarit et urgentes pour les projets d'infrastructure, d'énergie et de construction.</p></article>
+      <article class="bene-card r"><div class="bene-ico">🌱</div><div class="bene-title"><span data-ti="de" class="v">ESG-konforme Betriebsführung</span><span data-ti="en">ESG-Aligned Operations</span><span data-ti="fr">Opérations alignées ESG</span></div><p class="bene-desc" data-t="de">Routenoptimierung, verantwortungsvoller Güterumgang und duale Governance-Ausschüsse sichern ethische, nachhaltige Logistik bei jedem Projekt.</p><p class="bene-desc" data-t="en">Route optimization, responsible cargo handling, and dual governance committees ensuring ethical and sustainable logistics on every project.</p><p class="bene-desc" data-t="fr">Optimisation des itinéraires, gestion responsable et comités de gouvernance garantissant une logistique éthique et durable sur chaque projet.</p></article>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══ SERVICES ══ -->
+<section class="services-sect" id="services" aria-labelledby="srv-h2">
+  <div class="wrap">
+    <div class="section-eyebrow r"><span data-ti="de" class="v">Leistungsportfolio</span><span data-ti="en">What We Deliver</span><span data-ti="fr">Ce que nous livrons</span></div>
+    <h2 id="srv-h2" class="section-title r" data-t="de">Integrierte <em>Logistikleistungen</em></h2>
+    <h2 class="section-title r" data-t="en">Integrated <em>Logistics Services</em></h2>
+    <h2 class="section-title r" data-t="fr">Services <em>Logistiques Intégrés</em></h2>
+    <p class="section-lead r" data-t="de">Über Smart Logistics &amp; Services Ltd erhalten Thank Kompany-Kunden Zugang zu einem vollständigen Supply-Chain-Portfolio per Luft, Land und See.</p>
+    <p class="section-lead r" data-t="en">Through Smart Logistics &amp; Services Ltd, Thank Kompany clients access a full suite of supply chain services across air, land, and sea.</p>
+    <p class="section-lead r" data-t="fr">Via Smart Logistics, les clients de Thank Kompany accèdent à une gamme complète de services de chaîne d'approvisionnement par air, terre et mer.</p>
+    <div class="services-grid">
+      <div class="srv-card r"><div class="srv-ico">✈️</div><div class="srv-title"><span data-ti="de" class="v">Luftfracht</span><span data-ti="en">Air Freight</span><span data-ti="fr">Fret Aérien</span></div><p class="srv-desc" data-t="de">Zeitkritische Sendungen mit Präzision. Vollcharter-, Sammelgut- und Expressoptionen mit Echtzeit-Tracking vom Ursprung bis zur Zustellung.</p><p class="srv-desc" data-t="en">Time-critical shipments handled with precision. Full charter, consolidated, and express options with real-time tracking from origin to delivery.</p><p class="srv-desc" data-t="fr">Expéditions urgentes gérées avec précision. Options charter, groupage et express avec suivi en temps réel de l'origine à la livraison.</p></div>
+      <div class="srv-card r"><div class="srv-ico">🚢</div><div class="srv-title"><span data-ti="de" class="v">Seefracht</span><span data-ti="en">Sea Freight</span><span data-ti="fr">Fret Maritime</span></div><p class="srv-desc" data-t="de">FCL- und LCL-Containermanagement über den Hafen Douala mit Maersk-, CMA CGM-, MSC- und Hapag-Lloyd-Partnerschaften für optimale Transitzeiten.</p><p class="srv-desc" data-t="en">FCL and LCL container management through Douala Port, with Maersk, CMA CGM, MSC, and Hapag-Lloyd partnerships for competitive transit times.</p><p class="srv-desc" data-t="fr">Gestion FCL/LCL via le port de Douala, avec partenariats Maersk, CMA CGM, MSC et Hapag-Lloyd pour des délais compétitifs.</p></div>
+      <div class="srv-card r"><div class="srv-ico">🚛</div><div class="srv-title"><span data-ti="de" class="v">Landfracht</span><span data-ti="en">Land Freight</span><span data-ti="fr">Fret Terrestre</span></div><p class="srv-desc" data-t="de">Straßentransport entlang des gesamten CEMAC-Korridors: Kamerun, Tschad, ZAR, Kongo, Gabun und Äquatorialguinea — mit grenzüberschreitender Compliance.</p><p class="srv-desc" data-t="en">Road transportation across the full CEMAC corridor — Cameroon, Chad, CAR, Congo, Gabon, and Equatorial Guinea — with cross-border compliance.</p><p class="srv-desc" data-t="fr">Transport routier sur tout le corridor CEMAC — Cameroun, Tchad, RCA, Congo, Gabon, Guinée équatoriale — avec conformité transfrontalière.</p></div>
+      <div class="srv-card r"><div class="srv-ico">📋</div><div class="srv-title"><span data-ti="de" class="v">Zollagentur</span><span data-ti="en">Customs Brokerage</span><span data-ti="fr">Courtage en Douane</span></div><p class="srv-desc" data-t="de">End-to-End-Zollabfertigung mit 48-Stunden-Turnaround. Compliance-orientierte Dokumentation für alle Im-/Exportregimes der CEMAC-Länder.</p><p class="srv-desc" data-t="en">End-to-end customs clearance with 48-hour average turnaround. Compliance-led documentation for all import/export regimes across CEMAC countries.</p><p class="srv-desc" data-t="fr">Dédouanement bout en bout, délai moyen 48h. Documentation axée conformité pour tous régimes d'import/export des pays CEMAC.</p></div>
+      <div class="srv-card r"><div class="srv-ico">🏭</div><div class="srv-title"><span data-ti="de" class="v">Lagerung &amp; WMS</span><span data-ti="en">Warehousing &amp; WMS</span><span data-ti="fr">Entreposage &amp; WMS</span></div><p class="srv-desc" data-t="de">Sichere, WMS-gestützte Lagerung nahe dem Hafen Douala — flexible Lageroptionen, Echtzeit-Bestandssichtbarkeit und kontrollierte Handhabung sensibler Güter.</p><p class="srv-desc" data-t="en">Secure, WMS-enabled warehousing near Douala Port — flexible storage, real-time inventory visibility, and controlled handling for sensitive cargo.</p><p class="srv-desc" data-t="fr">Entreposage sécurisé WMS près du port de Douala — stockage flexible, visibilité des stocks en temps réel et manutention contrôlée.</p></div>
+      <div class="srv-card r"><div class="srv-ico">🏗️</div><div class="srv-title"><span data-ti="de" class="v">Projektfracht</span><span data-ti="en">Project Cargo</span><span data-ti="fr">Cargo de Projet</span></div><p class="srv-desc" data-t="de">Spezialisierte Logistik für Sondermaß-, Schwerlast- und Übergroßgüter für Öl &amp; Gas-, Bau- und Fertigungsprojekte in der gesamten Region.</p><p class="srv-desc" data-t="en">Specialized logistics for out-of-gauge, heavy-lift, and oversized cargo supporting oil &amp; gas, construction, and manufacturing projects region-wide.</p><p class="srv-desc" data-t="fr">Logistique spécialisée pour cargaisons hors-gabarit, levage lourd et surdimensionné pour les projets pétroliers, de construction et manufacturiers.</p></div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══ INDUSTRIES ══ -->
+<section class="industries" id="industries" aria-labelledby="ind-h2">
+  <div class="wrap">
+    <div class="section-eyebrow eyebrow--gold r"><span data-ti="de" class="v">Bediente Branchen</span><span data-ti="en">Sectors We Serve</span><span data-ti="fr">Secteurs desservis</span></div>
+    <h2 id="ind-h2" class="section-title section-title--w r" data-t="de">Branchenlösungen mit <em>hohem Impact</em></h2>
+    <h2 class="section-title section-title--w r" data-t="en">High-Impact Solutions Across <em>Critical Sectors</em></h2>
+    <h2 class="section-title section-title--w r" data-t="fr">Solutions à <em>Fort Impact</em> dans les Secteurs Clés</h2>
+    <p class="section-lead section-lead--w r" data-t="de">Smart Logistics bringt tiefe Branchenexpertise in die Bereiche, die Thank Kompany bedient — für abgestimmte operative und logistische Kompetenz.</p>
+    <p class="section-lead section-lead--w r" data-t="en">Smart Logistics brings deep sector expertise across the industries Thank Kompany serves — ensuring aligned operational and logistics competence.</p>
+    <p class="section-lead section-lead--w r" data-t="fr">Smart Logistics apporte une expertise sectorielle approfondie dans les domaines que Thank Kompany dessert — pour une compétence opérationnelle et logistique alignée.</p>
+    <div class="ind-grid">
+      <div class="ind-card r"><div class="ind-ico">⛽</div><div class="ind-name"><span data-ti="de" class="v">Öl &amp; Gas / Energie</span><span data-ti="en">Oil &amp; Gas / Energy</span><span data-ti="fr">Pétrole &amp; Gaz / Énergie</span></div><p class="ind-desc" data-t="de">Komplexe Sondertransporte mit HSE-Konformität für Upstream- und Downstream-Projekte.</p><p class="ind-desc" data-t="en">Complex out-of-gauge cargo with strict HSE compliance for upstream and downstream operations.</p><p class="ind-desc" data-t="fr">Cargaisons hors-gabarit complexes avec conformité HSE stricte pour opérations amont et aval.</p></div>
+      <div class="ind-card r"><div class="ind-ico">🏗️</div><div class="ind-name"><span data-ti="de" class="v">Bau &amp; Infrastruktur</span><span data-ti="en">Construction &amp; Infrastructure</span><span data-ti="fr">Construction &amp; Infrastructure</span></div><p class="ind-desc" data-t="de">End-to-End-Projektfracht für Schwergüter und Materialien bei bedeutenden Infrastrukturvorhaben.</p><p class="ind-desc" data-t="en">End-to-end project cargo for heavy machinery and materials supporting major infrastructure developments.</p><p class="ind-desc" data-t="fr">Cargo de projet bout en bout pour engins lourds et matériaux dans les grands chantiers d'infrastructure.</p></div>
+      <div class="ind-card r"><div class="ind-ico">🏥</div><div class="ind-name"><span data-ti="de" class="v">Gesundheit &amp; Pharma</span><span data-ti="en">Healthcare &amp; Pharma</span><span data-ti="fr">Santé &amp; Pharmacie</span></div><p class="ind-desc" data-t="de">Temperaturkontrollierte Lieferketten für sensible Pharmawaren — vom Hafen bis zum Patienten.</p><p class="ind-desc" data-t="en">Temperature-controlled supply chains for sensitive pharmaceuticals, from port to patient.</p><p class="ind-desc" data-t="fr">Chaînes d'approvisionnement à température contrôlée pour médicaments sensibles, du port au patient.</p></div>
+      <div class="ind-card r"><div class="ind-ico">🌐</div><div class="ind-name"><span data-ti="de" class="v">Humanitäre Hilfe</span><span data-ti="en">Humanitarian &amp; Aid</span><span data-ti="fr">Humanitaire &amp; Aide</span></div><p class="ind-desc" data-t="de">Schnelle Deploymentlogistik für NGOs und UN-Behörden — UNFPA, WFP und MINUSCA-Erfahrung.</p><p class="ind-desc" data-t="en">Rapid deployment logistics for NGOs and UN agencies — including UNFPA, WFP, and MINUSCA ops.</p><p class="ind-desc" data-t="fr">Logistique de déploiement rapide pour ONG et agences ONU — UNFPA, PAM et MINUSCA.</p></div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══ COVERAGE ══ -->
+<section class="coverage" id="coverage" aria-labelledby="cov-h2">
+  <div class="wrap">
+    <div class="section-eyebrow r"><span data-ti="de" class="v">Operative Reichweite</span><span data-ti="en">Operational Reach</span><span data-ti="fr">Portée Opérationnelle</span></div>
+    <h2 id="cov-h2" class="section-title r" data-t="de">CEMAC-Region &amp; <em>Globale Netzwerke</em></h2>
+    <h2 class="section-title r" data-t="en">CEMAC Region &amp; <em>Global Networks</em></h2>
+    <h2 class="section-title r" data-t="fr">Région CEMAC &amp; <em>Réseaux Mondiaux</em></h2>
+    <p class="section-lead r" data-t="de">Hauptsitz in Douala, Kamerun — dem Logistikzentrum Zentralafrikas — mit aktiven Operationen in der gesamten CEMAC-Subregion und weltweiten Frachtverbindungen.</p>
+    <p class="section-lead r" data-t="en">Headquartered in Douala, Cameroon — the logistics hub of Central Africa — with active operations across the full CEMAC sub-region and global freight connections.</p>
+    <p class="section-lead r" data-t="fr">Basée à Douala, Cameroun — le hub logistique d'Afrique centrale — avec des opérations actives dans toute la sous-région CEMAC et des connexions mondiales.</p>
+    <div class="coverage-grid">
+      <div class="map-wrap r">
+        <svg viewBox="0 0 420 320" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="CEMAC Region Coverage Map">
+          <defs>
+            <radialGradient id="g1" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#1a5eb8" stop-opacity=".07"/><stop offset="100%" stop-color="#1a5eb8" stop-opacity="0"/></radialGradient>
+            <filter id="blur"><feGaussianBlur stdDeviation="2"/></filter>
+          </defs>
+          <rect width="420" height="320" fill="#eef2f8" rx="6"/>
+          <rect width="420" height="320" fill="url(#g1)" rx="6"/>
+          <!-- Continent outline -->
+          <path d="M205,25 Q252,22 278,50 Q310,62 320,98 Q338,132 332,176 Q324,216 302,248 Q278,275 246,288 Q212,298 180,286 Q148,272 124,250 Q90,220 78,182 Q64,142 72,104 Q80,66 106,44 Q140,22 205,25Z" fill="#dde6f0" stroke="#c8d4e6" stroke-width="1.5"/>
+          <!-- Country halos -->
+          <ellipse cx="212" cy="162" rx="30" ry="24" fill="#1a5eb8" opacity=".12" filter="url(#blur)"/>
+          <!-- CM base -->
+          <circle cx="212" cy="162" r="15" fill="#1a5eb8" opacity=".9"/>
+          <text x="212" y="167" text-anchor="middle" fill="white" font-size="9" font-weight="700" font-family="Barlow Condensed,sans-serif">CM</text>
+          <!-- Other CEMAC -->
+          <circle cx="196" cy="114" r="10" fill="#e8a020" opacity=".88"/><text x="196" y="118" text-anchor="middle" fill="white" font-size="8" font-weight="700" font-family="Barlow Condensed,sans-serif">TD</text>
+          <circle cx="250" cy="126" r="10" fill="#e8a020" opacity=".88"/><text x="250" y="130" text-anchor="middle" fill="white" font-size="8" font-weight="700" font-family="Barlow Condensed,sans-serif">CF</text>
+          <circle cx="255" cy="180" r="10" fill="#e8a020" opacity=".88"/><text x="255" y="184" text-anchor="middle" fill="white" font-size="8" font-weight="700" font-family="Barlow Condensed,sans-serif">CG</text>
+          <circle cx="230" cy="200" r="10" fill="#e8a020" opacity=".88"/><text x="230" y="204" text-anchor="middle" fill="white" font-size="8" font-weight="700" font-family="Barlow Condensed,sans-serif">GA</text>
+          <circle cx="197" cy="188" r="10" fill="#e8a020" opacity=".88"/><text x="197" y="192" text-anchor="middle" fill="white" font-size="8" font-weight="700" font-family="Barlow Condensed,sans-serif">GQ</text>
+          <!-- Lines from Douala to countries -->
+          <line x1="183" y1="162" x2="196" y2="122" stroke="#e8a020" stroke-width="1.2" stroke-dasharray="4 3" opacity=".45"/>
+          <line x1="183" y1="162" x2="250" y2="134" stroke="#e8a020" stroke-width="1.2" stroke-dasharray="4 3" opacity=".45"/>
+          <line x1="183" y1="164" x2="255" y2="178" stroke="#e8a020" stroke-width="1.2" stroke-dasharray="4 3" opacity=".45"/>
+          <line x1="183" y1="165" x2="230" y2="198" stroke="#e8a020" stroke-width="1.2" stroke-dasharray="4 3" opacity=".45"/>
+          <line x1="183" y1="165" x2="197" y2="186" stroke="#e8a020" stroke-width="1.2" stroke-dasharray="4 3" opacity=".45"/>
+          <!-- Douala HQ pin -->
+          <circle cx="183" cy="165" r="7" fill="#0b1e3d"/>
+          <circle cx="183" cy="165" r="13" fill="none" stroke="#0b1e3d" stroke-width="1.5" opacity=".22"/>
+          <circle cx="183" cy="165" r="20" fill="none" stroke="#0b1e3d" stroke-width="1" opacity=".09"/>
+          <text x="183" y="190" text-anchor="middle" fill="#0b1e3d" font-size="9" font-weight="700" font-family="Barlow Condensed,sans-serif">Douala HQ</text>
+          <!-- Legend -->
+          <circle cx="32" cy="272" r="7" fill="#1a5eb8"/><text x="46" y="277" fill="#475569" font-size="11" font-family="Barlow,sans-serif">Base of Operations</text>
+          <circle cx="32" cy="294" r="7" fill="#e8a020"/><text x="46" y="299" fill="#475569" font-size="11" font-family="Barlow,sans-serif">CEMAC Coverage</text>
+        </svg>
+      </div>
+      <div class="kpi-stack">
+        <div class="kpi-card r"><div class="kpi-num">6+</div><div class="kpi-body"><strong><span data-ti="de" class="v">CEMAC-Länder</span><span data-ti="en">CEMAC Countries</span><span data-ti="fr">Pays CEMAC</span></strong><span><span data-ti="de" class="v">Aktive Operationen: Kamerun, Tschad, ZAR, Kongo, Gabun, Äquatorialguinea</span><span data-ti="en">Active operations: Cameroon, Chad, CAR, Congo, Gabon, Equatorial Guinea</span><span data-ti="fr">Opérations actives : Cameroun, Tchad, RCA, Congo, Gabon, Guinée équatoriale</span></span></div></div>
+        <div class="kpi-card r"><div class="kpi-num">48h</div><div class="kpi-body"><strong><span data-ti="de" class="v">Zollabfertigung</span><span data-ti="en">Customs Clearance</span><span data-ti="fr">Dédouanement</span></strong><span><span data-ti="de" class="v">Durchschnittlicher Turnaround für Im-/Export am Port of Douala</span><span data-ti="en">Average turnaround for import/export at Port of Douala</span><span data-ti="fr">Délai moyen pour import/export au port de Douala</span></span></div></div>
+        <div class="kpi-card r"><div class="kpi-num">20+</div><div class="kpi-body"><strong><span data-ti="de" class="v">Globale Referenzkunden</span><span data-ti="en">Global Reference Clients</span><span data-ti="fr">Clients mondiaux</span></strong><span>UNFPA · WFP · L&amp;T · Tata · GIZ · Maersk · CMA CGM · DHL</span></div></div>
+        <div class="kpi-card r"><div class="kpi-num">3</div><div class="kpi-body"><strong><span data-ti="de" class="v">Netzwerkmitgliedschaften</span><span data-ti="en">Network Memberships</span><span data-ti="fr">Adhésions réseau</span></strong><span>WCA · FIATA · JC Trans</span></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══ TESTIMONIALS ══ -->
+<section class="testimonials" aria-labelledby="testi-h2">
+  <div class="wrap">
+    <div class="section-eyebrow r"><span data-ti="de" class="v">Kundenstimmen</span><span data-ti="en">Client Voices</span><span data-ti="fr">Témoignages Clients</span></div>
+    <h2 id="testi-h2" class="section-title r" data-t="de">Was unsere <em>Kunden sagen</em></h2>
+    <h2 class="section-title r" data-t="en">What Our <em>Clients Say</em></h2>
+    <h2 class="section-title r" data-t="fr">Ce que disent <em>nos clients</em></h2>
+    <div class="testi-grid">
+      <div class="testi-card r"><span class="testi-qmark" aria-hidden="true">"</span><p class="testi-text" data-t="de">„Smart Logistics war ein unschätzbarer Partner. Ihre Expertise in der Zollabfertigung und im Transport hat uns Millionen FCFA gespart. Ihre Professionalität ist in der Region unübertroffen."</p><p class="testi-text" data-t="en">"Smart Logistics has been an invaluable partner. Their expertise in customs clearance and transportation has saved us millions of FCFA. Their professionalism is unmatched."</p><p class="testi-text" data-t="fr">« Smart Logistics a été un partenaire inestimable. Leur expertise en dédouanement et transport nous a fait économiser des millions de FCFA. Leur professionnalisme est sans égal. »</p><div class="testi-author"><div class="testi-avatar">SM</div><div><span class="testi-name">Smith A. Mengot</span><span class="testi-role">Executive Logistics, L&amp;T Power Transmission</span></div></div></div>
+      <div class="testi-card r"><span class="testi-qmark" aria-hidden="true">"</span><p class="testi-text" data-t="de">„Wir haben Smart Logistics unsere sensiblen Pharmalieferungen anvertraut. Ihr Echtzeit-Tracking gewährleistete eine reibungslose Lieferung, und der Kundenservice war erstklassig."</p><p class="testi-text" data-t="en">"We entrusted Smart Logistics with our sensitive pharmaceutical shipments. Their real-time tracking ensured seamless delivery, and their customer service was outstanding."</p><p class="testi-text" data-t="fr">« Nous avons confié nos expéditions pharmaceutiques sensibles à Smart Logistics. Leur suivi en temps réel a assuré une livraison sans accroc et leur service client était exemplaire. »</p><div class="testi-author"><div class="testi-avatar">CE</div><div><span class="testi-name">Dr. Christian Ewane</span><span class="testi-role">Supply Chain Analyst, UNFPA</span></div></div></div>
+      <div class="testi-card r"><span class="testi-qmark" aria-hidden="true">"</span><p class="testi-text" data-t="de">„Smart Logistics hat unsere Erwartungen beim Re-Export von Schwergütern aus Kamerun in die Elfenbeinküste übertroffen. Ihre Expertise hat uns wertvolle Zeit und unseren Projektplan geschützt."</p><p class="testi-text" data-t="en">"Smart Logistics exceeded our expectations in re-exporting heavy equipment from Cameroon to Ivory Coast. Their expertise saved us valuable time and protected our project schedule."</p><p class="testi-text" data-t="fr">« Smart Logistics a dépassé nos attentes lors de la réexportation d'équipements lourds. Leur expertise nous a fait gagner un temps précieux et protégé notre calendrier. »</p><div class="testi-author"><div class="testi-avatar">SY</div><div><span class="testi-name">Serge Yannick Southy</span><span class="testi-role">Logistics Manager, FMA Services International</span></div></div></div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══ ESG ══ -->
+<section class="esg" aria-labelledby="esg-h2">
+  <div class="wrap">
+    <div class="section-eyebrow r">ESG</div>
+    <h2 id="esg-h2" class="section-title r" data-t="de">Verantwortungsvolle <em>Logistik</em></h2>
+    <h2 class="section-title r" data-t="en">Responsible <em>Logistics</em></h2>
+    <h2 class="section-title r" data-t="fr">Logistique <em>Responsable</em></h2>
+    <p class="section-lead r" data-t="de">Smart Logistics &amp; Services Ltd integriert Umwelt-, Sozial- und Governance-Standards in jeden Aspekt seiner Tätigkeit — von der Routenoptimierung bis zur Mitarbeiterentwicklung.</p>
+    <p class="section-lead r" data-t="en">Smart Logistics &amp; Services Ltd integrates environmental, social, and governance standards into every aspect of its operations — from route optimization to staff development.</p>
+    <p class="section-lead r" data-t="fr">Smart Logistics intègre les normes ESG dans chaque aspect de ses opérations — de l'optimisation des itinéraires au développement du personnel.</p>
+    <div class="esg-grid">
+      <div class="esg-card r" data-l="E"><span class="esg-letter">E</span><div class="esg-title"><span data-ti="de" class="v">Umwelt</span><span data-ti="en">Environment</span><span data-ti="fr">Environnement</span></div><p class="esg-desc" data-t="de">Routenoptimierung zur Emissionsreduzierung, verantwortungsvoller Gefahrgutumgang, Abfallreduktion im Lagerbetrieb und schrittweise Umstellung auf kraftstoffeffiziente Fahrzeugflotten.</p><p class="esg-desc" data-t="en">Route optimization to cut emissions, responsible hazardous cargo handling, waste reduction in warehouse operations, and gradual transition to fuel-efficient transport fleets.</p><p class="esg-desc" data-t="fr">Optimisation des itinéraires, gestion responsable des matières dangereuses, réduction des déchets et transition vers des flottes économes en carburant.</p></div>
+      <div class="esg-card r" data-l="S"><span class="esg-letter">S</span><div class="esg-title"><span data-ti="de" class="v">Soziales</span><span data-ti="en">Social</span><span data-ti="fr">Social</span></div><p class="esg-desc" data-t="de">Strikte HSE-Standards, kontinuierliche Mitarbeiterschulung, ethische Arbeitspraktiken, null Toleranz gegenüber Diskriminierung und aktive Unterstützung humanitärer Lieferketten.</p><p class="esg-desc" data-t="en">Strict HSE standards, continuous staff training, ethical labour practices, zero tolerance for discrimination, and active support for humanitarian supply chains.</p><p class="esg-desc" data-t="fr">Normes HSE strictes, formation continue, pratiques de travail éthiques, tolérance zéro et soutien actif aux chaînes humanitaires.</p></div>
+      <div class="esg-card r" data-l="G"><span class="esg-letter">G</span><div class="esg-title"><span data-ti="de" class="v">Unternehmensführung</span><span data-ti="en">Governance</span><span data-ti="fr">Gouvernance</span></div><p class="esg-desc" data-t="de">Strategieplanungs- und Operational-Excellence-Ausschüsse gewährleisten Verantwortlichkeit, regulatorische Konformität, Risikominimierung und transparente Geschäftsführung.</p><p class="esg-desc" data-t="en">Strategic Planning and Operational Excellence Committees ensure accountability, regulatory compliance, risk mitigation, and transparent business conduct.</p><p class="esg-desc" data-t="fr">Les comités de planification stratégique et d'excellence opérationnelle assurent responsabilité, conformité, gestion des risques et transparence.</p></div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══ FAQ ══ -->
+<section class="faq-sect" aria-labelledby="faq-h2">
+  <div class="wrap">
+    <div class="section-eyebrow r">FAQ</div>
+    <h2 id="faq-h2" class="section-title r" data-t="de">Häufige <em>Fragen</em></h2>
+    <h2 class="section-title r" data-t="en">Common <em>Questions</em></h2>
+    <h2 class="section-title r" data-t="fr">Questions <em>Fréquentes</em></h2>
+    <div class="faq-layout">
+      <div class="faq-side r">
+        <p data-t="de">Alles, was Sie über unser CEMAC-Logistikangebot und die Partnerschaft mit Smart Logistics &amp; Services Ltd wissen müssen.</p>
+        <p data-t="en">Everything you need to know about our CEMAC logistics offering and the partnership with Smart Logistics &amp; Services Ltd.</p>
+        <p data-t="fr">Tout ce que vous devez savoir sur notre offre logistique CEMAC et le partenariat avec Smart Logistics &amp; Services Ltd.</p>
+        <div class="faq-side-cta">
+          <a href="#contact" class="btn btn--blue btn--sm"><span data-ti="de" class="v">Direkt anfragen</span><span data-ti="en">Ask Us Directly</span><span data-ti="fr">Nous interroger</span></a>
+        </div>
+      </div>
+      <div class="faq-items r">
+        <div class="faq-item"><button class="faq-btn" aria-expanded="false" aria-controls="f1"><span data-ti="de" class="v">Welche Länder deckt der Service ab?</span><span data-ti="en">What countries does this service cover?</span><span data-ti="fr">Quels pays ce service couvre-t-il ?</span><span class="faq-chevron" aria-hidden="true">▼</span></button><div class="faq-body" id="f1"><p data-t="de">Alle sechs CEMAC-Länder: Kamerun, Tschad, Zentralafrikanische Republik, Gabun, Äquatorialguinea und die Republik Kongo. Douala dient als primärer Betriebsstandort und Seeeingangshafen der gesamten Region.</p><p data-t="en">All six CEMAC nations: Cameroon, Chad, Central African Republic, Gabon, Equatorial Guinea, and the Republic of Congo. Douala serves as the primary operational hub and maritime gateway for the entire region.</p><p data-t="fr">Les six nations CEMAC : Cameroun, Tchad, RCA, Gabon, Guinée équatoriale et République du Congo. Douala est le hub principal et la porte maritime de toute la région.</p></div></div>
+        <div class="faq-item"><button class="faq-btn" aria-expanded="false" aria-controls="f2"><span data-ti="de" class="v">Wie schnell ist die Zollabfertigung?</span><span data-ti="en">How fast is customs clearance?</span><span data-ti="fr">Quel est le délai de dédouanement ?</span><span class="faq-chevron" aria-hidden="true">▼</span></button><div class="faq-body" id="f2"><p data-t="de">Die durchschnittliche Zollabfertigungszeit beträgt 48 Stunden für Standardsendungen mit vollständiger Dokumentation. Unser Team arbeitet proaktiv an der Vorankunftsdokumentation, um Verzögerungen zu minimieren.</p><p data-t="en">The average customs clearance time is 48 hours for standard shipments with complete documentation. Our team works proactively on pre-arrival documentation to minimize delays.</p><p data-t="fr">Le délai moyen est de 48 heures pour les envois standards avec documentation complète. Notre équipe prépare proactivement les documents pré-arrivée pour réduire les délais.</p></div></div>
+        <div class="faq-item"><button class="faq-btn" aria-expanded="false" aria-controls="f3"><span data-ti="de" class="v">Werden pharmazeutische Güter / Kühlkette unterstützt?</span><span data-ti="en">Can you handle pharmaceutical or cold-chain cargo?</span><span data-ti="fr">Gérez-vous les produits pharmaceutiques / chaîne du froid ?</span><span class="faq-chevron" aria-hidden="true">▼</span></button><div class="faq-body" id="f3"><p data-t="de">Ja. Smart Logistics betreibt temperaturkontrollierten Transport und Lagerung für Pharmazeutika und verderbliche Güter — Produktintegrität vom Hafen bis zur Endlieferung garantiert.</p><p data-t="en">Yes. Smart Logistics operates temperature-controlled transport and storage for pharmaceutical and perishable goods, guaranteeing product integrity from port to final delivery.</p><p data-t="fr">Oui. Smart Logistics assure transport et stockage à température contrôlée, garantissant l'intégrité des produits du port à la livraison finale.</p></div></div>
+        <div class="faq-item"><button class="faq-btn" aria-expanded="false" aria-controls="f4"><span data-ti="de" class="v">Ist der Service für NGOs und UN-Behörden verfügbar?</span><span data-ti="en">Is this available to NGOs and UN agencies?</span><span data-ti="fr">Ce service est-il disponible pour les ONG et agences ONU ?</span><span class="faq-chevron" aria-hidden="true">▼</span></button><div class="faq-body" id="f4"><p data-t="de">Absolut. Smart Logistics besitzt nachgewiesene Erfahrung mit UNFPA, WFP, MINUSCA und CHAI. Schnelle Deploymentlogistik und Zollabfertigung für humanitäre Lieferketten sind eine Kernkompetenz.</p><p data-t="en">Absolutely. Smart Logistics has proven experience with UNFPA, WFP, MINUSCA, and CHAI. Rapid deployment and regulatory clearance for humanitarian supply chains are a core competency.</p><p data-t="fr">Absolument. Smart Logistics a une expérience avérée avec UNFPA, PAM, MINUSCA et CHAI. Le déploiement rapide et le dédouanement humanitaire sont des compétences centrales.</p></div></div>
+        <div class="faq-item"><button class="faq-btn" aria-expanded="false" aria-controls="f5"><span data-ti="de" class="v">Welche Netzwerkmitgliedschaften bestehen?</span><span data-ti="en">What certifications and network memberships does the partner hold?</span><span data-ti="fr">Quelles certifications et adhésions le partenaire détient-il ?</span><span class="faq-chevron" aria-hidden="true">▼</span></button><div class="faq-body" id="f5"><p data-t="de">Smart Logistics &amp; Services Ltd ist Mitglied bei WCA (World Cargo Alliance), FIATA (Internationaler Verband der Spediteure) und JC Trans — globale Netzwerkanbindung und international anerkannte Berufsstandards.</p><p data-t="en">Smart Logistics &amp; Services Ltd holds memberships with WCA (World Cargo Alliance), FIATA, and JC Trans — ensuring global network alignment and internationally recognized professional standards.</p><p data-t="fr">Smart Logistics est membre de WCA, FIATA et JC Trans — garantissant une connexion au réseau mondial et des standards professionnels reconnus.</p></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══ CTA ══ -->
+<section class="cta-sect" id="contact" aria-labelledby="cta-h2">
+  <div class="cta-inner">
+    <h2 id="cta-h2" class="cta-title" data-t="de">Bereit für den <em>nächsten Schritt?</em></h2>
+    <h2 class="cta-title" data-t="en">Ready to Ship <em>Anywhere in CEMAC?</em></h2>
+    <h2 class="cta-title" data-t="fr">Prêt à expédier <em>partout en CEMAC ?</em></h2>
+    <p class="cta-desc" data-t="de">Kontaktieren Sie das Thank Kompany-Team oder Smart Logistics &amp; Services Ltd direkt. Gemeinsam liefern wir Ihr Projekt — pünktlich, compliant und skalierbar.</p>
+    <p class="cta-desc" data-t="en">Contact the Thank Kompany team or Smart Logistics &amp; Services Ltd directly. Together, we deliver your project — on time, in compliance, at scale.</p>
+    <p class="cta-desc" data-t="fr">Contactez l'équipe de Thank Kompany ou Smart Logistics &amp; Services Ltd directement. Ensemble, nous livrons votre projet — à temps, en conformité et à grande échelle.</p>
+    <div class="cta-btns">
+      <a href="mailto:info@smartls.cm" class="btn btn--primary"><span data-ti="de" class="v">Smart Logistics kontaktieren</span><span data-ti="en">Email Smart Logistics</span><span data-ti="fr">Écrire à Smart Logistics</span></a>
+      <a href="https://smartls.cm/smart-quote" target="_blank" rel="noopener" class="btn btn--ghost"><span data-ti="de" class="v">Frachtangebot einholen ↗</span><span data-ti="en">Get a Freight Quote ↗</span><span data-ti="fr">Obtenir un devis ↗</span></a>
+      <a href="https://wa.me/237696122511" target="_blank" rel="noopener" class="btn btn--ghost">WhatsApp ↗</a>
+    </div>
+    <div class="cta-contacts">
+      <a href="mailto:info@smartls.cm" class="cta-ci"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>info@smartls.cm</a>
+      <div class="cta-vsep" aria-hidden="true"></div>
+      <a href="tel:+237233420281" class="cta-ci"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13.6 19.79 19.79 0 0 1 1.61 5 2 2 0 0 1 3.6 3h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 10.9a16 16 0 0 0 6 6l.92-.92a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 18.19Z"/></svg>+237 233 420 281</a>
+      <div class="cta-vsep" aria-hidden="true"></div>
+      <span class="cta-ci">📍 B.P. 5120, Douala, Cameroun</span>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══ FOOTER ══ -->
+<footer class="footer" role="contentinfo">
+  <div class="footer-body">
+    <div>
+      <a href="https://www.thankompany.com/" class="footer-wm">THANK <em>KOMPANY</em></a>
+      <p class="footer-tag"><span data-ti="de" class="v">Internationale Beratung &amp; Technologie — Logistik, SAP, Automatisierung, Software. Ludwigshafen, Deutschland · seit 2022.</span><span data-ti="en">International consulting &amp; technology — Logistics, SAP, Automation, Software. Ludwigshafen, Germany · since 2022.</span><span data-ti="fr">Conseil et technologie internationaux — Logistique, SAP, Automatisation, Logiciel. Ludwigshafen, Allemagne · depuis 2022.</span></p>
+    </div>
+    <div>
+      <span class="footer-col-head"><span data-ti="de" class="v">Leistungen</span><span data-ti="en">Services</span><span data-ti="fr">Services</span></span>
+      <a href="https://www.thankompany.com/sap" class="footer-a">SAP EAM/PM</a>
+      <a href="https://www.thankompany.com/automatisation" class="footer-a"><span data-ti="de" class="v">Automatisierung</span><span data-ti="en">Automation</span><span data-ti="fr">Automatisation</span></a>
+      <a href="https://www.thankompany.com/software-development" class="footer-a">Software Dev</a>
+      <a href="#" class="footer-a">Logistics Africa</a>
+    </div>
+    <div>
+      <span class="footer-col-head"><span data-ti="de" class="v">Logistik Afrika</span><span data-ti="en">Logistics Africa</span><span data-ti="fr">Logistique Afrique</span></span>
+      <a href="#services" class="footer-a"><span data-ti="de" class="v">Frachtleistungen</span><span data-ti="en">Freight Services</span><span data-ti="fr">Services de fret</span></a>
+      <a href="#coverage" class="footer-a">CEMAC Coverage</a>
+      <a href="#industries" class="footer-a"><span data-ti="de" class="v">Branchen</span><span data-ti="en">Industries</span><span data-ti="fr">Secteurs</span></a>
+      <a href="https://smartls.cm" target="_blank" rel="noopener" class="footer-a footer-a--accent">smartls.cm ↗</a>
+    </div>
+    <div>
+      <span class="footer-col-head"><span data-ti="de" class="v">Kontakt</span><span data-ti="en">Contact</span><span data-ti="fr">Contact</span></span>
+      <a href="mailto:info@smartls.cm" class="footer-a">info@smartls.cm</a>
+      <a href="tel:+237233420281" class="footer-a">+237 233 420 281</a>
+      <a href="https://wa.me/237696122511" target="_blank" rel="noopener" class="footer-a">WhatsApp ↗</a>
+      <a href="https://www.thankompany.com/#contact" class="footer-a"><span data-ti="de" class="v">THANK KOMPANY anfragen</span><span data-ti="en">Contact THANK KOMPANY</span><span data-ti="fr">Contacter THANK KOMPANY</span></a>
+    </div>
+  </div>
+  <div class="footer-base">
+    <span class="footer-copy">© 2026 THANK KOMPANY GmbH &amp; Smart Logistics &amp; Services Ltd — <span data-ti="de" class="v">Alle Rechte vorbehalten.</span><span data-ti="en">All rights reserved.</span><span data-ti="fr">Tous droits réservés.</span></span>
+    <div class="footer-legal">
+      <a href="https://www.thankompany.com/impressum">Impressum</a>
+      <a href="https://www.thankompany.com/datenschutz">Datenschutz</a>
+      <a href="https://smartls.cm/#privacy">Privacy Policy</a>
+    </div>
+  </div>
+</footer>
+
+
+<script>
+/* ── Language ── */
+let lang='de';
+const META={
+  de:'THANK KOMPANY GmbH und Smart Logistics & Services Ltd liefern multimodale Frachtlösungen, Zollabfertigung und 3PL-Logistik für internationale Projekte in der CEMAC-Region.',
+  en:'THANK KOMPANY GmbH partners with Smart Logistics & Services Ltd to deliver compliant multimodal freight, customs brokerage and 3PL solutions across the CEMAC region.',
+  fr:"THANK KOMPANY GmbH et Smart Logistics & Services Ltd proposent des solutions de transit multimodal, dédouanement et 3PL dans la région CEMAC."
+};
+const TITLES={
+  de:'THANK KOMPANY GmbH | Logistics Africa — Smart Logistics Partner',
+  en:'THANK KOMPANY GmbH | Logistics Africa — Smart Logistics Partner',
+  fr:'THANK KOMPANY GmbH | Logistique Afrique — Partenaire Smart Logistics'
+};
+function setLang(l){
+  lang=l;
+  document.documentElement.lang=l;
+  document.querySelectorAll('.lang-btn').forEach(b=>{const on=b.textContent.trim().toLowerCase()===l;b.classList.toggle('on',on);b.setAttribute('aria-pressed',on)});
+  document.querySelectorAll('[data-t]').forEach(el=>{el.style.display=el.getAttribute('data-t')===l?'block':'none'});
+  document.querySelectorAll('[data-ti]').forEach(el=>{el.classList.toggle('v',el.getAttribute('data-ti')===l)});
+  document.querySelectorAll('[data-tf]').forEach(el=>{el.style.display=el.getAttribute('data-tf')===l?'flex':'none'});
+  document.querySelector('meta[name="description"]').content=META[l];
+  document.title=TITLES[l];
+}
+setLang('de');
+
+/* ── FAQ ── */
+document.querySelectorAll('.faq-btn').forEach(btn=>{
+  btn.addEventListener('click',()=>{
+    const open=btn.getAttribute('aria-expanded')==='true';
+    document.querySelectorAll('.faq-btn').forEach(b=>b.setAttribute('aria-expanded','false'));
+    document.querySelectorAll('.faq-body').forEach(b=>b.classList.remove('open'));
+    if(!open){btn.setAttribute('aria-expanded','true');btn.nextElementSibling.classList.add('open')}
+  });
+});
+
+/* ── Scroll reveal ── */
+const io=new IntersectionObserver(entries=>{
+  entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}});
+},{threshold:.08,rootMargin:'0px 0px -28px 0px'});
+document.querySelectorAll('.r').forEach((el,_)=>{
+  const parent=el.closest('.services-grid,.ind-grid,.testi-grid,.esg-grid,.kpi-stack,.hero-panel,.synergy-grid,.chips,.trust-logos,.benefits-grid,.coverage-grid');
+  if(parent){const sibs=[...parent.querySelectorAll(':scope > .r')];const i=sibs.indexOf(el);if(i>0)el.style.transitionDelay=`${i*60}ms`}
+  io.observe(el);
+});
+</script>
+</body>
+</html>
