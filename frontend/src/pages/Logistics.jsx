@@ -15,7 +15,7 @@ const Logistics = () => {
     return (
         <div className="logistics-page">
             {/* Hero Section */}
-            <section className="logistics-hero" style={{ backgroundImage: `url(/images/img-32.jpg)` }}>
+            <section className="logistics-hero" style={{ backgroundImage: `url(/images/ahome.jpg)` }}>
                 <div className="logistics-hero-overlay"></div>
                 <div className="logistics-hero-content">
                     <h1 className="logistics-hero-title" dangerouslySetInnerHTML={{ __html: t('logistics_africa_hero_title') }} />
@@ -45,7 +45,7 @@ const Logistics = () => {
                         <p dangerouslySetInnerHTML={{ __html: t('logistics_africa_syn_desc2') }} />
                     </div>
                     <div className="service-image">
-                        <img src="/images/sap_intro.png" alt="Synergy" />
+                        <img src="/images/tnk_sml.png" alt="Synergy" />
                     </div>
                 </div>
             </section>
@@ -66,7 +66,7 @@ const Logistics = () => {
                         </ul>
                     </div>
                     <div className="service-image">
-                        <img src="/images/sap_expertise.png" alt="Benefits" />
+                        <img src="/images/2026/log_vis.png" alt="Benefits" />
                     </div>
                 </div>
             </section>
@@ -87,7 +87,7 @@ const Logistics = () => {
                         </ul>
                     </div>
                     <div className="service-image">
-                        <img src="/images/img-16.jpg" alt="Services" />
+                        <img src="/images/2026/logistics.png" alt="Services" />
                     </div>
                 </div>
             </section>
@@ -106,7 +106,7 @@ const Logistics = () => {
                         </ul>
                     </div>
                     <div className="service-image">
-                        <img src="/images/sap_challenge.png" alt="Industries" />
+                        <img src="/images/2026/log_sector.png" alt="Industries" />
                     </div>
                 </div>
             </section>
@@ -124,7 +124,7 @@ const Logistics = () => {
                         </ul>
                     </div>
                     <div className="service-image">
-                        <img src="/images/sap_commitment.png" alt="ESG" />
+                        <img src="/images/business.png" alt="ESG" />
                     </div>
                 </div>
             </section>
@@ -165,7 +165,7 @@ const Logistics = () => {
             {/* Custom CTA Section */}
             <section className="logistics-cta-section" id="contact">
                 <div className="cta-container">
-                    <span className="cta-subtitle">THANK KOMPANY × Smart Logistics</span>
+                    <span className="cta-subtitle">THANK KOMPANY & Smart Logistics</span>
                     <h2 className="cta-title" dangerouslySetInnerHTML={{ __html: t('logistics_africa_cta_title') }} />
                     <p className="cta-desc" dangerouslySetInnerHTML={{ __html: t('logistics_africa_cta_desc') }} />
 

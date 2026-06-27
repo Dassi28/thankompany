@@ -29,7 +29,7 @@ const Automatisation = () => {
                       <p>{t('automation_automation_description')}</p>
                   </div>
                   <div className="service-image">
-                      <img src="/images/auto_intro.png" alt="Conseils SAP" />
+                      <img src="/images/2026/auto_sbuilding.png" alt="Smart Automation for Buildings & Industry" />
                   </div>
               </div>
           </section>
@@ -52,7 +52,7 @@ const Automatisation = () => {
                       <p>{t('automation_expertise_service_conclusion')}</p>
                   </div>
                   <div className="service-image">
-                      <img src="/images/auto_expertise.png" alt="Gestion des Données" />
+                      <img src="/images/2026/auto_working.jpg" alt="Our  Expertise" />
                   </div>
               </div>
           </section>
@@ -74,7 +74,7 @@ const Automatisation = () => {
                       <p>{t('automation_why_conclusion')}</p>
                   </div>
                   <div className="service-image">
-                      <img src="/images/auto_why.png" alt="Développement Web" />
+                      <img src="/images/2026/auto_db.png" alt="Why Modern AutomationMatters" />
                   </div>
               </div>
           </section>
@@ -196,7 +196,7 @@ const Automatisation = () => {
                       <p>{t('automation_why_conclusion')}</p>
                   </div>
                   <div className="service-image">
-                      <img src="/images/auto_challenge.png" alt="Développement Logiciels" />
+                      <img src="/images/2026/auto_KPI.jpg" alt="Challenges We Solve" />
                   </div>
               </div>
           </section>
@@ -223,7 +223,7 @@ const Automatisation = () => {
                       </button>*/}
                   </div> 
                   <div className="service-image">
-                      <img src="/images/auto_commitment.png" alt="Maintenance Informatiques" />
+                      <img src="/images/2026/auto_challenge.png" alt="Our Commitment to Excellence" />
                   </div>
               </div>
 

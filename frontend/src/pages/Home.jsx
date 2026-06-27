@@ -38,7 +38,7 @@ const Home = () => {
             {/* Section Héro */}
             <section className="hero">
                 <div className="hero-bg-overlay"></div>
-                <img src="/images/img-25.jpg" alt="Hero Transport" className="hero-bg-image" />
+                <img src="/images/2026/home_vision.png" alt="Hero Transport" className="hero-bg-image" />
 
                 <div className="hero-content">
                     <div className="hero-text">
@@ -173,7 +173,7 @@ const Home = () => {
                 {/* Mission: Image à gauche, Texte à droite */}
                 <div className="mission-vision-item">
                     <div className="mv-image-container">
-                        <img src="/images/img-22.jpg" alt="Employé d'entrepôt" />
+                        <img src="\images\2026\home_mission.png" alt="Employé d'entrepôt" />
                     </div>
                     <div className="mv-text-container">
                         <h3 className='highlight'>{t('home_mission_title')}</h3>
@@ -191,7 +191,7 @@ const Home = () => {
                         </p>
                     </div>
                     <div className="mv-image-container">
-                        <img src="/images/img-19.jpg" alt="Manager dans un entrepôt" />
+                        <img src="\images\2026\home_vision.png" alt="Manager dans un entrepôt" />
                     </div>
                 </div>
             </section>
@@ -324,6 +324,7 @@ const Home = () => {
                                             <span className="country-name">{t('country_germany')}</span>
                                         </div>
                                         <div className="address-lines">
+                                            <p>THANK KOMPANY GmbH</p>
                                             <p>Mundenheimer Str. 177</p>
                                             <p>67061 Ludwigshafen</p>
                                             <p className="phone-number">{t('home_contact_phone_germany')}</p>
@@ -337,7 +338,9 @@ const Home = () => {
                                             <span className="country-name">{t('country_cameroon')}</span>
                                         </div>
                                         <div className="address-lines">
-                                            <p>BP 7509</p>
+                                            <p>SMART LOGISTICS & SERVICES LTD</p>
+                                            <p>1030, Avenue Douala Manga Bell, </p>
+                                            <p>BP 5120</p>
                                             <p>Douala, {t('country_cameroon')}</p>
                                             <p className="phone-number">{t('home_contact_phone_cameroon')}</p>
                                         </div>

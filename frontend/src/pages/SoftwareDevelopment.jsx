@@ -12,7 +12,7 @@ const SoftwareDevelopment = () => {
     return (
         <div className="software-development-page">
             {/* 01: Hero Section */}
-            <section className="sd-hero" style={{ backgroundImage: `url(/images/img-32.jpg)` }}>
+            <section className="sd-hero" style={{ backgroundImage: `url(/images/2026/it_code.jpg)` }}>
                 <div className="sd-hero-overlay"></div>
                 <div className="sd-hero-content">
                     <h1 className="sd-hero-title">{t('software_dev_title')}</h1>
@@ -28,7 +28,7 @@ const SoftwareDevelopment = () => {
                         <p>{t('software_dev_sd_description')}</p>
                     </div>
                     <div className="service-image">
-                        <img src="/images/sw_intro.png" alt="Software Developement" />
+                        <img src="/images/2026/it_web.jpg" alt="Empower Your Digital Solutions" />
                     </div>
                 </div>
             </section>
@@ -50,7 +50,7 @@ const SoftwareDevelopment = () => {
                         </ul>
                     </div>
                     <div className="service-image">
-                        <img src="/images/sw_expertise.png" alt="Gestion des Données" />
+                        <img src="/images/2026/it_sw_dev.png" alt="Our Expertise" />
                     </div>
                 </div>
             </section>
@@ -74,7 +74,7 @@ const SoftwareDevelopment = () => {
                         <p>{t('software_dev_why_conclusion2')}</p>
                     </div>
                     <div className="service-image">
-                        <img src="/images/sw_why.png" alt="Développement Web" />
+                        <img src="/images/2026/sap_mobil.jpg" alt="Why Modern Software Development Matters" />
                     </div>
                 </div>
             </section>
@@ -213,7 +213,7 @@ const SoftwareDevelopment = () => {
                         <p>{t('software_dev_why_conclusion')}</p>
                     </div>
                     <div className="service-image">
-                        <img src="/images/sw_challenge.png" alt="D�veloppement Logiciels" />
+                        <img src="/images/2026/mission.jpeg" alt="How We Master Your Software Modernization" />
                     </div>
                 </div>
             </section>
@@ -239,7 +239,7 @@ const SoftwareDevelopment = () => {
                         </button>*/}
                     </div>
                     <div className="service-image">
-                        <img src="/images/sw_commitment.png" alt="Maintenance Informatiques" />
+                        <img src="/images/2026/home_greet.jpg" alt="Our Guarantee" />
                     </div>
                 </div>
 

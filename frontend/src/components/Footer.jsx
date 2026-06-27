@@ -56,15 +56,11 @@ const Footer = () => {
             <div className="address-columns">
               <div className="address-col">
                 <h4>{t('country_germany')}</h4>
-                <p>Mundenheimer Str. 177<br />67061 Ludwigshafen<br />{t('home_contact_phone_germany')}</p>
-              </div>
-              <div className="address-col">
-                <h4>{t('country_france')}</h4>
-                <p>1 Rue Chateaubriand<br />92320 Chatillon<br />+33 786 377 944</p>
+                <p>THANK KOMPANY GmbH<br />Mundenheimer Str. 177<br />67061 Ludwigshafen<br />{t('home_contact_phone_germany')}</p>
               </div>
               <div className="address-col">
                 <h4>{t('country_cameroon')}</h4>
-                <p>BP 7509<br />Douala, {t('country_cameroon')}<br />{t('home_contact_phone_cameroon')}</p>
+                <p>SMART LOGISTICS & SERVICES Ltd <br />1030, Avenue Douala Manga Bell<br />PO Box 5120<br />Douala, {t('country_cameroon')}<br />{t('home_contact_phone_cameroon')}</p>
               </div>
             </div>
           </div>

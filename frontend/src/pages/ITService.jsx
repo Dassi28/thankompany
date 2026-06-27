@@ -12,7 +12,7 @@ const ITService = () => {
             {/* 01: Hero Section */}
 
             {/* 01: Hero Section */}
-            <section className="it-hero" style={{ backgroundImage: `url(/images/img-37.jpg)` }}>
+            <section className="it-hero" style={{ backgroundImage: `url(/images/2026/sap_factory2.jpg)`}}>
                 <div className="it-hero-overlay"></div>
                 <div className="it-hero-content">
                     <h1 className="it-hero-title">{t('sap_eam_title')}</h1>
@@ -28,7 +28,7 @@ const ITService = () => {
                         <p>{t('sap_eam_sap_description')}</p>
                     </div>
                     <div className="service-image">
-                        <img src="/images/sap_intro.png" alt="Conseils SAP" />
+                        <img src="/images/2026/eam_hero.png" alt="SAP EAM/PM Consulting" />
                     </div>
                 </div>
             </section>
@@ -54,7 +54,7 @@ const ITService = () => {
                         </ul>
                     </div>
                     <div className="service-image">
-                        <img src="/images/sap_expertise.png" alt="Gestion des Données" />
+                        <img src="/images/2026/eam_wartung.png" alt="Our SAP EAM/PM Expertise" />
                     </div>
                 </div>
             </section>
@@ -76,7 +76,7 @@ const ITService = () => {
                         <p>{t('sap_eam_why_conclusion')}</p>
                     </div>
                     <div className="service-image">
-                        <img src="/images/img-16.jpg" alt="Développement Web" />
+                        <img src="/images/2026/it_maintenance.jpg" alt="Why SAP S/4HANA Matters" />
                     </div>
                 </div>
             </section>
@@ -98,7 +98,7 @@ const ITService = () => {
                         <p>{t('sap_eam_why_conclusion')}</p>
                     </div>
                     <div className="service-image">
-                        <img src="/images/sap_challenge.png" alt="Développement Logiciels" />
+                        <img src="/images/2026/eam_migration.png" alt="Your Path to S/4HANA EAM" />
                     </div>
                 </div>
             </section>
@@ -120,7 +120,7 @@ const ITService = () => {
                         <p className="quote">{t('sap_eam_maintenance_quote')}</p>
                     </div>
                     <div className="service-image">
-                        <img src="/images/sap_commitment.png" alt="Maintenance Informatiques" />
+                        <img src="/images/2026/sap_pm.jpg" alt="Our Guarantee" />
                     </div>
                 </div>
 
